@@ -1,969 +1,4528 @@
 {
-    "twenty one pilots": [
+  "twenty one pilots": {
+    "location": "https://raw.githubusercontent.com/sigmiliarity/web57/refs/heads/main/",
+    "albums": [
+      {
+        "name": "Blurryface",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Heavydirtysoul",
+            "url": "Blurryface/01.%20Heavydirtysoul.opus"
+          },
+          {
+            "track": "02",
+            "title": "Stressed Out",
+            "url": "Blurryface/02.%20Stressed%20Out.opus"
+          },
+          {
+            "track": "03",
+            "title": "Ride",
+            "url": "Blurryface/03.%20Ride.opus"
+          },
+          {
+            "track": "04",
+            "title": "Fairly Local",
+            "url": "Blurryface/04.%20Fairly%20Local.opus"
+          },
+          {
+            "track": "05",
+            "title": "Tear in My Heart",
+            "url": "Blurryface/05.%20Tear%20in%20My%20Heart.opus"
+          },
+          {
+            "track": "06",
+            "title": "Lane Boy",
+            "url": "Blurryface/06.%20Lane%20Boy.opus"
+          },
+          {
+            "track": "07",
+            "title": "The Judge",
+            "url": "Blurryface/07.%20The%20Judge.opus"
+          },
+          {
+            "track": "08",
+            "title": "Doubt",
+            "url": "Blurryface/08.%20Doubt.opus"
+          },
+          {
+            "track": "09",
+            "title": "Polarize",
+            "url": "Blurryface/09.%20Polarize.opus"
+          },
+          {
+            "track": "10",
+            "title": "We Dont Believe Whats on TV",
+            "url": "Blurryface/10.%20We%20Dont%20Believe%20Whats%20on%20TV.opus"
+          },
+          {
+            "track": "11",
+            "title": "Message Man",
+            "url": "Blurryface/11.%20Message%20Man.opus"
+          },
+          {
+            "track": "12",
+            "title": "Hometown",
+            "url": "Blurryface/12.%20Hometown.opus"
+          },
+          {
+            "track": "13",
+            "title": "Not Today",
+            "url": "Blurryface/13.%20Not%20Today.opus"
+          },
+          {
+            "track": "14",
+            "title": "Goner",
+            "url": "Blurryface/14.%20Goner.opus"
+          }
+        ]
+      },
+      {
+        "name": "Breach",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "City Walls",
+            "url": "Breach/01.%20City%20Walls.opus"
+          },
+          {
+            "track": "02",
+            "title": "RAWFEAR",
+            "url": "Breach/02.%20RAWFEAR.opus"
+          },
+          {
+            "track": "03",
+            "title": "Drum Show",
+            "url": "Breach/03.%20Drum%20Show.opus"
+          },
+          {
+            "track": "04",
+            "title": "Garbage",
+            "url": "Breach/04.%20Garbage.opus"
+          },
+          {
+            "track": "05",
+            "title": "The Contract",
+            "url": "Breach/05.%20The%20Contract.opus"
+          },
+          {
+            "track": "06",
+            "title": "Downstairs",
+            "url": "Breach/06.%20Downstairs.opus"
+          },
+          {
+            "track": "07",
+            "title": "Robot Voices",
+            "url": "Breach/07.%20Robot%20Voices.opus"
+          },
+          {
+            "track": "08",
+            "title": "Center Mass",
+            "url": "Breach/08.%20Center%20Mass.opus"
+          },
+          {
+            "track": "09",
+            "title": "Cottonwood",
+            "url": "Breach/09.%20Cottonwood.opus"
+          },
+          {
+            "track": "10",
+            "title": "One Way",
+            "url": "Breach/10.%20One%20Way.opus"
+          },
+          {
+            "track": "11",
+            "title": "Days Lie Dormant",
+            "url": "Breach/11.%20Days%20Lie%20Dormant.opus"
+          },
+          {
+            "track": "12",
+            "title": "Tally",
+            "url": "Breach/12.%20Tally.opus"
+          },
+          {
+            "track": "13",
+            "title": "Intentions",
+            "url": "Breach/13.%20Intentions.opus"
+          }
+        ]
+      },
+      {
+        "name": "Cancer",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Cancer",
+            "url": "Cancer/01.%20Cancer.opus"
+          }
+        ]
+      },
+      {
+        "name": "Chlorine (Alternative Mix)",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Chlorine (Alternative Mix)",
+            "url": "Chlorine%20(Alternative%20Mix)/01.%20Chlorine%20(Alternative%20Mix).opus"
+          }
+        ]
+      },
+      {
+        "name": "Chlorine (Mexico City)",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Chlorine (Mexico City)",
+            "url": "Chlorine%20(Mexico%20City)/01.%20Chlorine%20(Mexico%20City).opus"
+          }
+        ]
+      },
+      {
+        "name": "Christmas Saves The Year",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Christmas Saves The Year",
+            "url": "Christmas%20Saves%20The%20Year/01.%20Christmas%20Saves%20The%20Year.opus"
+          }
+        ]
+      },
+      {
+        "name": "Clancy",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Overcompensate",
+            "url": "Clancy/01.%20Overcompensate.opus"
+          },
+          {
+            "track": "02",
+            "title": "Next Semester",
+            "url": "Clancy/02.%20Next%20Semester.opus"
+          },
+          {
+            "track": "03",
+            "title": "Backslide",
+            "url": "Clancy/03.%20Backslide.opus"
+          },
+          {
+            "track": "04",
+            "title": "Midwest Indigo",
+            "url": "Clancy/04.%20Midwest%20Indigo.opus"
+          },
+          {
+            "track": "05",
+            "title": "Routines In The Night",
+            "url": "Clancy/05.%20Routines%20In%20The%20Night.opus"
+          },
+          {
+            "track": "06",
+            "title": "Vignette",
+            "url": "Clancy/06.%20Vignette.opus"
+          },
+          {
+            "track": "07",
+            "title": "The Craving Jennas version",
+            "url": "Clancy/07.%20The%20Craving%20Jennas%20version.opus"
+          },
+          {
+            "track": "08",
+            "title": "Lavish",
+            "url": "Clancy/08.%20Lavish.opus"
+          },
+          {
+            "track": "09",
+            "title": "Navigating",
+            "url": "Clancy/09.%20Navigating.opus"
+          },
+          {
+            "track": "10",
+            "title": "Snap Back",
+            "url": "Clancy/10.%20Snap%20Back.opus"
+          },
+          {
+            "track": "11",
+            "title": "Oldies Station",
+            "url": "Clancy/11.%20Oldies%20Station.opus"
+          },
+          {
+            "track": "12",
+            "title": "At The Risk Of Feeling Dumb",
+            "url": "Clancy/12.%20At%20The%20Risk%20Of%20Feeling%20Dumb.opus"
+          },
+          {
+            "track": "13",
+            "title": "Paladin Strait",
+            "url": "Clancy/13.%20Paladin%20Strait.opus"
+          }
+        ]
+      },
+      {
+        "name": "Cut My Lip (Brooklyn)",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Cut My Lip (Brooklyn)",
+            "url": "Cut%20My%20Lip%20(Brooklyn)/01.%20Cut%20My%20Lip%20(Brooklyn).opus"
+          }
+        ]
+      },
+      {
+        "name": "Doubt (demo)",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Doubt (demo)",
+            "url": "Doubt%20(demo)/01.%20Doubt%20(demo).opus"
+          }
+        ]
+      },
+      {
+        "name": "Drag Path",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Drag Path",
+            "url": "Drag%20Path/01.%20Drag%20Path.opus"
+          }
+        ]
+      },
+      {
+        "name": "Breach Digital Remains",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Drag Path (Digital Remains)",
+            "url": "Breach%20Digital%20Remains/01.%20Drag%20Path.mp3"
+          }
+        ]
+      },
+      {
+        "name": "Fairly Local",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Fairly Local",
+            "url": "Fairly%20Local/01.%20Fairly%20Local.opus"
+          }
+        ]
+      },
+      {
+        "name": "Heathens  Trees (Livestream Version)",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Heathens  Trees (Livestream Version)",
+            "url": "Heathens%20%20Trees%20(Livestream%20Version)/01.%20Heathens%20%20Trees%20(Livestream%20Version).opus"
+          }
+        ]
+      },
+      {
+        "name": "Jumpsuit  Nico and the Niners",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Jumpsuit",
+            "url": "Jumpsuit%20%20Nico%20and%20the%20Niners/01.%20Jumpsuit.opus"
+          },
+          {
+            "track": "02",
+            "title": "Nico and the Niners",
+            "url": "Jumpsuit%20%20Nico%20and%20the%20Niners/02.%20Nico%20and%20the%20Niners.opus"
+          }
+        ]
+      },
+      {
+        "name": "Level of Concern",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Level of Concern",
+            "url": "Level%20of%20Concern/01.%20Level%20of%20Concern.opus"
+          }
+        ]
+      },
+      {
+        "name": "Level of Concern (live from outside)",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Level of Concern (live from outside)",
+            "url": "Level%20of%20Concern%20(live%20from%20outside)/01.%20Level%20of%20Concern%20(live%20from%20outside).opus"
+          }
+        ]
+      },
+      {
+        "name": "MTV Unplugged (Live)",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Intro (MTV Unplugged) [Live]",
+            "url": "MTV%20Unplugged%20(Live)/01.%20Intro%20(MTV%20Unplugged)%20[Live].opus"
+          },
+          {
+            "track": "02",
+            "title": "Stressed Out (MTV Unplugged ) [Live]",
+            "url": "MTV%20Unplugged%20(Live)/02.%20Stressed%20Out%20(MTV%20Unplugged%20)%20[Live].opus"
+          },
+          {
+            "track": "03",
+            "title": "Tear in My Heart (MTV Unplugged) [Live]",
+            "url": "MTV%20Unplugged%20(Live)/03.%20Tear%20in%20My%20Heart%20(MTV%20Unplugged)%20[Live].opus"
+          },
+          {
+            "track": "04",
+            "title": "House Of Gold  Lane Boy (MTV Unplugged ) [Live]",
+            "url": "MTV%20Unplugged%20(Live)/04.%20House%20Of%20Gold%20%20Lane%20Boy%20(MTV%20Unplugged%20)%20[Live].opus"
+          },
+          {
+            "track": "05",
+            "title": "Shy Away (MTV Unplugged) [Live]",
+            "url": "MTV%20Unplugged%20(Live)/05.%20Shy%20Away%20(MTV%20Unplugged)%20[Live].opus"
+          },
+          {
+            "track": "06",
+            "title": "Ride  Nico And The Niners (MTV Unplugged) [Live]",
+            "url": "MTV%20Unplugged%20(Live)/06.%20Ride%20%20Nico%20And%20The%20Niners%20(MTV%20Unplugged)%20[Live].opus"
+          },
+          {
+            "track": "07",
+            "title": "Car Radio  Heathens (MTV Unplugged) [Live]",
+            "url": "MTV%20Unplugged%20(Live)/07.%20Car%20Radio%20%20Heathens%20(MTV%20Unplugged)%20[Live].opus"
+          }
+        ]
+      },
+      {
+        "name": "No Phun Intended",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Blasphemy",
+            "url": "No%20Phun%20Intended/01.%20Blasphemy.opus"
+          },
+          {
+            "track": "02",
+            "title": "Drown",
+            "url": "No%20Phun%20Intended/02.%20Drown.opus"
+          },
+          {
+            "track": "03",
+            "title": "Hole in the Ground",
+            "url": "No%20Phun%20Intended/03.%20Hole%20in%20the%20Ground.opus"
+          },
+          {
+            "track": "04",
+            "title": "Save",
+            "url": "No%20Phun%20Intended/04.%20Save.opus"
+          },
+          {
+            "track": "05",
+            "title": "Taken By Sleep",
+            "url": "No%20Phun%20Intended/05.%20Taken%20By%20Sleep.opus"
+          },
+          {
+            "track": "06",
+            "title": "I Want To Know",
+            "url": "No%20Phun%20Intended/06.%20I%20Want%20To%20Know.opus"
+          },
+          {
+            "track": "07",
+            "title": "Just Like Yesterday",
+            "url": "No%20Phun%20Intended/07.%20Just%20Like%20Yesterday.opus"
+          },
+          {
+            "track": "08",
+            "title": "Never Change",
+            "url": "No%20Phun%20Intended/08.%20Never%20Change.opus"
+          },
+          {
+            "track": "09",
+            "title": "Prove Me Wrong",
+            "url": "No%20Phun%20Intended/09.%20Prove%20Me%20Wrong.opus"
+          },
+          {
+            "track": "10",
+            "title": "Realize That It's Gone",
+            "url": "No%20Phun%20Intended/10.%20Realize%20That%20It's%20Gone.opus"
+          },
+          {
+            "track": "11",
+            "title": "Tonight",
+            "url": "No%20Phun%20Intended/11.%20Tonight.opus"
+          },
+          {
+            "track": "12",
+            "title": "Falling Too",
+            "url": "No%20Phun%20Intended/12.%20Falling%20Too.opus"
+          },
+          {
+            "track": "13",
+            "title": "Whisper",
+            "url": "No%20Phun%20Intended/13.%20Whisper.opus"
+          },
+          {
+            "track": "14",
+            "title": "TB Saga",
+            "url": "No%20Phun%20Intended/14.%20TB%20Saga.opus"
+          },
+          {
+            "track": "17",
+            "title": "Where Did We Go",
+            "url": "No%20Phun%20Intended/17.%20Where%20Did%20We%20Go.opus"
+          },
+          {
+            "track": "19",
+            "title": "Hear Me Now",
+            "url": "No%20Phun%20Intended/19.%20Hear%20Me%20Now.opus"
+          },
+          {
+            "track": "21",
+            "title": "Jar Of Hearts",
+            "url": "No%20Phun%20Intended/21.%20Jar%20Of%20Hearts.opus"
+          },
+          {
+            "track": "22",
+            "title": "Two",
+            "url": "No%20Phun%20Intended/22.%20Two.opus"
+          },
+          {
+            "track": "23",
+            "title": "Time To Say Goodbye",
+            "url": "No%20Phun%20Intended/23.%20Time%20To%20Say%20Goodbye.opus"
+          },
+          {
+            "track": "24",
+            "title": "Can't Help Falling In Love",
+            "url": "No%20Phun%20Intended/24.%20Can't%20Help%20Falling%20In%20Love.opus"
+          },
+          {
+            "track": "25",
+            "title": "Lovely",
+            "url": "No%20Phun%20Intended/25.%20Lovely.opus"
+          },
+          {
+            "track": "26",
+            "title": "O Come, O Come, Emmanuel",
+            "url": "No%20Phun%20Intended/26.%20O%20Come,%20O%20Come,%20Emmanuel.opus"
+          },
+          {
+            "track": "27",
+            "title": "Dollhouse",
+            "url": "No%20Phun%20Intended/27.%20Dollhouse.opus"
+          },
+          {
+            "track": "28",
+            "title": "LINE",
+            "url": "No%20Phun%20Intended/28.%20LINE.opus"
+          },
+          {
+            "track": "29",
+            "title": "Goner",
+            "url": "No%20Phun%20Intended/29.%20Goner.opus"
+          },
+          {
+            "track": "30",
+            "title": "Trees",
+            "url": "No%20Phun%20Intended/30.%20Trees.opus"
+          }
+        ]
+      },
+      {
+        "name": "Overcompensate (edit)",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Overcompensate (edit)",
+            "url": "Overcompensate%20(edit)/01.%20Overcompensate%20(edit).opus"
+          }
+        ]
+      },
+      {
+        "name": "Regional At Best",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Guns For Hands",
+            "url": "Regional%20At%20Best/01.%20Guns%20For%20Hands.opus"
+          },
+          {
+            "track": "02",
+            "title": "Holding on to You",
+            "url": "Regional%20At%20Best/02.%20Holding%20on%20to%20You.opus"
+          },
+          {
+            "track": "03",
+            "title": "Ode to Sleep",
+            "url": "Regional%20At%20Best/03.%20Ode%20to%20Sleep.opus"
+          },
+          {
+            "track": "04",
+            "title": "Slowtown",
+            "url": "Regional%20At%20Best/04.%20Slowtown.opus"
+          },
+          {
+            "track": "07",
+            "title": "Glowing Eyes",
+            "url": "Regional%20At%20Best/07.%20Glowing%20Eyes.opus"
+          },
+          {
+            "track": "08",
+            "title": "Kitchen Sink",
+            "url": "Regional%20At%20Best/08.%20Kitchen%20Sink.opus"
+          },
+          {
+            "track": "11",
+            "title": "Ruby",
+            "url": "Regional%20At%20Best/11.%20Ruby.opus"
+          },
+          {
+            "track": "12",
+            "title": "Trees",
+            "url": "Regional%20At%20Best/12.%20Trees.opus"
+          },
+          {
+            "track": "13",
+            "title": "Be Concerned",
+            "url": "Regional%20At%20Best/13.%20Be%20Concerned.opus"
+          },
+          {
+            "track": "14",
+            "title": "Clear",
+            "url": "Regional%20At%20Best/14.%20Clear.opus"
+          },
+          {
+            "track": "15",
+            "title": "House of Gold",
+            "url": "Regional%20At%20Best/15.%20House%20of%20Gold.opus"
+          },
+          {
+            "track": "16",
+            "title": "Two",
+            "url": "Regional%20At%20Best/16.%20Two.opus"
+          }
+        ]
+      },
+      {
+        "name": "Scaled And Icy",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Good Day",
+            "url": "Scaled%20And%20Icy/01.%20Good%20Day.opus"
+          },
+          {
+            "track": "02",
+            "title": "Choker",
+            "url": "Scaled%20And%20Icy/02.%20Choker.opus"
+          },
+          {
+            "track": "03",
+            "title": "Shy Away",
+            "url": "Scaled%20And%20Icy/03.%20Shy%20Away.opus"
+          },
+          {
+            "track": "04",
+            "title": "The Outside",
+            "url": "Scaled%20And%20Icy/04.%20The%20Outside.opus"
+          },
+          {
+            "track": "05",
+            "title": "Saturday",
+            "url": "Scaled%20And%20Icy/05.%20Saturday.opus"
+          },
+          {
+            "track": "06",
+            "title": "Never Take It",
+            "url": "Scaled%20And%20Icy/06.%20Never%20Take%20It.opus"
+          },
+          {
+            "track": "07",
+            "title": "Mulberry Street",
+            "url": "Scaled%20And%20Icy/07.%20Mulberry%20Street.opus"
+          },
+          {
+            "track": "08",
+            "title": "Formidable",
+            "url": "Scaled%20And%20Icy/08.%20Formidable.opus"
+          },
+          {
+            "track": "09",
+            "title": "Bounce Man",
+            "url": "Scaled%20And%20Icy/09.%20Bounce%20Man.opus"
+          },
+          {
+            "track": "10",
+            "title": "No Chances",
+            "url": "Scaled%20And%20Icy/10.%20No%20Chances.opus"
+          },
+          {
+            "track": "11",
+            "title": "Redecorate",
+            "url": "Scaled%20And%20Icy/11.%20Redecorate.opus"
+          }
+        ]
+      },
+      {
+        "name": "Shy Away (Livestream Version)",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Shy Away (Livestream Version)",
+            "url": "Shy%20Away%20(Livestream%20Version)/01.%20Shy%20Away%20(Livestream%20Version).opus"
+          }
+        ]
+      },
+      {
+        "name": "The Contract",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "The Contract",
+            "url": "The%20Contract/01.%20The%20Contract.opus"
+          }
+        ]
+      },
+      {
+        "name": "The Craving (single version)",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "The Craving (single version)",
+            "url": "The%20Craving%20(single%20version)/01.%20The%20Craving%20(single%20version).opus"
+          }
+        ]
+      },
+      {
+        "name": "The Hype (Alt Mix)",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "The Hype (Alt Mix)",
+            "url": "The%20Hype%20(Alt%20Mix)/01.%20The%20Hype%20(Alt%20Mix).opus"
+          }
+        ]
+      },
+      {
+        "name": "The Hype (Berlin)",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "The Hype (Berlin)",
+            "url": "The%20Hype%20(Berlin)/01.%20The%20Hype%20(Berlin).opus"
+          }
+        ]
+      },
+      {
+        "name": "three songs",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Guns for Hands",
+            "url": "three%20songs/01.%20Guns%20for%20Hands.opus"
+          },
+          {
+            "track": "02",
+            "title": "Migraine",
+            "url": "three%20songs/02.%20Migraine.opus"
+          },
+          {
+            "track": "03",
+            "title": "Ode to Sleep",
+            "url": "three%20songs/03.%20Ode%20to%20Sleep.opus"
+          }
+        ]
+      },
+      {
+        "name": "TOPxMM",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Heathens feat. MUTEMATH",
+            "url": "TOPxMM/01.%20Heathens%20feat.%20MUTEMATH.opus"
+          },
+          {
+            "track": "02",
+            "title": "Heavydirtysoul feat. MUTEMATH",
+            "url": "TOPxMM/02.%20Heavydirtysoul%20feat.%20MUTEMATH.opus"
+          },
+          {
+            "track": "03",
+            "title": "Ride feat. MUTEMATH",
+            "url": "TOPxMM/03.%20Ride%20feat.%20MUTEMATH.opus"
+          },
+          {
+            "track": "04",
+            "title": "Tear in My Heart feat. MUTEMATH",
+            "url": "TOPxMM/04.%20Tear%20in%20My%20Heart%20feat.%20MUTEMATH.opus"
+          },
+          {
+            "track": "05",
+            "title": "Lane Boy feat. MUTEMATH",
+            "url": "TOPxMM/05.%20Lane%20Boy%20feat.%20MUTEMATH.opus"
+          }
+        ]
+      },
+      {
+        "name": "Trench",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Jumpsuit",
+            "url": "Trench/01.%20Jumpsuit.opus"
+          },
+          {
+            "track": "02",
+            "title": "Levitate",
+            "url": "Trench/02.%20Levitate.opus"
+          },
+          {
+            "track": "03",
+            "title": "Morph",
+            "url": "Trench/03.%20Morph.opus"
+          },
+          {
+            "track": "04",
+            "title": "My Blood",
+            "url": "Trench/04.%20My%20Blood.opus"
+          },
+          {
+            "track": "05",
+            "title": "Chlorine",
+            "url": "Trench/05.%20Chlorine.opus"
+          },
+          {
+            "track": "06",
+            "title": "Smithereens",
+            "url": "Trench/06.%20Smithereens.opus"
+          },
+          {
+            "track": "07",
+            "title": "Neon Gravestones",
+            "url": "Trench/07.%20Neon%20Gravestones.opus"
+          },
+          {
+            "track": "08",
+            "title": "The Hype",
+            "url": "Trench/08.%20The%20Hype.opus"
+          },
+          {
+            "track": "09",
+            "title": "Nico and the Niners",
+            "url": "Trench/09.%20Nico%20and%20the%20Niners.opus"
+          },
+          {
+            "track": "10",
+            "title": "Cut My Lip",
+            "url": "Trench/10.%20Cut%20My%20Lip.opus"
+          },
+          {
+            "track": "11",
+            "title": "Bandito",
+            "url": "Trench/11.%20Bandito.opus"
+          },
+          {
+            "track": "12",
+            "title": "Pet Cheetah",
+            "url": "Trench/12.%20Pet%20Cheetah.opus"
+          },
+          {
+            "track": "13",
+            "title": "Legend",
+            "url": "Trench/13.%20Legend.opus"
+          },
+          {
+            "track": "14",
+            "title": "Leave the City",
+            "url": "Trench/14.%20Leave%20the%20City.opus"
+          }
+        ]
+      },
+      {
+        "name": "Twenty One Pilots",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Implicit Demand For Proof",
+            "url": "Twenty%20One%20Pilots/01.%20Implicit%20Demand%20For%20Proof.opus"
+          },
+          {
+            "track": "02",
+            "title": "Fall Away",
+            "url": "Twenty%20One%20Pilots/02.%20Fall%20Away.opus"
+          },
+          {
+            "track": "03",
+            "title": "The Pantaloon",
+            "url": "Twenty%20One%20Pilots/03.%20The%20Pantaloon.opus"
+          },
+          {
+            "track": "04",
+            "title": "Addict With A Pen",
+            "url": "Twenty%20One%20Pilots/04.%20Addict%20With%20A%20Pen.opus"
+          },
+          {
+            "track": "05",
+            "title": "Friend Please",
+            "url": "Twenty%20One%20Pilots/05.%20Friend%20Please.opus"
+          },
+          {
+            "track": "06",
+            "title": "March To the Sea",
+            "url": "Twenty%20One%20Pilots/06.%20March%20To%20the%20Sea.opus"
+          },
+          {
+            "track": "07",
+            "title": "Johnny Boy",
+            "url": "Twenty%20One%20Pilots/07.%20Johnny%20Boy.opus"
+          },
+          {
+            "track": "08",
+            "title": "Oh Ms Believer",
+            "url": "Twenty%20One%20Pilots/08.%20Oh%20Ms%20Believer.opus"
+          },
+          {
+            "track": "09",
+            "title": "Air Catcher",
+            "url": "Twenty%20One%20Pilots/09.%20Air%20Catcher.opus"
+          },
+          {
+            "track": "10",
+            "title": "Trapdoor",
+            "url": "Twenty%20One%20Pilots/10.%20Trapdoor.opus"
+          },
+          {
+            "track": "11",
+            "title": "A Car a Torch a Death",
+            "url": "Twenty%20One%20Pilots/11.%20A%20Car%20a%20Torch%20a%20Death.opus"
+          },
+          {
+            "track": "12",
+            "title": "Taxi Cab",
+            "url": "Twenty%20One%20Pilots/12.%20Taxi%20Cab.opus"
+          },
+          {
+            "track": "13",
+            "title": "Before You Start Your Day",
+            "url": "Twenty%20One%20Pilots/13.%20Before%20You%20Start%20Your%20Day.opus"
+          },
+          {
+            "track": "14",
+            "title": "Isle Of Flightless Birds",
+            "url": "Twenty%20One%20Pilots/14.%20Isle%20Of%20Flightless%20Birds.opus"
+          }
+        ]
+      },
+      {
+        "name": "Vessel",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Ode to Sleep",
+            "url": "Vessel/01.%20Ode%20to%20Sleep.opus"
+          },
+          {
+            "track": "02",
+            "title": "Holding on to You",
+            "url": "Vessel/02.%20Holding%20on%20to%20You.opus"
+          },
+          {
+            "track": "03",
+            "title": "Migraine",
+            "url": "Vessel/03.%20Migraine.opus"
+          },
+          {
+            "track": "04",
+            "title": "House of Gold",
+            "url": "Vessel/04.%20House%20of%20Gold.opus"
+          },
+          {
+            "track": "05",
+            "title": "Car Radio",
+            "url": "Vessel/05.%20Car%20Radio.opus"
+          },
+          {
+            "track": "06",
+            "title": "Semi-Automatic",
+            "url": "Vessel/06.%20Semi-Automatic.opus"
+          },
+          {
+            "track": "07",
+            "title": "Screen",
+            "url": "Vessel/07.%20Screen.opus"
+          },
+          {
+            "track": "08",
+            "title": "The Run and Go",
+            "url": "Vessel/08.%20The%20Run%20and%20Go.opus"
+          },
+          {
+            "track": "09",
+            "title": "Fake You Out",
+            "url": "Vessel/09.%20Fake%20You%20Out.opus"
+          },
+          {
+            "track": "10",
+            "title": "Guns for Hands",
+            "url": "Vessel/10.%20Guns%20for%20Hands.opus"
+          },
+          {
+            "track": "11",
+            "title": "Trees",
+            "url": "Vessel/11.%20Trees.opus"
+          },
+          {
+            "track": "12",
+            "title": "Truce",
+            "url": "Vessel/12.%20Truce.opus"
+          }
+        ]
+      }
+    ]
+  },
+  "Tyler, the Creator": {
+    "location": "https://raw.githubusercontent.com/sigmiliarity/web60/refs/heads/main/t/",
+    "albums": [
+      {
+        "name": "CALL ME IF YOU GET LOST The Estate Sale",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "SIR BAUDELAIRE",
+            "url": "CALL ME IF YOU GET LOST The Estate Sale/01.%20SIR%20BAUDELAIRE.mp3"
+          },
+          {
+            "track": "02",
+            "title": "CORSO",
+            "url": "CALL ME IF YOU GET LOST The Estate Sale/02.%20CORSO.mp3"
+          },
+          {
+            "track": "03",
+            "title": "LEMONHEAD",
+            "url": "CALL ME IF YOU GET LOST The Estate Sale/03.%20LEMONHEAD.mp3"
+          },
+          {
+            "track": "04",
+            "title": "WUSYANAME + Intro",
+            "url": "CALL ME IF YOU GET LOST The Estate Sale/04.%20WUSYANAME%20%2B%20Intro.mp3"
+          },
+          {
+            "track": "05",
+            "title": "LUMBERJACK",
+            "url": "CALL ME IF YOU GET LOST The Estate Sale/05.%20LUMBERJACK.mp3"
+          },
+          {
+            "track": "06",
+            "title": "HOT WIND BLOWS",
+            "url": "CALL ME IF YOU GET LOST The Estate Sale/06.%20HOT%20WIND%20BLOWS.mp3"
+          },
+          {
+            "track": "07",
+            "title": "MASSA",
+            "url": "CALL ME IF YOU GET LOST The Estate Sale/07.%20MASSA.mp3"
+          },
+          {
+            "track": "08",
+            "title": "RUNITUP",
+            "url": "CALL ME IF YOU GET LOST The Estate Sale/08.%20RUNITUP.mp3"
+          },
+          {
+            "track": "09",
+            "title": "MANIFESTO",
+            "url": "CALL ME IF YOU GET LOST The Estate Sale/09.%20MANIFESTO.mp3"
+          },
+          {
+            "track": "10",
+            "title": "SWEET / I THOUGHT YOU WANTED TO DANCE",
+            "url": "CALL ME IF YOU GET LOST The Estate Sale/10.%20SWEET%20_%20I%20THOUGHT%20YOU%20WANTED%20TO%20DANCE.mp3"
+          },
+          {
+            "track": "11",
+            "title": "MOMMA TALK",
+            "url": "CALL ME IF YOU GET LOST The Estate Sale/11.%20MOMMA%20TALK.mp3"
+          },
+          {
+            "track": "12",
+            "title": "RISE!",
+            "url": "CALL ME IF YOU GET LOST The Estate Sale/12.%20RISE!.mp3"
+          },
+          {
+            "track": "13",
+            "title": "BLESSED",
+            "url": "CALL ME IF YOU GET LOST The Estate Sale/13.%20BLESSED.mp3"
+          },
+          {
+            "track": "14",
+            "title": "JUGGERNAUT",
+            "url": "CALL ME IF YOU GET LOST The Estate Sale/14.%20JUGGERNAUT.mp3"
+          },
+          {
+            "track": "15",
+            "title": "WILSHIRE",
+            "url": "CALL ME IF YOU GET LOST The Estate Sale/15.%20WILSHIRE.mp3"
+          },
+          {
+            "track": "16",
+            "title": "SAFARI",
+            "url": "CALL ME IF YOU GET LOST The Estate Sale/16.%20SAFARI.mp3"
+          },
+          {
+            "track": "17",
+            "title": "EVERYTHING MUST GO",
+            "url": "CALL ME IF YOU GET LOST The Estate Sale/17.%20EVERYTHING%20MUST%20GO%20%5Bt7hS8FSH-Vs%5D.mp3"
+          },
+          {
+            "track": "18",
+            "title": "STUNTMAN",
+            "url": "CALL ME IF YOU GET LOST The Estate Sale/18.%20STUNTMAN.mp3"
+          },
+          {
+            "track": "19",
+            "title": "WHAT A DAY",
+            "url": "CALL ME IF YOU GET LOST The Estate Sale/19.%20WHAT%20A%20DAY.mp3"
+          },
+          {
+            "track": "20",
+            "title": "WHARF TALK",
+            "url": "CALL ME IF YOU GET LOST The Estate Sale/20.%20WHARF%20TALK.mp3"
+          },
+          {
+            "track": "21",
+            "title": "DOGTOOTH",
+            "url": "CALL ME IF YOU GET LOST The Estate Sale/21.%20DOGTOOTH.mp3"
+          },
+          {
+            "track": "22",
+            "title": "HEAVEN TO ME",
+            "url": "CALL ME IF YOU GET LOST The Estate Sale/22.%20HEAVEN%20TO%20ME.mp3"
+          },
+          {
+            "track": "23",
+            "title": "BOYFRIEND, GIRLFRIEND (2020 Demo)",
+            "url": "CALL ME IF YOU GET LOST The Estate Sale/23.%20BOYFRIEND%2C%20GIRLFRIEND%20%282020%20Demo%29.mp3"
+          },
+          {
+            "track": "24",
+            "title": "SORRY NOT SORRY",
+            "url": "CALL ME IF YOU GET LOST The Estate Sale/24.%20SORRY%20NOT%20SORRY.mp3"
+          }
+        ]
+      },
+      {
+        "name": "Flower Boy",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Foreword",
+            "url": "Flower Boy/01.%20Foreword.mp3"
+          },
+          {
+            "track": "02",
+            "title": "Where This Flower Blooms",
+            "url": "Flower Boy/02.%20Where%20This%20Flower%20Blooms.mp3"
+          },
+          {
+            "track": "03",
+            "title": "Sometimes",
+            "url": "Flower Boy/03.%20Sometimes.mp3"
+          },
+          {
+            "track": "04",
+            "title": "See You Again",
+            "url": "Flower Boy/04.%20See%20You%20Again.mp3"
+          },
+          {
+            "track": "05",
+            "title": "Who Dat Boy",
+            "url": "Flower Boy/05.%20Who%20Dat%20Boy.mp3"
+          },
+          {
+            "track": "06",
+            "title": "Pothole",
+            "url": "Flower Boy/06.%20Pothole.mp3"
+          },
+          {
+            "track": "07",
+            "title": "Garden Shed",
+            "url": "Flower Boy/07.%20Garden%20Shed.mp3"
+          },
+          {
+            "track": "08",
+            "title": "Boredom",
+            "url": "Flower Boy/08.%20Boredom.mp3"
+          },
+          {
+            "track": "09",
+            "title": "I Ain't Got Time!",
+            "url": "Flower Boy/09.%20I%20Ain%27t%20Got%20Time!.mp3"
+          },
+          {
+            "track": "10",
+            "title": "911 / Mr. Lonely",
+            "url": "Flower Boy/10.%20911%20_%20Mr.%20Lonely.mp3"
+          },
+          {
+            "track": "12",
+            "title": "November",
+            "url": "Flower Boy/12.%20November.mp3"
+          },
+          {
+            "track": "13",
+            "title": "Glitter",
+            "url": "Flower Boy/13.%20Glitter.mp3"
+          },
+          {
+            "track": "14",
+            "title": "Enjoy Right Now, Today",
+            "url": "Flower Boy/14.%20Enjoy%20Right%20Now%2C%20Today.mp3"
+          }
+        ]
+      },
+      {
+        "name": "IGOR",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "IGOR'S THEME",
+            "url": "IGOR/01.%20IGOR%27S%20THEME.mp3"
+          },
+          {
+            "track": "02",
+            "title": "EARFQUAKE",
+            "url": "IGOR/02.%20EARFQUAKE.mp3"
+          },
+          {
+            "track": "03",
+            "title": "I THINK",
+            "url": "IGOR/03.%20I%20THINK.mp3"
+          },
+          {
+            "track": "04",
+            "title": "BOYFRIEND",
+            "url": "IGOR/04.%20BOYFRIEND.mp3"
+          },
+          {
+            "track": "05",
+            "title": "RUNNING OUT OF TIME",
+            "url": "IGOR/05.%20RUNNING%20OUT%20OF%20TIME.mp3"
+          },
+          {
+            "track": "06",
+            "title": "NEW MAGIC WAND",
+            "url": "IGOR/06.%20NEW%20MAGIC%20WAND.mp3"
+          },
+          {
+            "track": "07",
+            "title": "A BOY IS A GUN_",
+            "url": "IGOR/07.%20A%20BOY%20IS%20A%20GUN_.mp3"
+          },
+          {
+            "track": "08",
+            "title": "PUPPET",
+            "url": "IGOR/08.%20PUPPET.mp3"
+          },
+          {
+            "track": "09",
+            "title": "WHAT'S GOOD",
+            "url": "IGOR/09.%20WHAT%27S%20GOOD.mp3"
+          },
+          {
+            "track": "10",
+            "title": "GONE, GONE / THANK YOU",
+            "url": "IGOR/10.%20GONE%2C%20GONE%20_%20THANK%20YOU.mp3"
+          },
+          {
+            "track": "11",
+            "title": "I DON'T LOVE YOU ANYMORE",
+            "url": "IGOR/11.%20I%20DON%27T%20LOVE%20YOU%20ANYMORE.mp3"
+          },
+          {
+            "track": "12",
+            "title": "ARE WE STILL FRIENDS_",
+            "url": "IGOR/12.%20ARE%20WE%20STILL%20FRIENDS_.mp3"
+          }
+        ]
+      },
+      {
+        "name": "Wolf",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "WOLF",
+            "url": "Wolf/01.%20WOLF.mp3"
+          },
+          {
+            "track": "02",
+            "title": "Jamba",
+            "url": "Wolf/02.%20Jamba.mp3"
+          },
+          {
+            "track": "03",
+            "title": "Cowboy",
+            "url": "Wolf/03.%20Cowboy.mp3"
+          },
+          {
+            "track": "04",
+            "title": "Awkward",
+            "url": "Wolf/04.%20Awkward.mp3"
+          },
+          {
+            "track": "05",
+            "title": "Domo23",
+            "url": "Wolf/05.%20Domo23.mp3"
+          },
+          {
+            "track": "06",
+            "title": "Answer",
+            "url": "Wolf/06.%20Answer.mp3"
+          },
+          {
+            "track": "07",
+            "title": "Slater",
+            "url": "Wolf/07.%20Slater.mp3"
+          },
+          {
+            "track": "08",
+            "title": "48",
+            "url": "Wolf/08.%2048.mp3"
+          },
+          {
+            "track": "09",
+            "title": "Colossus",
+            "url": "Wolf/09.%20Colossus.mp3"
+          },
+          {
+            "track": "10",
+            "title": "Bimmer",
+            "url": "Wolf/10.%20Bimmer.mp3"
+          },
+          {
+            "track": "11",
+            "title": "Campfire",
+            "url": "Wolf/10.%20Campfire.mp3"
+          },
+          {
+            "track": "12",
+            "title": "PartyIsntOver",
+            "url": "Wolf/10.%20PartyIsntOver.mp3"
+          },
+          {
+            "track": "13",
+            "title": "IFHY",
+            "url": "Wolf/11.%20IFHY.mp3"
+          },
+          {
+            "track": "14",
+            "title": "Pigs",
+            "url": "Wolf/12.%20Pigs.mp3"
+          },
+          {
+            "track": "15",
+            "title": "Parking Lot",
+            "url": "Wolf/13.%20Parking%20Lot.mp3"
+          },
+          {
+            "track": "16",
+            "title": "Rusty",
+            "url": "Wolf/14.%20Rusty.mp3"
+          },
+          {
+            "track": "17",
+            "title": "Trashwang",
+            "url": "Wolf/15.%20Trashwang.mp3"
+          },
+          {
+            "track": "18",
+            "title": "Treehome95 (feat. Coco O. & Erykah Badu)",
+            "url": "Wolf/16.%20Treehome95%20%28feat.%20Coco%20O.%20%26%20Erykah%20Badu%29.mp3"
+          },
+          {
+            "track": "19",
+            "title": "Tamale",
+            "url": "Wolf/17.%20Tamale.mp3"
+          },
+          {
+            "track": "20",
+            "title": "Lone",
+            "url": "Wolf/18.%20Lone.mp3"
+          }
+        ]
+      },
+      {
+        "name": "Cherry Bomb",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "DEATHCAMP",
+            "url": "Cherry Bomb/01.%20DEATHCAMP.mp3"
+          },
+          {
+            "track": "05",
+            "title": "FIND YOUR WINGS",
+            "url": "Cherry Bomb/05.%20FIND%20YOUR%20WINGS.mp3"
+          },
+          {
+            "track": "08",
+            "title": "2SEATER",
+            "url": "Cherry Bomb/08.%202SEATER.mp3"
+          },
+          {
+            "track": "09",
+            "title": "THE BROWN STAINS OF DARKEESE LATIFAH PART 6-12 (REMIX)",
+            "url": "Cherry Bomb/09.%20THE%20BROWN%20STAINS%20OF%20DARKEESE%20LATIFAH%20PART%206-12%20%28REMIX%29.mp3"
+          },
+          {
+            "track": "12",
+            "title": "KEEP DA O'S",
+            "url": "Cherry Bomb/12.%20KEEP%20DA%20O%27S.mp3"
+          },
+          {
+            "track": "13",
+            "title": "OKAGA, CA",
+            "url": "Cherry Bomb/13.%20OKAGA%2C%20CA.mp3"
+          }
+        ]
+      },
+      {
+        "name": "CHROMAKOPIA",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "St. Chroma (feat. Daniel Caesar)",
+            "url": "CHROMAKOPIA/01.%20St.%20Chroma%20%28feat.%20Daniel%20Caesar%29.mp3"
+          },
+          {
+            "track": "02",
+            "title": "Rah Tah Tah",
+            "url": "CHROMAKOPIA/02.%20Rah%20Tah%20Tah.mp3"
+          },
+          {
+            "track": "03",
+            "title": "Noid",
+            "url": "CHROMAKOPIA/03.%20Noid.mp3"
+          },
+          {
+            "track": "04",
+            "title": "Darling, I (feat. Teezo Touchdown)",
+            "url": "CHROMAKOPIA/04.%20Darling%2C%20I%20%28feat.%20Teezo%20Touchdown%29.mp3"
+          },
+          {
+            "track": "05",
+            "title": "Hey Jane",
+            "url": "CHROMAKOPIA/05.%20Hey%20Jane.mp3"
+          },
+          {
+            "track": "06",
+            "title": "I Killed You",
+            "url": "CHROMAKOPIA/06.%20I%20Killed%20You.mp3"
+          },
+          {
+            "track": "07",
+            "title": "Judge Judy",
+            "url": "CHROMAKOPIA/07.%20Judge%20Judy.mp3"
+          },
+          {
+            "track": "08",
+            "title": "Sticky (feat. GloRilla, Sexyy Red & Lil Wayne)",
+            "url": "CHROMAKOPIA/08.%20Sticky%20%28feat.%20GloRilla%2C%20Sexyy%20Red%20%26%20Lil%20Wayne%29.mp3"
+          },
+          {
+            "track": "09",
+            "title": "Take Your Mask Off (feat. Daniel Caesar & LaToiya Williams)",
+            "url": "CHROMAKOPIA/09.%20Take%20Your%20Mask%20Off%20%28feat.%20Daniel%20Caesar%20%26%20LaToiya%20Williams%29.mp3"
+          },
+          {
+            "track": "10",
+            "title": "Tomorrow",
+            "url": "CHROMAKOPIA/10.%20Tomorrow.mp3"
+          },
+          {
+            "track": "11",
+            "title": "Thought I Was Dead (feat. ScHoolboy Q & Santigold)",
+            "url": "CHROMAKOPIA/11.%20Thought%20I%20Was%20Dead%20%28feat.%20ScHoolboy%20Q%20%26%20Santigold%29.mp3"
+          },
+          {
+            "track": "12",
+            "title": "LikeHim (feat. Lola Young)",
+            "url": "CHROMAKOPIA/12.%20LikeHim%20%28feat.%20Lola%20Young%29.mp3"
+          },
+          {
+            "track": "13",
+            "title": "Balloon (feat. Doechii)",
+            "url": "CHROMAKOPIA/13.%20Balloon%20%28feat.%20Doechii%29.mp3"
+          },
+          {
+            "track": "14",
+            "title": "I Hope You Find Your Way Home",
+            "url": "CHROMAKOPIA/14.%20I%20Hope%20You%20Find%20Your%20Way%20Home.mp3"
+          },
+          {
+            "track": "15",
+            "title": "Mother",
+            "url": "CHROMAKOPIA/15.%20Mother.mp3"
+          }
+        ]
+      },
+      {
+        "name": "DON'T TAP THE GLASS",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Big Poe (feat. Sk8brd)",
+            "url": "DON'T%20TAP%20THE%20GLASS/01.%20Big%20Poe%20%28feat.%20Sk8brd%29.mp3"
+          },
+          {
+            "track": "02",
+            "title": "Sugar On My Tongue",
+            "url": "DON'T%20TAP%20THE%20GLASS/02.%20Sugar%20On%20My%20Tongue.mp3"
+          },
+          {
+            "track": "03",
+            "title": "Sucka Free",
+            "url": "DON'T%20TAP%20THE%20GLASS/03.%20Sucka%20Free.mp3"
+          },
+          {
+            "track": "04",
+            "title": "Mommanem",
+            "url": "DON'T%20TAP%20THE%20GLASS/04.%20Mommanem.mp3"
+          },
+          {
+            "track": "05",
+            "title": "Stop Playing With Me",
+            "url": "DON'T%20TAP%20THE%20GLASS/05.%20Stop%20Playing%20With%20Me.mp3"
+          },
+          {
+            "track": "06",
+            "title": "Ring Ring Ring",
+            "url": "DON'T%20TAP%20THE%20GLASS/06.%20Ring%20Ring%20Ring.mp3"
+          },
+          {
+            "track": "07",
+            "title": "Don't Tap That Glass / Tweakin'",
+            "url": "DON'T%20TAP%20THE%20GLASS/07.%20Don't%20Tap%20That%20Glass%20_%20Tweakin'.mp3"
+          },
+          {
+            "track": "08",
+            "title": "Don't You Worry Baby (feat. Madison McFerrin)",
+            "url": "DON'T%20TAP%20THE%20GLASS/08.%20Don't%20You%20Worry%20Baby%20%28feat.%20Madison%20McFerrin%29.mp3"
+          },
+          {
+            "track": "09",
+            "title": "I'll Take Care of You (feat. Yebba)",
+            "url": "DON'T%20TAP%20THE%20GLASS/09.%20I'll%20Take%20Care%20of%20You%20%28feat.%20Yebba%29.mp3"
+          },
+          {
+            "track": "10",
+            "title": "Tell Me What It Is",
+            "url": "DON'T%20TAP%20THE%20GLASS/10.%20Tell%20Me%20What%20It%20Is.mp3"
+          }
+        ]
+      },
+      {
+        "name": "all",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "BEST INTEREST",
+            "url": "all/BEST%20INTEREST.mp3"
+          },
+          {
+            "track": "02",
+            "title": "Cash In Cash Out",
+            "url": "all/Cash%20In%20Cash%20Out.mp3"
+          },
+          {
+            "track": "03",
+            "title": "OKRA",
+            "url": "all/OKRA.mp3"
+          },
+          {
+            "track": "04",
+            "title": "Potato Salad",
+            "url": "all/Potato%20Salad.mp3"
+          },
+          {
+            "track": "05",
+            "title": "Yonkers",
+            "url": "all/Yonkers.mp3"
+          }
+        ]
+      }
+    ]
+  },
+  "Magdalena Bay": {
+    "location": "https://raw.githubusercontent.com/sigmiliarity/web60/refs/heads/main/m/",
+    "albums": [
+      {
+        "name": "A Little Rhythm and a Wicked Feeling",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "How to Get Physical",
+            "url": "A%20Little%20Rhythm%20and%20a%20Wicked%20Feeling/01.%20How%20to%20Get%20Physical.opus"
+          },
+          {
+            "track": "02",
+            "title": "Story",
+            "url": "A%20Little%20Rhythm%20and%20a%20Wicked%20Feeling/02.%20Story.opus"
+          },
+          {
+            "track": "03",
+            "title": "Good Intentions",
+            "url": "A%20Little%20Rhythm%20and%20a%20Wicked%20Feeling/03.%20Good%20Intentions.opus"
+          },
+          {
+            "track": "04",
+            "title": "Airplane",
+            "url": "A%20Little%20Rhythm%20and%20a%20Wicked%20Feeling/04.%20Airplane.opus"
+          },
+          {
+            "track": "05",
+            "title": "Venice",
+            "url": "A%20Little%20Rhythm%20and%20a%20Wicked%20Feeling/05.%20Venice.opus"
+          },
+          {
+            "track": "06",
+            "title": "Killshot",
+            "url": "A%20Little%20Rhythm%20and%20a%20Wicked%20Feeling/06.%20Killshot.opus"
+          },
+          {
+            "track": "07",
+            "title": "Stop  Go",
+            "url": "A%20Little%20Rhythm%20and%20a%20Wicked%20Feeling/07.%20Stop%20%20Go.opus"
+          },
+          {
+            "track": "08",
+            "title": "Oh Hell",
+            "url": "A%20Little%20Rhythm%20and%20a%20Wicked%20Feeling/08.%20Oh%20Hell.opus"
+          }
+        ]
+      },
+      {
+        "name": "Airplane",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Airplane",
+            "url": "Airplane/01.%20Airplane.opus"
+          }
+        ]
+      },
+      {
+        "name": "Ashes to Ashes (triple j Like A Version)",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Ashes to Ashes (triple j Like A Version)",
+            "url": "Ashes%20to%20Ashes%20(triple%20j%20Like%20A%20Version)/01.%20Ashes%20to%20Ashes%20(triple%20j%20Like%20A%20Version).opus"
+          }
+        ]
+      },
+      {
+        "name": "Chaeri (Danny L Harle Remix)",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Chaeri (Danny L Harle Remix)",
+            "url": "Chaeri%20(Danny%20L%20Harle%20Remix)/01.%20Chaeri%20(Danny%20L%20Harle%20Remix).opus"
+          }
+        ]
+      },
+      {
+        "name": "daypop",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Waking Up",
+            "url": "daypop/01.%20Waking%20Up.opus"
+          },
+          {
+            "track": "02",
+            "title": "Set Me Off",
+            "url": "daypop/02.%20Set%20Me%20Off.opus"
+          },
+          {
+            "track": "03",
+            "title": "Head Over Heels",
+            "url": "daypop/03.%20Head%20Over%20Heels.opus"
+          },
+          {
+            "track": "04",
+            "title": "wastehistime",
+            "url": "daypop/04.%20wastehistime.opus"
+          }
+        ]
+      },
+      {
+        "name": "Death & Romance",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Death & Romance",
+            "url": "Death%20&%20Romance/01.%20Death%20&%20Romance.opus"
+          }
+        ]
+      },
+      {
+        "name": "Ghost",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Ghost",
+            "url": "Ghost/01.%20Ghost.opus"
+          }
+        ]
+      },
+      {
+        "name": "Good Intentions",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Good Intentions",
+            "url": "Good%20Intentions/01.%20Good%20Intentions.opus"
+          }
+        ]
+      },
+      {
+        "name": "How to Get Physical",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "How to Get Physical",
+            "url": "How%20to%20Get%20Physical/01.%20How%20to%20Get%20Physical.opus"
+          }
+        ]
+      },
+      {
+        "name": "Human Happens  Paint Me A Picture",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Human Happens",
+            "url": "Human%20Happens%20%20Paint%20Me%20A%20Picture/01.%20Human%20Happens.opus"
+          },
+          {
+            "track": "02",
+            "title": "Paint Me A Picture",
+            "url": "Human%20Happens%20%20Paint%20Me%20A%20Picture/02.%20Paint%20Me%20A%20Picture.opus"
+          }
+        ]
+      },
+      {
+        "name": "Image (Grimes Special)",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Image (Grimes Special)",
+            "url": "Image%20(Grimes%20Special)/01.%20Image%20(Grimes%20Special).opus"
+          }
+        ]
+      },
+      {
+        "name": "Imaginal Disk",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "She Looked Like Me!",
+            "url": "Imaginal%20Disk/01.%20She%20Looked%20Like%20Me!.opus"
+          },
+          {
+            "track": "02",
+            "title": "Killing Time",
+            "url": "Imaginal%20Disk/02.%20Killing%20Time.opus"
+          },
+          {
+            "track": "03",
+            "title": "True Blue Interlude",
+            "url": "Imaginal%20Disk/03.%20True%20Blue%20Interlude.opus"
+          },
+          {
+            "track": "04",
+            "title": "Image",
+            "url": "Imaginal%20Disk/04.%20Image.opus"
+          },
+          {
+            "track": "05",
+            "title": "Death & Romance",
+            "url": "Imaginal%20Disk/05.%20Death%20&%20Romance.opus"
+          },
+          {
+            "track": "06",
+            "title": "Fear, Sex",
+            "url": "Imaginal%20Disk/06.%20Fear,%20Sex.opus"
+          },
+          {
+            "track": "07",
+            "title": "Vampire in the Corner",
+            "url": "Imaginal%20Disk/07.%20Vampire%20in%20the%20Corner.opus"
+          },
+          {
+            "track": "08",
+            "title": "Watching T.V.",
+            "url": "Imaginal%20Disk/08.%20Watching%20T.V..opus"
+          },
+          {
+            "track": "09",
+            "title": "Tunnel Vision",
+            "url": "Imaginal%20Disk/09.%20Tunnel%20Vision.opus"
+          },
+          {
+            "track": "10",
+            "title": "Love Is Everywhere",
+            "url": "Imaginal%20Disk/10.%20Love%20Is%20Everywhere.opus"
+          },
+          {
+            "track": "11",
+            "title": "Feeling DiskInserted",
+            "url": "Imaginal%20Disk/11.%20Feeling%20DiskInserted.opus"
+          },
+          {
+            "track": "12",
+            "title": "That's My Floor",
+            "url": "Imaginal%20Disk/12.%20That's%20My%20Floor.opus"
+          },
+          {
+            "track": "13",
+            "title": "Cry for Me",
+            "url": "Imaginal%20Disk/13.%20Cry%20for%20Me.opus"
+          },
+          {
+            "track": "14",
+            "title": "Angel on a Satellite",
+            "url": "Imaginal%20Disk/14.%20Angel%20on%20a%20Satellite.opus"
+          },
+          {
+            "track": "15",
+            "title": "The Ballad of Matt & Mica",
+            "url": "Imaginal%20Disk/15.%20The%20Ballad%20of%20Matt%20&%20Mica.opus"
+          }
+        ]
+      },
+      {
+        "name": "Killshot",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Killshot",
+            "url": "Killshot/01.%20Killshot.opus"
+          }
+        ]
+      },
+      {
+        "name": "Killshot (Slowed + Reverb)",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Killshot (Slowed + Reverb)",
+            "url": "Killshot%20(Slowed%20+%20Reverb)/01.%20Killshot%20(Slowed%20+%20Reverb).opus"
+          }
+        ]
+      },
+      {
+        "name": "Mercurial World (Deluxe)",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "secret 1",
+            "url": "Mercurial%20World%20(Deluxe)/01.%20secret%201.opus"
+          },
+          {
+            "track": "02",
+            "title": "The End",
+            "url": "Mercurial%20World%20(Deluxe)/02.%20The%20End.opus"
+          },
+          {
+            "track": "03",
+            "title": "Mercurial World",
+            "url": "Mercurial%20World%20(Deluxe)/03.%20Mercurial%20World.opus"
+          },
+          {
+            "track": "04",
+            "title": "Unconditional",
+            "url": "Mercurial%20World%20(Deluxe)/04.%20Unconditional.opus"
+          },
+          {
+            "track": "05",
+            "title": "Dawning of the Season",
+            "url": "Mercurial%20World%20(Deluxe)/05.%20Dawning%20of%20the%20Season.opus"
+          },
+          {
+            "track": "06",
+            "title": "Secrets (Your Fire)",
+            "url": "Mercurial%20World%20(Deluxe)/06.%20Secrets%20(Your%20Fire).opus"
+          },
+          {
+            "track": "07",
+            "title": "secrets 2-9 medley",
+            "url": "Mercurial%20World%20(Deluxe)/07.%20secrets%202-9%20medley.opus"
+          },
+          {
+            "track": "08",
+            "title": "You Lose!",
+            "url": "Mercurial%20World%20(Deluxe)/08.%20You%20Lose!.opus"
+          },
+          {
+            "track": "09",
+            "title": "secret 10",
+            "url": "Mercurial%20World%20(Deluxe)/09.%20secret%2010.opus"
+          },
+          {
+            "track": "10",
+            "title": "You Lose! (8-Bit)",
+            "url": "Mercurial%20World%20(Deluxe)/10.%20You%20Lose!%20(8-Bit).opus"
+          },
+          {
+            "track": "11",
+            "title": "Something for 2 (Cecile Believe Remix)",
+            "url": "Mercurial%20World%20(Deluxe)/11.%20Something%20for%202%20(Cecile%20Believe%20Remix).opus"
+          },
+          {
+            "track": "12",
+            "title": "Chaeri",
+            "url": "Mercurial%20World%20(Deluxe)/12.%20Chaeri.opus"
+          },
+          {
+            "track": "13",
+            "title": "secret 11",
+            "url": "Mercurial%20World%20(Deluxe)/13.%20secret%2011.opus"
+          },
+          {
+            "track": "14",
+            "title": "Halfway",
+            "url": "Mercurial%20World%20(Deluxe)/14.%20Halfway.opus"
+          },
+          {
+            "track": "15",
+            "title": "Hysterical Us",
+            "url": "Mercurial%20World%20(Deluxe)/15.%20Hysterical%20Us.opus"
+          },
+          {
+            "track": "16",
+            "title": "secret 12",
+            "url": "Mercurial%20World%20(Deluxe)/16.%20secret%2012.opus"
+          },
+          {
+            "track": "17",
+            "title": "All You Do",
+            "url": "Mercurial%20World%20(Deluxe)/17.%20All%20You%20Do.opus"
+          },
+          {
+            "track": "18",
+            "title": "Prophecy (Synth & Strings)",
+            "url": "Mercurial%20World%20(Deluxe)/18.%20Prophecy%20(Synth%20&%20Strings).opus"
+          },
+          {
+            "track": "19",
+            "title": "Follow the Leader",
+            "url": "Mercurial%20World%20(Deluxe)/19.%20Follow%20the%20Leader.opus"
+          },
+          {
+            "track": "20",
+            "title": "secret 13",
+            "url": "Mercurial%20World%20(Deluxe)/20.%20secret%2013.opus"
+          },
+          {
+            "track": "21",
+            "title": "Chaeri (Danny L Harle Remix)",
+            "url": "Mercurial%20World%20(Deluxe)/21.%20Chaeri%20(Danny%20L%20Harle%20Remix).opus"
+          },
+          {
+            "track": "22",
+            "title": "Chaeri (Piano & Strings)",
+            "url": "Mercurial%20World%20(Deluxe)/22.%20Chaeri%20(Piano%20&%20Strings).opus"
+          },
+          {
+            "track": "23",
+            "title": "Dominó (Spanish Version)",
+            "url": "Mercurial%20World%20(Deluxe)/23.%20Dominó%20(Spanish%20Version).opus"
+          },
+          {
+            "track": "24",
+            "title": "Dreamcatching",
+            "url": "Mercurial%20World%20(Deluxe)/24.%20Dreamcatching.opus"
+          },
+          {
+            "track": "25",
+            "title": "secret 14",
+            "url": "Mercurial%20World%20(Deluxe)/25.%20secret%2014.opus"
+          },
+          {
+            "track": "26",
+            "title": "The Beginning",
+            "url": "Mercurial%20World%20(Deluxe)/26.%20The%20Beginning.opus"
+          },
+          {
+            "track": "27",
+            "title": "Mercurial World (Piano & Strings)",
+            "url": "Mercurial%20World%20(Deluxe)/27.%20Mercurial%20World%20(Piano%20&%20Strings).opus"
+          },
+          {
+            "track": "28",
+            "title": "secret 15",
+            "url": "Mercurial%20World%20(Deluxe)/28.%20secret%2015.opus"
+          }
+        ]
+      },
+      {
+        "name": "Mine",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Mine",
+            "url": "Mine/01.%20Mine.opus"
+          }
+        ]
+      },
+      {
+        "name": "mini mix vol. 2",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Live 4ever",
+            "url": "mini%20mix%20vol.%202/01.%20Live%204ever.opus"
+          },
+          {
+            "track": "02",
+            "title": "I Dont Want to Cry Anymore",
+            "url": "mini%20mix%20vol.%202/02.%20I%20Dont%20Want%20to%20Cry%20Anymore.opus"
+          },
+          {
+            "track": "03",
+            "title": "Sky2Fall",
+            "url": "mini%20mix%20vol.%202/03.%20Sky2Fall.opus"
+          },
+          {
+            "track": "04",
+            "title": "Body",
+            "url": "mini%20mix%20vol.%202/04.%20Body.opus"
+          },
+          {
+            "track": "05",
+            "title": "Woww",
+            "url": "mini%20mix%20vol.%202/05.%20Woww.opus"
+          },
+          {
+            "track": "06",
+            "title": "Hideaway",
+            "url": "mini%20mix%20vol.%202/06.%20Hideaway.opus"
+          },
+          {
+            "track": "07",
+            "title": "Sky2Fall Reprise",
+            "url": "mini%20mix%20vol.%202/07.%20Sky2Fall%20Reprise.opus"
+          }
+        ]
+      },
+      {
+        "name": "mini mix vol. 3",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Slug Song",
+            "url": "mini%20mix%20vol.%203/01.%20Slug%20Song.opus"
+          },
+          {
+            "track": "02",
+            "title": "EXO",
+            "url": "mini%20mix%20vol.%203/02.%20EXO.opus"
+          },
+          {
+            "track": "03",
+            "title": "2 Wheel Drive",
+            "url": "mini%20mix%20vol.%203/03.%202%20Wheel%20Drive.opus"
+          },
+          {
+            "track": "04",
+            "title": "Top Dog",
+            "url": "mini%20mix%20vol.%203/04.%20Top%20Dog.opus"
+          },
+          {
+            "track": "05",
+            "title": "Tonguetwister",
+            "url": "mini%20mix%20vol.%203/05.%20Tonguetwister.opus"
+          },
+          {
+            "track": "06",
+            "title": "Wandering Eyes",
+            "url": "mini%20mix%20vol.%203/06.%20Wandering%20Eyes.opus"
+          },
+          {
+            "track": "07",
+            "title": "Slug Song Reprise",
+            "url": "mini%20mix%20vol.%203/07.%20Slug%20Song%20Reprise.opus"
+          }
+        ]
+      },
+      {
+        "name": "Mini Mix, Vol. 1",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Intro",
+            "url": "Mini%20Mix,%20Vol.%201/01.%20Intro.opus"
+          },
+          {
+            "track": "02",
+            "title": "Afternoon in Heaven",
+            "url": "Mini%20Mix,%20Vol.%201/02.%20Afternoon%20in%20Heaven.opus"
+          },
+          {
+            "track": "03",
+            "title": "El Dorado",
+            "url": "Mini%20Mix,%20Vol.%201/03.%20El%20Dorado.opus"
+          },
+          {
+            "track": "04",
+            "title": "Turning off the Rain",
+            "url": "Mini%20Mix,%20Vol.%201/04.%20Turning%20off%20the%20Rain.opus"
+          },
+          {
+            "track": "05",
+            "title": "U Wanna Dance",
+            "url": "Mini%20Mix,%20Vol.%201/05.%20U%20Wanna%20Dance.opus"
+          },
+          {
+            "track": "06",
+            "title": "Nothing Baby",
+            "url": "Mini%20Mix,%20Vol.%201/06.%20Nothing%20Baby.opus"
+          },
+          {
+            "track": "07",
+            "title": "Mine",
+            "url": "Mini%20Mix,%20Vol.%201/07.%20Mine.opus"
+          }
+        ]
+      },
+      {
+        "name": "Money Lover",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Money Lover",
+            "url": "Money%20Lover/01.%20Money%20Lover.opus"
+          }
+        ]
+      },
+      {
+        "name": "Neon",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Neon",
+            "url": "Neon/01.%20Neon.opus"
+          }
+        ]
+      },
+      {
+        "name": "nightpop",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Neon",
+            "url": "nightpop/01.%20Neon.opus"
+          },
+          {
+            "track": "02",
+            "title": "Drive Alone",
+            "url": "nightpop/02.%20Drive%20Alone.opus"
+          },
+          {
+            "track": "03",
+            "title": "Redbone",
+            "url": "nightpop/03.%20Redbone.opus"
+          },
+          {
+            "track": "04",
+            "title": "Move Slow",
+            "url": "nightpop/04.%20Move%20Slow.opus"
+          }
+        ]
+      },
+      {
+        "name": "Oh Hell",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Oh Hell",
+            "url": "Oh%20Hell/01.%20Oh%20Hell.opus"
+          }
+        ]
+      },
+      {
+        "name": "Only If You Want It",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Only If You Want It",
+            "url": "Only%20If%20You%20Want%20It/01.%20Only%20If%20You%20Want%20It.opus"
+          }
+        ]
+      },
+      {
+        "name": "Push Me Away",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Push Me Away",
+            "url": "Push%20Me%20Away/01.%20Push%20Me%20Away.opus"
+          }
+        ]
+      },
+      {
+        "name": "Second Sleep  Star Eyes",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Second Sleep",
+            "url": "Second%20Sleep%20%20Star%20Eyes/01.%20Second%20Sleep.opus"
+          },
+          {
+            "track": "02",
+            "title": "Star Eyes",
+            "url": "Second%20Sleep%20%20Star%20Eyes/02.%20Star%20Eyes.opus"
+          }
+        ]
+      },
+      {
+        "name": "Secrets (Your Fire)",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Secrets (Your Fire)",
+            "url": "Secrets%20(Your%20Fire)/01.%20Secrets%20(Your%20Fire).opus"
+          }
+        ]
+      },
+      {
+        "name": "Shotgun (Magdalena Bay Remix)",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Shotgun (Magdalena Bay Remix)",
+            "url": "Shotgun%20(Magdalena%20Bay%20Remix)/01.%20Shotgun%20(Magdalena%20Bay%20Remix).opus"
+          },
+          {
+            "track": "02",
+            "title": "Shotgun (slowed + reverb)",
+            "url": "Shotgun%20(Magdalena%20Bay%20Remix)/02.%20Shotgun%20(slowed%20+%20reverb).opus"
+          },
+          {
+            "track": "03",
+            "title": "Shotgun",
+            "url": "Shotgun%20(Magdalena%20Bay%20Remix)/03.%20Shotgun.opus"
+          }
+        ]
+      },
+      {
+        "name": "Story (Gus Kero Kero Bonito Remix)",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Story (Gus Kero Kero Bonito Remix)",
+            "url": "Story%20(Gus%20Kero%20Kero%20Bonito%20Remix)/01.%20Story%20(Gus%20Kero%20Kero%20Bonito%20Remix).opus"
+          }
+        ]
+      },
+      {
+        "name": "The Girls",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "The Girls",
+            "url": "The%20Girls/01.%20The%20Girls.opus"
+          }
+        ]
+      },
+      {
+        "name": "This Is The World (I Made It For You)  Nice Day",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "This Is The World (I Made It For You)",
+            "url": "This%20Is%20The%20World%20(I%20Made%20It%20For%20You)%20%20Nice%20Day/01.%20This%20Is%20The%20World%20(I%20Made%20It%20For%20You).opus"
+          },
+          {
+            "track": "02",
+            "title": "Nice Day",
+            "url": "This%20Is%20The%20World%20(I%20Made%20It%20For%20You)%20%20Nice%20Day/02.%20Nice%20Day.opus"
+          }
+        ]
+      },
+      {
+        "name": "Unoriginal  Black-Eyed Susan Climb",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Unoriginal",
+            "url": "Unoriginal%20%20Black-Eyed%20Susan%20Climb/01.%20Unoriginal.opus"
+          },
+          {
+            "track": "02",
+            "title": "Black-Eyed Susan Climb",
+            "url": "Unoriginal%20%20Black-Eyed%20Susan%20Climb/02.%20Black-Eyed%20Susan%20Climb.opus"
+          }
+        ]
+      },
+      {
+        "name": "Venice",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Venice",
+            "url": "Venice/01.%20Venice.opus"
+          }
+        ]
+      },
+      {
+        "name": "Waking Up",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Waking Up",
+            "url": "Waking%20Up/01.%20Waking%20Up.opus"
+          }
+        ]
+      },
+      {
+        "name": "You Lose!",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "You Lose!",
+            "url": "You%20Lose!/01.%20You%20Lose!.opus"
+          }
+        ]
+      },
+      {
+        "name": "VOC POP",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "VOC POP",
+            "url": "VOC%20POP/01. voc-pop.m4a"
+          }
+        ]
+      },
+      {
+        "name": "NeverEnding Story",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "NeverEnding Story",
+            "url": "NeverEnding%20Story/01. neverending-story-mini-cover.m4a"
+          }
+        ]
+      }
+    ]
+  },
+  "Kendrick Lamar": {
+    "location": "https://raw.githubusercontent.com/sigmiliarity/web60/refs/heads/main/k/",
+    "albums": [
+      {
+        "dname": "Alright",
+        "name": "Alright [Clean]",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Alright",
+            "url": "Alright%20[Clean]/01.%20Alright%20[Clean].opus"
+          }
+        ]
+      },
+      {
+        "dname": "Don't Kill My Vibe (Remix)",
+        "name": "Bitch, Don't Kill My Vibe (Remix) [Clean]",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Don’t Kill My Vibe (Remix) [feat. Emeli Sandé]",
+            "url": "Bitch,%20Don't%20Kill%20My%20Vibe%20(Remix)%20[Clean]/01.%20Bitch,%20Don’t%20Kill%20My%20Vibe%20(Remix)%20[feat.%20Emeli%20Sandé].opus"
+          }
+        ]
+      },
+      {
+        "dname": "Black Panther The Album Music From And Inspired By",
+        "name": "Black Panther The Album Music From And Inspired By [Clean]",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Black Panther",
+            "url": "Black%20Panther%20The%20Album%20Music%20From%20And%20Inspired%20By%20[Clean]/01.%20Black%20Panther.opus"
+          },
+          {
+            "track": "02",
+            "title": "All The Stars",
+            "url": "Black%20Panther%20The%20Album%20Music%20From%20And%20Inspired%20By%20[Clean]/02.%20All%20The%20Stars%20[Clean].opus"
+          },
+          {
+            "track": "03",
+            "title": "X",
+            "url": "Black%20Panther%20The%20Album%20Music%20From%20And%20Inspired%20By%20[Clean]/03.%20X%20[Clean].opus"
+          },
+          {
+            "track": "04",
+            "title": "The Ways",
+            "url": "Black%20Panther%20The%20Album%20Music%20From%20And%20Inspired%20By%20[Clean]/04.%20The%20Ways%20[Clean].opus"
+          },
+          {
+            "track": "05",
+            "title": "Opps",
+            "url": "Black%20Panther%20The%20Album%20Music%20From%20And%20Inspired%20By%20[Clean]/05.%20Opps.opus"
+          },
+          {
+            "track": "06",
+            "title": "I Am",
+            "url": "Black%20Panther%20The%20Album%20Music%20From%20And%20Inspired%20By%20[Clean]/06.%20I%20Am%20[Clean].opus"
+          },
+          {
+            "track": "07",
+            "title": "Paramedic!",
+            "url": "Black%20Panther%20The%20Album%20Music%20From%20And%20Inspired%20By%20[Clean]/07.%20Paramedic!.opus"
+          },
+          {
+            "track": "08",
+            "title": "Bloody Waters",
+            "url": "Black%20Panther%20The%20Album%20Music%20From%20And%20Inspired%20By%20[Clean]/08.%20Bloody%20Waters.opus"
+          },
+          {
+            "track": "09",
+            "title": "King's Dead",
+            "url": "Black%20Panther%20The%20Album%20Music%20From%20And%20Inspired%20By%20[Clean]/09.%20King's%20Dead%20[Clean].opus"
+          },
+          {
+            "track": "10",
+            "title": "Redemption Interlude",
+            "url": "Black%20Panther%20The%20Album%20Music%20From%20And%20Inspired%20By%20[Clean]/10.%20Redemption%20Interlude%20[Clean].opus"
+          },
+          {
+            "track": "11",
+            "title": "Redemption",
+            "url": "Black%20Panther%20The%20Album%20Music%20From%20And%20Inspired%20By%20[Clean]/11.%20Redemption.opus"
+          },
+          {
+            "track": "12",
+            "title": "Seasons",
+            "url": "Black%20Panther%20The%20Album%20Music%20From%20And%20Inspired%20By%20[Clean]/12.%20Seasons.opus"
+          },
+          {
+            "track": "13",
+            "title": "Big Shot",
+            "url": "Black%20Panther%20The%20Album%20Music%20From%20And%20Inspired%20By%20[Clean]/13.%20Big%20Shot.opus"
+          },
+          {
+            "track": "14",
+            "title": "Pray For Me",
+            "url": "Black%20Panther%20The%20Album%20Music%20From%20And%20Inspired%20By%20[Clean]/14.%20Pray%20For%20Me%20[Clean].opus"
+          }
+        ]
+      },
+      {
+        "dname": "DANG.",
+        "name": "DAMN. [Clean]",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "BLOOD.",
+            "url": "DAMN.%20[Clean]/01.%20BLOOD..opus"
+          },
+          {
+            "track": "02",
+            "title": "DNA.",
+            "url": "DAMN.%20[Clean]/02.%20DNA.%20[Clean].opus"
+          },
+          {
+            "track": "03",
+            "title": "YAH.",
+            "url": "DAMN.%20[Clean]/03.%20YAH.%20[Clean].opus"
+          },
+          {
+            "track": "04",
+            "title": "ELEMENT.",
+            "url": "DAMN.%20[Clean]/04.%20ELEMENT..opus"
+          },
+          {
+            "track": "05",
+            "title": "FEEL.",
+            "url": "DAMN.%20[Clean]/05.%20FEEL..opus"
+          },
+          {
+            "track": "06",
+            "title": "LOYALTY.",
+            "url": "DAMN.%20[Clean]/06.%20LOYALTY.%20FT.%20RIHANNA..opus"
+          },
+          {
+            "track": "07",
+            "title": "PRIDE.",
+            "url": "DAMN.%20[Clean]/07.%20PRIDE..opus"
+          },
+          {
+            "track": "08",
+            "title": "HUMBLE.",
+            "url": "DAMN.%20[Clean]/08.%20HUMBLE..opus"
+          },
+          {
+            "track": "09",
+            "title": "LUST.",
+            "url": "DAMN.%20[Clean]/09.%20LUST..opus"
+          },
+          {
+            "track": "10",
+            "title": "LOVE.",
+            "url": "DAMN.%20[Clean]/10.%20LOVE.%20FT.%20ZACARI..opus"
+          },
+          {
+            "track": "11",
+            "title": "XXX.",
+            "url": "DAMN.%20[Clean]/11.%20XXX.%20FT.%20U2..opus"
+          },
+          {
+            "track": "12",
+            "title": "FEAR.",
+            "url": "DAMN.%20[Clean]/12.%20FEAR..opus"
+          },
+          {
+            "track": "13",
+            "title": "GOD.",
+            "url": "DAMN.%20[Clean]/13.%20GOD.%20[Clean].opus"
+          },
+          {
+            "track": "14",
+            "title": "DUCKWORTH.",
+            "url": "DAMN.%20[Clean]/14.%20DUCKWORTH..opus"
+          }
+        ]
+      },
+      {
+        "dname": "good kid, m.A.A.d city",
+        "name": "good kid, m.A.A.d city [Clean]",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Sherane a.k.a Master Splinter’s Daughter",
+            "url": "good%20kid,%20m.A.A.d%20city%20[Clean]/01.%20Sherane%20a.k.a%20Master%20Splinter’s%20Daughter%20[Clean].opus"
+          },
+          {
+            "track": "02",
+            "title": "Don’t Kill My Vibe",
+            "url": "good%20kid,%20m.A.A.d%20city%20[Clean]/02.%20Bitch,%20Don’t%20Kill%20My%20Vibe%20[Clean].opus"
+          },
+          {
+            "track": "03",
+            "title": "Backseat Freestyle",
+            "url": "good%20kid,%20m.A.A.d%20city%20[Clean]/03.%20Backseat%20Freestyle%20[Clean].opus"
+          },
+          {
+            "track": "04",
+            "title": "The Art of Peer Pressure",
+            "url": "good%20kid,%20m.A.A.d%20city%20[Clean]/04.%20The%20Art%20of%20Peer%20Pressure.opus"
+          },
+          {
+            "track": "05",
+            "title": "Money Trees [feat. Jay Rock]",
+            "url": "good%20kid,%20m.A.A.d%20city%20[Clean]/05.%20Money%20Trees%20[feat.%20Jay%20Rock]%20[Clean].opus"
+          },
+          {
+            "track": "06",
+            "title": "Poetic Justice [feat. Drake]",
+            "url": "good%20kid,%20m.A.A.d%20city%20[Clean]/06.%20Poetic%20Justice%20[feat.%20Drake].opus"
+          },
+          {
+            "track": "07",
+            "title": "good kid",
+            "url": "good%20kid,%20m.A.A.d%20city%20[Clean]/07.%20good%20kid%20[Clean].opus"
+          },
+          {
+            "track": "08",
+            "title": "m.A.A.d city [feat. MC Eiht]",
+            "url": "good%20kid,%20m.A.A.d%20city%20[Clean]/08.%20m.A.A.d%20city%20[feat.%20MC%20Eiht].opus"
+          },
+          {
+            "track": "09",
+            "title": "Swimming Pools (Drank) (Extended Version)",
+            "url": "good%20kid,%20m.A.A.d%20city%20[Clean]/09.%20Swimming%20Pools%20(Drank)%20(Extended%20Version).opus"
+          },
+          {
+            "track": "10",
+            "title": "Sing About Me, I'm Dying Of Thirst",
+            "url": "good%20kid,%20m.A.A.d%20city%20[Clean]/10.%20Sing%20About%20Me,%20I'm%20Dying%20Of%20Thirst%20[Clean].opus"
+          },
+          {
+            "track": "11",
+            "title": "Real [feat. Anna Wise]",
+            "url": "good%20kid,%20m.A.A.d%20city%20[Clean]/11.%20Real%20[feat.%20Anna%20Wise].opus"
+          },
+          {
+            "track": "12",
+            "title": "Compton [feat. Dr. Dre]",
+            "url": "good%20kid,%20m.A.A.d%20city%20[Clean]/12.%20Compton%20[feat.%20Dr.%20Dre]%20[Clean].opus"
+          },
+          {
+            "track": "13",
+            "title": "Don’t Kill My Vibe (Remix) [feat. JAŸ-Z]",
+            "url": "good%20kid,%20m.A.A.d%20city%20[Clean]/13.%20Bitch,%20Don’t%20Kill%20My%20Vibe%20(Remix)%20[feat.%20JAŸ-Z]%20[Clean].opus"
+          }
+        ]
+      },
+      {
+        "dname": "To Pimp A Butterfly",
+        "name": "To Pimp A Butterfly [Clean]",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "Wesley's Theory [feat. George Clinton & Thundercat]",
+            "url": "To%20Pimp%20A%20Butterfly%20[Clean]/01.%20Wesley's%20Theory%20[feat.%20George%20Clinton%20&%20Thundercat].opus"
+          },
+          {
+            "track": "03",
+            "title": "King Kunta",
+            "url": "To%20Pimp%20A%20Butterfly%20[Clean]/03.%20King%20Kunta%20[Clean].opus"
+          },
+          {
+            "track": "04",
+            "title": "Institutionalized [feat. Bilal & Anna Wise & Snoop Dogg]",
+            "url": "To%20Pimp%20A%20Butterfly%20[Clean]/04.%20Institutionalized%20[feat.%20Bilal%20&%20Anna%20Wise%20&%20Snoop%20Dogg]%20[Clean].opus"
+          },
+          {
+            "track": "05",
+            "title": "These Walls [feat. Bilal & Anna Wise & Thundercat]",
+            "url": "To%20Pimp%20A%20Butterfly%20[Clean]/05.%20These%20Walls%20[feat.%20Bilal%20&%20Anna%20Wise%20&%20Thundercat]%20[Clean].opus"
+          },
+          {
+            "track": "06",
+            "title": "u",
+            "url": "To%20Pimp%20A%20Butterfly%20[Clean]/06.%20u%20[Clean].opus"
+          },
+          {
+            "track": "07",
+            "title": "Alright",
+            "url": "To%20Pimp%20A%20Butterfly%20[Clean]/07.%20Alright%20[Clean].opus"
+          },
+          {
+            "track": "09",
+            "title": "Momma",
+            "url": "To%20Pimp%20A%20Butterfly%20[Clean]/09.%20Momma%20[Clean].opus"
+          },
+          {
+            "track": "10",
+            "title": "Hood Politics",
+            "url": "To%20Pimp%20A%20Butterfly%20[Clean]/10.%20Hood%20Politics.opus"
+          },
+          {
+            "track": "11",
+            "title": "How Much A Dollar Cost [feat. James Fauntleroy & Ronald Isley]",
+            "url": "To%20Pimp%20A%20Butterfly%20[Clean]/11.%20How%20Much%20A%20Dollar%20Cost%20[feat.%20James%20Fauntleroy%20&%20Ronald%20Isley]%20[Clean].opus"
+          },
+          {
+            "track": "12",
+            "title": "Complexion (A Zulu Love) [feat. Rapsody]",
+            "url": "To%20Pimp%20A%20Butterfly%20[Clean]/12.%20Complexion%20(A%20Zulu%20Love)%20[feat.%20Rapsody].opus"
+          },
+          {
+            "track": "13",
+            "title": "The Blacker The Berry",
+            "url": "To%20Pimp%20A%20Butterfly%20[Clean]/13.%20The%20Blacker%20The%20Berry%20[Clean].opus"
+          },
+          {
+            "track": "14",
+            "title": "You Ain't Gotta Lie (Momma Said)",
+            "url": "To%20Pimp%20A%20Butterfly%20[Clean]/14.%20You%20Ain't%20Gotta%20Lie%20(Momma%20Said).opus"
+          },
+          {
+            "track": "15",
+            "title": "i",
+            "url": "To%20Pimp%20A%20Butterfly%20[Clean]/15.%20i%20[Clean].opus"
+          },
+          {
+            "track": "16",
+            "title": "Mortal Man",
+            "url": "To%20Pimp%20A%20Butterfly%20[Clean]/16.%20Mortal%20Man.opus"
+          }
+        ]
+      },
+      {
+        "name": "untitled unmastered. [Clean]",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "untitled 01  08.19.2014.",
+            "url": "untitled%20unmastered.%20[Clean]/01.%20untitled%2001%20%2008.19.2014..opus"
+          },
+          {
+            "track": "02",
+            "title": "untitled 02  06.23.2014.",
+            "url": "untitled%20unmastered.%20[Clean]/02.%20untitled%2002%20%2006.23.2014..opus"
+          },
+          {
+            "track": "03",
+            "title": "untitled 03  05.28.2013.",
+            "url": "untitled%20unmastered.%20[Clean]/03.%20untitled%2003%20%2005.28.2013..opus"
+          },
+          {
+            "track": "04",
+            "title": "untitled 04  08.14.2014.",
+            "url": "untitled%20unmastered.%20[Clean]/04.%20untitled%2004%20%2008.14.2014.%20[Clean].opus"
+          },
+          {
+            "track": "05",
+            "title": "untitled 05  09.21.2014.",
+            "url": "untitled%20unmastered.%20[Clean]/05.%20untitled%2005%20%2009.21.2014..opus"
+          },
+          {
+            "track": "06",
+            "title": "untitled 06  06.30.2014.",
+            "url": "untitled%20unmastered.%20[Clean]/06.%20untitled%2006%20%2006.30.2014.%20[Clean].opus"
+          },
+          {
+            "track": "07",
+            "title": "untitled 07  2014 - 2016",
+            "url": "untitled%20unmastered.%20[Clean]/07.%20untitled%2007%20%202014%20-%202016.opus"
+          },
+          {
+            "track": "08",
+            "title": "untitled 08  09.06.2014.",
+            "url": "untitled%20unmastered.%20[Clean]/08.%20untitled%2008%20%2009.06.2014..opus"
+          }
+        ]
+      },
+      {
+        "name": "GNX",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "wacced out murals",
+            "url": "GNX/01.%20wacced%20out%20murals.opus"
+          },
+          {
+            "track": "02",
+            "title": "squabble up",
+            "url": "GNX/02.%20squabble%20up.opus"
+          },
+          {
+            "track": "03",
+            "title": "luther",
+            "url": "GNX/03.%20luther.opus"
+          },
+          {
+            "track": "04",
+            "title": "man at the garden",
+            "url": "GNX/04.%20man%20at%20the%20garden.opus"
+          },
+          {
+            "track": "05",
+            "title": "hey now [feat. Dody6]",
+            "url": "GNX/05.%20hey%20now.opus"
+          },
+          {
+            "track": "06",
+            "title": "reincarnated",
+            "url": "GNX/06.%20reincarnated.opus"
+          },
+          {
+            "track": "07",
+            "title": "tv off [feat. Lefty Gunplay]",
+            "url": "GNX/07.%20tv%20off.opus"
+          },
+          {
+            "track": "08",
+            "title": "dodger blue [feat. Wallie the Sensei & Siete7x & Roddy Ricch]",
+            "url": "GNX/08.%20dodger%20blue.opus"
+          },
+          {
+            "track": "09",
+            "title": "peekaboo [feat. AzChike]",
+            "url": "GNX/09.%20peekaboo.opus"
+          },
+          {
+            "track": "10",
+            "title": "heart pt. 6",
+            "url": "GNX/10.%20heart%20pt.%206.opus"
+          },
+          {
+            "track": "11",
+            "title": "gnx [feat. Hitta J3 & YoungThreat & Peysoh]",
+            "url": "GNX/11.%20gnx.opus"
+          },
+          {
+            "track": "12",
+            "title": "gloria",
+            "url": "GNX/12.%20gloria.opus"
+          }
+        ]
+      },
+      {
+        "name": "6:16 in LA",
+        "tracks": [
+          {
+            "track": "01",
+            "title": "6:16 in LA",
+            "url": "6:16%20in%20LA/01.%20616%20In%20LA.mp3"
+          }
+        ]
+      }
+    ]
+  },
+  "Evanescence": {
+    "location": "https://raw.githubusercontent.com/sigmiliarity/web60/refs/heads/main/e/",
+    "albums": [
   {
-    "name": "Blurryface",
+    "name": "Across The Universe",
     "tracks": [
       {
         "track": "01",
-        "title": "Heavydirtysoul",
-        "url": "Blurryface/01.%20Heavydirtysoul.opus"
+        "title": "Across The Universe",
+        "url": "Across%20The%20Universe/01.%20Across%20The%20Universe.opus"
+      }
+    ]
+  },
+  {
+    "name": "Afterlife (from the Netflix Series Devil May Cry)",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "Afterlife (from the Netflix Series Devil May Cry)",
+        "url": "Afterlife%20(from%20the%20Netflix%20Series%20Devil%20May%20Cry)/01.%20Afterlife%20(from%20the%20Netflix%20Series%20Devil%20May%20Cry).opus"
+      }
+    ]
+  },
+  {
+    "name": "Anywhere But Home (Live)",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "Haunted (Live From Le Zénith,France2004)",
+        "url": "Anywhere%20But%20Home%20(Live)/01.%20Haunted%20(Live%20From%20Le%20Zénith,France2004).opus"
       },
       {
         "track": "02",
-        "title": "Stressed Out",
-        "url": "Blurryface/02.%20Stressed%20Out.opus"
+        "title": "Going Under (Live From Le Zénith,France2004)",
+        "url": "Anywhere%20But%20Home%20(Live)/02.%20Going%20Under%20(Live%20From%20Le%20Zénith,France2004).opus"
       },
       {
         "track": "03",
-        "title": "Ride",
-        "url": "Blurryface/03.%20Ride.opus"
+        "title": "Taking Over Me (Live From Le Zénith,France2004)",
+        "url": "Anywhere%20But%20Home%20(Live)/03.%20Taking%20Over%20Me%20(Live%20From%20Le%20Zénith,France2004).opus"
       },
       {
         "track": "04",
-        "title": "Fairly Local",
-        "url": "Blurryface/04.%20Fairly%20Local.opus"
+        "title": "Everybody's Fool (Live From Le Zénith,France2004)",
+        "url": "Anywhere%20But%20Home%20(Live)/04.%20Everybody's%20Fool%20(Live%20From%20Le%20Zénith,France2004).opus"
       },
       {
         "track": "05",
-        "title": "Tear in My Heart",
-        "url": "Blurryface/05.%20Tear%20in%20My%20Heart.opus"
+        "title": "Thoughtless (Live From Le Zénith,France2004)",
+        "url": "Anywhere%20But%20Home%20(Live)/05.%20Thoughtless%20(Live%20From%20Le%20Zénith,France2004).opus"
       },
       {
         "track": "06",
-        "title": "Lane Boy",
-        "url": "Blurryface/06.%20Lane%20Boy.opus"
+        "title": "My Last Breath (Live From Le Zénith,France2004)",
+        "url": "Anywhere%20But%20Home%20(Live)/06.%20My%20Last%20Breath%20(Live%20From%20Le%20Zénith,France2004).opus"
       },
       {
         "track": "07",
-        "title": "The Judge",
-        "url": "Blurryface/07.%20The%20Judge.opus"
+        "title": "Farther Away (Live From Le Zénith,France2004)",
+        "url": "Anywhere%20But%20Home%20(Live)/07.%20Farther%20Away%20(Live%20From%20Le%20Zénith,France2004).opus"
       },
       {
         "track": "08",
-        "title": "Doubt",
-        "url": "Blurryface/08.%20Doubt.opus"
+        "title": "Breathe No More (Live From Le Zénith,France2004)",
+        "url": "Anywhere%20But%20Home%20(Live)/08.%20Breathe%20No%20More%20(Live%20From%20Le%20Zénith,France2004).opus"
       },
       {
         "track": "09",
-        "title": "Polarize",
-        "url": "Blurryface/09.%20Polarize.opus"
+        "title": "My Immortal (Live From Le Zénith,France2004)",
+        "url": "Anywhere%20But%20Home%20(Live)/09.%20My%20Immortal%20(Live%20From%20Le%20Zénith,France2004).opus"
       },
       {
         "track": "10",
-        "title": "We Dont Believe Whats on TV",
-        "url": "Blurryface/10.%20We%20Dont%20Believe%20Whats%20on%20TV.opus"
+        "title": "Bring Me To Life (Live From Le Zénith,France2004)",
+        "url": "Anywhere%20But%20Home%20(Live)/10.%20Bring%20Me%20To%20Life%20(Live%20From%20Le%20Zénith,France2004).opus"
       },
       {
         "track": "11",
-        "title": "Message Man",
-        "url": "Blurryface/11.%20Message%20Man.opus"
+        "title": "Tourniquet (Live From Le Zénith,France2004)",
+        "url": "Anywhere%20But%20Home%20(Live)/11.%20Tourniquet%20(Live%20From%20Le%20Zénith,France2004).opus"
       },
       {
         "track": "12",
-        "title": "Hometown",
-        "url": "Blurryface/12.%20Hometown.opus"
+        "title": "Imaginary (Live From Le Zénith,France2004)",
+        "url": "Anywhere%20But%20Home%20(Live)/12.%20Imaginary%20(Live%20From%20Le%20Zénith,France2004).opus"
       },
       {
         "track": "13",
-        "title": "Not Today",
-        "url": "Blurryface/13.%20Not%20Today.opus"
+        "title": "Whisper (Live From Le Zénith,France2004)",
+        "url": "Anywhere%20But%20Home%20(Live)/13.%20Whisper%20(Live%20From%20Le%20Zénith,France2004).opus"
       },
       {
         "track": "14",
-        "title": "Goner",
-        "url": "Blurryface/14.%20Goner.opus"
+        "title": "Missing",
+        "url": "Anywhere%20But%20Home%20(Live)/14.%20Missing.opus"
       }
     ]
   },
   {
-    "name": "Breach",
+    "name": "Bring Me To Life (Synthesis)",
     "tracks": [
       {
         "track": "01",
-        "title": "City Walls",
-        "url": "Breach/01.%20City%20Walls.opus"
+        "title": "Bring Me To Life (Synthesis)",
+        "url": "Bring%20Me%20To%20Life%20(Synthesis)/01.%20Bring%20Me%20To%20Life%20(Synthesis).opus"
+      }
+    ]
+  },
+  {
+    "name": "Evanescence",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "What You Want",
+        "url": "Evanescence/01.%20What%20You%20Want.opus"
       },
       {
         "track": "02",
-        "title": "RAWFEAR",
-        "url": "Breach/02.%20RAWFEAR.opus"
+        "title": "Made Of Stone",
+        "url": "Evanescence/02.%20Made%20Of%20Stone.opus"
       },
       {
         "track": "03",
-        "title": "Drum Show",
-        "url": "Breach/03.%20Drum%20Show.opus"
+        "title": "The Change",
+        "url": "Evanescence/03.%20The%20Change.opus"
       },
       {
         "track": "04",
-        "title": "Garbage",
-        "url": "Breach/04.%20Garbage.opus"
+        "title": "My Heart Is Broken",
+        "url": "Evanescence/04.%20My%20Heart%20Is%20Broken.opus"
       },
       {
         "track": "05",
-        "title": "The Contract",
-        "url": "Breach/05.%20The%20Contract.opus"
+        "title": "The Other Side",
+        "url": "Evanescence/05.%20The%20Other%20Side.opus"
       },
       {
         "track": "06",
-        "title": "Downstairs",
-        "url": "Breach/06.%20Downstairs.opus"
+        "title": "Erase This",
+        "url": "Evanescence/06.%20Erase%20This.opus"
       },
       {
         "track": "07",
-        "title": "Robot Voices",
-        "url": "Breach/07.%20Robot%20Voices.opus"
+        "title": "Lost In Paradise",
+        "url": "Evanescence/07.%20Lost%20In%20Paradise.opus"
       },
       {
         "track": "08",
-        "title": "Center Mass",
-        "url": "Breach/08.%20Center%20Mass.opus"
+        "title": "Sick",
+        "url": "Evanescence/08.%20Sick.opus"
       },
       {
         "track": "09",
-        "title": "Cottonwood",
-        "url": "Breach/09.%20Cottonwood.opus"
+        "title": "The End Of The Dream",
+        "url": "Evanescence/09.%20The%20End%20Of%20The%20Dream.opus"
       },
       {
         "track": "10",
-        "title": "One Way",
-        "url": "Breach/10.%20One%20Way.opus"
+        "title": "Oceans",
+        "url": "Evanescence/10.%20Oceans.opus"
       },
       {
         "track": "11",
-        "title": "Days Lie Dormant",
-        "url": "Breach/11.%20Days%20Lie%20Dormant.opus"
+        "title": "Never Go Back",
+        "url": "Evanescence/11.%20Never%20Go%20Back.opus"
       },
       {
         "track": "12",
-        "title": "Tally",
-        "url": "Breach/12.%20Tally.opus"
-      },
-      {
-        "track": "13",
-        "title": "Intentions",
-        "url": "Breach/13.%20Intentions.opus"
+        "title": "Swimming Home",
+        "url": "Evanescence/12.%20Swimming%20Home.opus"
       }
     ]
   },
   {
-    "name": "Cancer",
+    "name": "Evanescence (Deluxe Version)",
     "tracks": [
       {
         "track": "01",
-        "title": "Cancer",
-        "url": "Cancer/01.%20Cancer.opus"
-      }
-    ]
-  },
-  {
-    "name": "Chlorine (Alternative Mix)",
-    "tracks": [
-      {
-        "track": "01",
-        "title": "Chlorine (Alternative Mix)",
-        "url": "Chlorine%20(Alternative%20Mix)/01.%20Chlorine%20(Alternative%20Mix).opus"
-      }
-    ]
-  },
-  {
-    "name": "Chlorine (Mexico City)",
-    "tracks": [
-      {
-        "track": "01",
-        "title": "Chlorine (Mexico City)",
-        "url": "Chlorine%20(Mexico%20City)/01.%20Chlorine%20(Mexico%20City).opus"
-      }
-    ]
-  },
-  {
-    "name": "Christmas Saves The Year",
-    "tracks": [
-      {
-        "track": "01",
-        "title": "Christmas Saves The Year",
-        "url": "Christmas%20Saves%20The%20Year/01.%20Christmas%20Saves%20The%20Year.opus"
-      }
-    ]
-  },
-  {
-    "name": "Clancy",
-    "tracks": [
-      {
-        "track": "01",
-        "title": "Overcompensate",
-        "url": "Clancy/01.%20Overcompensate.opus"
+        "title": "What You Want",
+        "url": "Evanescence%20(Deluxe%20Version)/01.%20What%20You%20Want.opus"
       },
       {
         "track": "02",
-        "title": "Next Semester",
-        "url": "Clancy/02.%20Next%20Semester.opus"
+        "title": "Made Of Stone",
+        "url": "Evanescence%20(Deluxe%20Version)/02.%20Made%20Of%20Stone.opus"
       },
       {
         "track": "03",
-        "title": "Backslide",
-        "url": "Clancy/03.%20Backslide.opus"
+        "title": "The Change",
+        "url": "Evanescence%20(Deluxe%20Version)/03.%20The%20Change.opus"
       },
       {
         "track": "04",
-        "title": "Midwest Indigo",
-        "url": "Clancy/04.%20Midwest%20Indigo.opus"
+        "title": "My Heart Is Broken",
+        "url": "Evanescence%20(Deluxe%20Version)/04.%20My%20Heart%20Is%20Broken.opus"
       },
       {
         "track": "05",
-        "title": "Routines In The Night",
-        "url": "Clancy/05.%20Routines%20In%20The%20Night.opus"
+        "title": "The Other Side",
+        "url": "Evanescence%20(Deluxe%20Version)/05.%20The%20Other%20Side.opus"
       },
       {
         "track": "06",
-        "title": "Vignette",
-        "url": "Clancy/06.%20Vignette.opus"
+        "title": "Erase This",
+        "url": "Evanescence%20(Deluxe%20Version)/06.%20Erase%20This.opus"
       },
       {
         "track": "07",
-        "title": "The Craving Jennas version",
-        "url": "Clancy/07.%20The%20Craving%20Jennas%20version.opus"
+        "title": "Lost In Paradise",
+        "url": "Evanescence%20(Deluxe%20Version)/07.%20Lost%20In%20Paradise.opus"
       },
       {
         "track": "08",
-        "title": "Lavish",
-        "url": "Clancy/08.%20Lavish.opus"
+        "title": "Sick",
+        "url": "Evanescence%20(Deluxe%20Version)/08.%20Sick.opus"
       },
       {
         "track": "09",
-        "title": "Navigating",
-        "url": "Clancy/09.%20Navigating.opus"
+        "title": "The End Of The Dream",
+        "url": "Evanescence%20(Deluxe%20Version)/09.%20The%20End%20Of%20The%20Dream.opus"
       },
       {
         "track": "10",
-        "title": "Snap Back",
-        "url": "Clancy/10.%20Snap%20Back.opus"
+        "title": "Oceans",
+        "url": "Evanescence%20(Deluxe%20Version)/10.%20Oceans.opus"
       },
       {
         "track": "11",
-        "title": "Oldies Station",
-        "url": "Clancy/11.%20Oldies%20Station.opus"
+        "title": "Never Go Back",
+        "url": "Evanescence%20(Deluxe%20Version)/11.%20Never%20Go%20Back.opus"
       },
       {
         "track": "12",
-        "title": "At The Risk Of Feeling Dumb",
-        "url": "Clancy/12.%20At%20The%20Risk%20Of%20Feeling%20Dumb.opus"
+        "title": "Swimming Home",
+        "url": "Evanescence%20(Deluxe%20Version)/12.%20Swimming%20Home.opus"
       },
       {
         "track": "13",
-        "title": "Paladin Strait",
-        "url": "Clancy/13.%20Paladin%20Strait.opus"
-      }
-    ]
-  },
-  {
-    "name": "Cut My Lip (Brooklyn)",
-    "tracks": [
-      {
-        "track": "01",
-        "title": "Cut My Lip (Brooklyn)",
-        "url": "Cut%20My%20Lip%20(Brooklyn)/01.%20Cut%20My%20Lip%20(Brooklyn).opus"
-      }
-    ]
-  },
-  {
-    "name": "Doubt (demo)",
-    "tracks": [
-      {
-        "track": "01",
-        "title": "Doubt (demo)",
-        "url": "Doubt%20(demo)/01.%20Doubt%20(demo).opus"
-      }
-    ]
-  },
-  {
-    "name": "Drag Path",
-    "tracks": [
-      {
-        "track": "01",
-        "title": "Drag Path",
-        "url": "Drag%20Path/01.%20Drag%20Path.opus"
-      }
-    ]
-  },
-  {
-    "name": "Fairly Local",
-    "tracks": [
-      {
-        "track": "01",
-        "title": "Fairly Local",
-        "url": "Fairly%20Local/01.%20Fairly%20Local.opus"
-      }
-    ]
-  },
-  {
-    "name": "Heathens  Trees (Livestream Version)",
-    "tracks": [
-      {
-        "track": "01",
-        "title": "Heathens  Trees (Livestream Version)",
-        "url": "Heathens%20%20Trees%20(Livestream%20Version)/01.%20Heathens%20%20Trees%20(Livestream%20Version).opus"
-      }
-    ]
-  },
-  {
-    "name": "Jumpsuit  Nico and the Niners",
-    "tracks": [
-      {
-        "track": "01",
-        "title": "Jumpsuit",
-        "url": "Jumpsuit%20%20Nico%20and%20the%20Niners/01.%20Jumpsuit.opus"
-      },
-      {
-        "track": "02",
-        "title": "Nico and the Niners",
-        "url": "Jumpsuit%20%20Nico%20and%20the%20Niners/02.%20Nico%20and%20the%20Niners.opus"
-      }
-    ]
-  },
-  {
-    "name": "Level of Concern",
-    "tracks": [
-      {
-        "track": "01",
-        "title": "Level of Concern",
-        "url": "Level%20of%20Concern/01.%20Level%20of%20Concern.opus"
-      }
-    ]
-  },
-  {
-    "name": "Level of Concern (live from outside)",
-    "tracks": [
-      {
-        "track": "01",
-        "title": "Level of Concern (live from outside)",
-        "url": "Level%20of%20Concern%20(live%20from%20outside)/01.%20Level%20of%20Concern%20(live%20from%20outside).opus"
-      }
-    ]
-  },
-  {
-    "name": "MTV Unplugged (Live)",
-    "tracks": [
-      {
-        "track": "01",
-        "title": "Intro (MTV Unplugged) [Live]",
-        "url": "MTV%20Unplugged%20(Live)/01.%20Intro%20(MTV%20Unplugged)%20[Live].opus"
-      },
-      {
-        "track": "02",
-        "title": "Stressed Out (MTV Unplugged ) [Live]",
-        "url": "MTV%20Unplugged%20(Live)/02.%20Stressed%20Out%20(MTV%20Unplugged%20)%20[Live].opus"
-      },
-      {
-        "track": "03",
-        "title": "Tear in My Heart (MTV Unplugged) [Live]",
-        "url": "MTV%20Unplugged%20(Live)/03.%20Tear%20in%20My%20Heart%20(MTV%20Unplugged)%20[Live].opus"
-      },
-      {
-        "track": "04",
-        "title": "House Of Gold  Lane Boy (MTV Unplugged ) [Live]",
-        "url": "MTV%20Unplugged%20(Live)/04.%20House%20Of%20Gold%20%20Lane%20Boy%20(MTV%20Unplugged%20)%20[Live].opus"
-      },
-      {
-        "track": "05",
-        "title": "Shy Away (MTV Unplugged) [Live]",
-        "url": "MTV%20Unplugged%20(Live)/05.%20Shy%20Away%20(MTV%20Unplugged)%20[Live].opus"
-      },
-      {
-        "track": "06",
-        "title": "Ride  Nico And The Niners (MTV Unplugged) [Live]",
-        "url": "MTV%20Unplugged%20(Live)/06.%20Ride%20%20Nico%20And%20The%20Niners%20(MTV%20Unplugged)%20[Live].opus"
-      },
-      {
-        "track": "07",
-        "title": "Car Radio  Heathens (MTV Unplugged) [Live]",
-        "url": "MTV%20Unplugged%20(Live)/07.%20Car%20Radio%20%20Heathens%20(MTV%20Unplugged)%20[Live].opus"
-      }
-    ]
-  },
-  {
-    "name": "No Phun Intended",
-    "tracks": [
-      {
-        "track": "01",
-        "title": "Blasphemy",
-        "url": "No%20Phun%20Intended/01.%20Blasphemy.opus"
-      },
-      {
-        "track": "02",
-        "title": "Drown",
-        "url": "No%20Phun%20Intended/02.%20Drown.opus"
-      },
-      {
-        "track": "03",
-        "title": "Hole in the Ground",
-        "url": "No%20Phun%20Intended/03.%20Hole%20in%20the%20Ground.opus"
-      },
-      {
-        "track": "04",
-        "title": "Save",
-        "url": "No%20Phun%20Intended/04.%20Save.opus"
-      },
-      {
-        "track": "05",
-        "title": "Taken By Sleep",
-        "url": "No%20Phun%20Intended/05.%20Taken%20By%20Sleep.opus"
-      },
-      {
-        "track": "06",
-        "title": "I Want To Know",
-        "url": "No%20Phun%20Intended/06.%20I%20Want%20To%20Know.opus"
-      },
-      {
-        "track": "07",
-        "title": "Just Like Yesterday",
-        "url": "No%20Phun%20Intended/07.%20Just%20Like%20Yesterday.opus"
-      },
-      {
-        "track": "08",
-        "title": "Never Change",
-        "url": "No%20Phun%20Intended/08.%20Never%20Change.opus"
-      },
-      {
-        "track": "09",
-        "title": "Prove Me Wrong",
-        "url": "No%20Phun%20Intended/09.%20Prove%20Me%20Wrong.opus"
-      },
-      {
-        "track": "10",
-        "title": "Realize That It's Gone",
-        "url": "No%20Phun%20Intended/10.%20Realize%20That%20It's%20Gone.opus"
-      },
-      {
-        "track": "11",
-        "title": "Tonight",
-        "url": "No%20Phun%20Intended/11.%20Tonight.opus"
-      },
-      {
-        "track": "12",
-        "title": "Falling Too",
-        "url": "No%20Phun%20Intended/12.%20Falling%20Too.opus"
-      },
-      {
-        "track": "13",
-        "title": "Whisper",
-        "url": "No%20Phun%20Intended/13.%20Whisper.opus"
+        "title": "A New Way To Bleed",
+        "url": "Evanescence%20(Deluxe%20Version)/13.%20A%20New%20Way%20To%20Bleed.opus"
       },
       {
         "track": "14",
-        "title": "TB Saga",
-        "url": "No%20Phun%20Intended/14.%20TB%20Saga.opus"
-      },
-      {
-        "track": "17",
-        "title": "Where Did We Go",
-        "url": "No%20Phun%20Intended/17.%20Where%20Did%20We%20Go.opus"
-      },
-      {
-        "track": "19",
-        "title": "Hear Me Now",
-        "url": "No%20Phun%20Intended/19.%20Hear%20Me%20Now.opus"
-      },
-      {
-        "track": "21",
-        "title": "Jar Of Hearts",
-        "url": "No%20Phun%20Intended/21.%20Jar%20Of%20Hearts.opus"
-      },
-      {
-        "track": "22",
-        "title": "Two",
-        "url": "No%20Phun%20Intended/22.%20Two.opus"
-      },
-      {
-        "track": "23",
-        "title": "Time To Say Goodbye",
-        "url": "No%20Phun%20Intended/23.%20Time%20To%20Say%20Goodbye.opus"
-      },
-      {
-        "track": "24",
-        "title": "Can't Help Falling In Love",
-        "url": "No%20Phun%20Intended/24.%20Can't%20Help%20Falling%20In%20Love.opus"
-      },
-      {
-        "track": "25",
-        "title": "Lovely",
-        "url": "No%20Phun%20Intended/25.%20Lovely.opus"
-      },
-      {
-        "track": "26",
-        "title": "O Come, O Come, Emmanuel",
-        "url": "No%20Phun%20Intended/26.%20O%20Come,%20O%20Come,%20Emmanuel.opus"
-      },
-      {
-        "track": "27",
-        "title": "Dollhouse",
-        "url": "No%20Phun%20Intended/27.%20Dollhouse.opus"
-      },
-      {
-        "track": "28",
-        "title": "LINE",
-        "url": "No%20Phun%20Intended/28.%20LINE.opus"
-      },
-      {
-        "track": "29",
-        "title": "Goner",
-        "url": "No%20Phun%20Intended/29.%20Goner.opus"
-      },
-      {
-        "track": "30",
-        "title": "Trees",
-        "url": "No%20Phun%20Intended/30.%20Trees.opus"
-      }
-    ]
-  },
-  {
-    "name": "Overcompensate (edit)",
-    "tracks": [
-      {
-        "track": "01",
-        "title": "Overcompensate (edit)",
-        "url": "Overcompensate%20(edit)/01.%20Overcompensate%20(edit).opus"
-      }
-    ]
-  },
-  {
-    "name": "Regional At Best",
-    "tracks": [
-      {
-        "track": "01",
-        "title": "Guns For Hands",
-        "url": "Regional%20At%20Best/01.%20Guns%20For%20Hands.opus"
-      },
-      {
-        "track": "02",
-        "title": "Holding on to You",
-        "url": "Regional%20At%20Best/02.%20Holding%20on%20to%20You.opus"
-      },
-      {
-        "track": "03",
-        "title": "Ode to Sleep",
-        "url": "Regional%20At%20Best/03.%20Ode%20to%20Sleep.opus"
-      },
-      {
-        "track": "04",
-        "title": "Slowtown",
-        "url": "Regional%20At%20Best/04.%20Slowtown.opus"
-      },
-      {
-        "track": "07",
-        "title": "Glowing Eyes",
-        "url": "Regional%20At%20Best/07.%20Glowing%20Eyes.opus"
-      },
-      {
-        "track": "08",
-        "title": "Kitchen Sink",
-        "url": "Regional%20At%20Best/08.%20Kitchen%20Sink.opus"
-      },
-      {
-        "track": "11",
-        "title": "Ruby",
-        "url": "Regional%20At%20Best/11.%20Ruby.opus"
-      },
-      {
-        "track": "12",
-        "title": "Trees",
-        "url": "Regional%20At%20Best/12.%20Trees.opus"
-      },
-      {
-        "track": "13",
-        "title": "Be Concerned",
-        "url": "Regional%20At%20Best/13.%20Be%20Concerned.opus"
-      },
-      {
-        "track": "14",
-        "title": "Clear",
-        "url": "Regional%20At%20Best/14.%20Clear.opus"
+        "title": "Say You Will",
+        "url": "Evanescence%20(Deluxe%20Version)/14.%20Say%20You%20Will.opus"
       },
       {
         "track": "15",
-        "title": "House of Gold",
-        "url": "Regional%20At%20Best/15.%20House%20of%20Gold.opus"
+        "title": "Disappear",
+        "url": "Evanescence%20(Deluxe%20Version)/15.%20Disappear.opus"
       },
       {
         "track": "16",
-        "title": "Two",
-        "url": "Regional%20At%20Best/16.%20Two.opus"
+        "title": "Secret Door",
+        "url": "Evanescence%20(Deluxe%20Version)/16.%20Secret%20Door.opus"
       }
     ]
   },
   {
-    "name": "Scaled And Icy",
+    "name": "Fallen",
     "tracks": [
       {
         "track": "01",
-        "title": "Good Day",
-        "url": "Scaled%20And%20Icy/01.%20Good%20Day.opus"
+        "title": "Going Under",
+        "url": "Fallen/01.%20Going%20Under.opus"
       },
       {
         "track": "02",
-        "title": "Choker",
-        "url": "Scaled%20And%20Icy/02.%20Choker.opus"
+        "title": "Bring Me To Life",
+        "url": "Fallen/02.%20Bring%20Me%20To%20Life.opus"
       },
       {
         "track": "03",
-        "title": "Shy Away",
-        "url": "Scaled%20And%20Icy/03.%20Shy%20Away.opus"
+        "title": "Everybodys Fool",
+        "url": "Fallen/03.%20Everybodys%20Fool.opus"
       },
       {
         "track": "04",
-        "title": "The Outside",
-        "url": "Scaled%20And%20Icy/04.%20The%20Outside.opus"
+        "title": "My Immortal",
+        "url": "Fallen/04.%20My%20Immortal.opus"
       },
       {
         "track": "05",
-        "title": "Saturday",
-        "url": "Scaled%20And%20Icy/05.%20Saturday.opus"
+        "title": "Haunted",
+        "url": "Fallen/05.%20Haunted.opus"
       },
       {
         "track": "06",
-        "title": "Never Take It",
-        "url": "Scaled%20And%20Icy/06.%20Never%20Take%20It.opus"
+        "title": "Tourniquet",
+        "url": "Fallen/06.%20Tourniquet.opus"
       },
       {
         "track": "07",
-        "title": "Mulberry Street",
-        "url": "Scaled%20And%20Icy/07.%20Mulberry%20Street.opus"
+        "title": "Imaginary",
+        "url": "Fallen/07.%20Imaginary.opus"
       },
       {
         "track": "08",
-        "title": "Formidable",
-        "url": "Scaled%20And%20Icy/08.%20Formidable.opus"
+        "title": "Taking Over Me",
+        "url": "Fallen/08.%20Taking%20Over%20Me.opus"
       },
       {
         "track": "09",
-        "title": "Bounce Man",
-        "url": "Scaled%20And%20Icy/09.%20Bounce%20Man.opus"
+        "title": "Hello",
+        "url": "Fallen/09.%20Hello.opus"
       },
       {
         "track": "10",
-        "title": "No Chances",
-        "url": "Scaled%20And%20Icy/10.%20No%20Chances.opus"
+        "title": "My Last Breath",
+        "url": "Fallen/10.%20My%20Last%20Breath.opus"
       },
       {
         "track": "11",
-        "title": "Redecorate",
-        "url": "Scaled%20And%20Icy/11.%20Redecorate.opus"
-      }
-    ]
-  },
-  {
-    "name": "Shy Away (Livestream Version)",
-    "tracks": [
-      {
-        "track": "01",
-        "title": "Shy Away (Livestream Version)",
-        "url": "Shy%20Away%20(Livestream%20Version)/01.%20Shy%20Away%20(Livestream%20Version).opus"
-      }
-    ]
-  },
-  {
-    "name": "The Contract",
-    "tracks": [
-      {
-        "track": "01",
-        "title": "The Contract",
-        "url": "The%20Contract/01.%20The%20Contract.opus"
-      }
-    ]
-  },
-  {
-    "name": "The Craving (single version)",
-    "tracks": [
-      {
-        "track": "01",
-        "title": "The Craving (single version)",
-        "url": "The%20Craving%20(single%20version)/01.%20The%20Craving%20(single%20version).opus"
-      }
-    ]
-  },
-  {
-    "name": "The Hype (Alt Mix)",
-    "tracks": [
-      {
-        "track": "01",
-        "title": "The Hype (Alt Mix)",
-        "url": "The%20Hype%20(Alt%20Mix)/01.%20The%20Hype%20(Alt%20Mix).opus"
-      }
-    ]
-  },
-  {
-    "name": "The Hype (Berlin)",
-    "tracks": [
-      {
-        "track": "01",
-        "title": "The Hype (Berlin)",
-        "url": "The%20Hype%20(Berlin)/01.%20The%20Hype%20(Berlin).opus"
-      }
-    ]
-  },
-  {
-    "name": "three songs",
-    "tracks": [
-      {
-        "track": "01",
-        "title": "Guns for Hands",
-        "url": "three%20songs/01.%20Guns%20for%20Hands.opus"
-      },
-      {
-        "track": "02",
-        "title": "Migraine",
-        "url": "three%20songs/02.%20Migraine.opus"
-      },
-      {
-        "track": "03",
-        "title": "Ode to Sleep",
-        "url": "three%20songs/03.%20Ode%20to%20Sleep.opus"
-      }
-    ]
-  },
-  {
-    "name": "TOPxMM",
-    "tracks": [
-      {
-        "track": "01",
-        "title": "Heathens feat. MUTEMATH",
-        "url": "TOPxMM/01.%20Heathens%20feat.%20MUTEMATH.opus"
-      },
-      {
-        "track": "02",
-        "title": "Heavydirtysoul feat. MUTEMATH",
-        "url": "TOPxMM/02.%20Heavydirtysoul%20feat.%20MUTEMATH.opus"
-      },
-      {
-        "track": "03",
-        "title": "Ride feat. MUTEMATH",
-        "url": "TOPxMM/03.%20Ride%20feat.%20MUTEMATH.opus"
-      },
-      {
-        "track": "04",
-        "title": "Tear in My Heart feat. MUTEMATH",
-        "url": "TOPxMM/04.%20Tear%20in%20My%20Heart%20feat.%20MUTEMATH.opus"
-      },
-      {
-        "track": "05",
-        "title": "Lane Boy feat. MUTEMATH",
-        "url": "TOPxMM/05.%20Lane%20Boy%20feat.%20MUTEMATH.opus"
-      }
-    ]
-  },
-  {
-    "name": "Trench",
-    "tracks": [
-      {
-        "track": "01",
-        "title": "Jumpsuit",
-        "url": "Trench/01.%20Jumpsuit.opus"
-      },
-      {
-        "track": "02",
-        "title": "Levitate",
-        "url": "Trench/02.%20Levitate.opus"
-      },
-      {
-        "track": "03",
-        "title": "Morph",
-        "url": "Trench/03.%20Morph.opus"
-      },
-      {
-        "track": "04",
-        "title": "My Blood",
-        "url": "Trench/04.%20My%20Blood.opus"
-      },
-      {
-        "track": "05",
-        "title": "Chlorine",
-        "url": "Trench/05.%20Chlorine.opus"
-      },
-      {
-        "track": "06",
-        "title": "Smithereens",
-        "url": "Trench/06.%20Smithereens.opus"
-      },
-      {
-        "track": "07",
-        "title": "Neon Gravestones",
-        "url": "Trench/07.%20Neon%20Gravestones.opus"
-      },
-      {
-        "track": "08",
-        "title": "The Hype",
-        "url": "Trench/08.%20The%20Hype.opus"
-      },
-      {
-        "track": "09",
-        "title": "Nico and the Niners",
-        "url": "Trench/09.%20Nico%20and%20the%20Niners.opus"
-      },
-      {
-        "track": "10",
-        "title": "Cut My Lip",
-        "url": "Trench/10.%20Cut%20My%20Lip.opus"
-      },
-      {
-        "track": "11",
-        "title": "Bandito",
-        "url": "Trench/11.%20Bandito.opus"
+        "title": "Whisper",
+        "url": "Fallen/11.%20Whisper.opus"
       },
       {
         "track": "12",
-        "title": "Pet Cheetah",
-        "url": "Trench/12.%20Pet%20Cheetah.opus"
+        "title": "My Immortal Band Version",
+        "url": "Fallen/12.%20My%20Immortal%20Band%20Version.opus"
+      }
+    ]
+  },
+  {
+    "name": "Fallen (Deluxe Edition  Remastered 2023)",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "Going Under (Remastered 2023)",
+        "url": "Fallen%20(Deluxe%20Edition%20%20Remastered%202023)/01.%20Going%20Under%20(Remastered%202023).opus"
+      },
+      {
+        "track": "02",
+        "title": "Bring Me To Life (Remastered 2023)",
+        "url": "Fallen%20(Deluxe%20Edition%20%20Remastered%202023)/02.%20Bring%20Me%20To%20Life%20(Remastered%202023).opus"
+      },
+      {
+        "track": "03",
+        "title": "Everybody’s Fool (Remastered 2023)",
+        "url": "Fallen%20(Deluxe%20Edition%20%20Remastered%202023)/03.%20Everybody’s%20Fool%20(Remastered%202023).opus"
+      },
+      {
+        "track": "04",
+        "title": "My Immortal (Remastered 2023)",
+        "url": "Fallen%20(Deluxe%20Edition%20%20Remastered%202023)/04.%20My%20Immortal%20(Remastered%202023).opus"
+      },
+      {
+        "track": "05",
+        "title": "Haunted (Remastered 2023)",
+        "url": "Fallen%20(Deluxe%20Edition%20%20Remastered%202023)/05.%20Haunted%20(Remastered%202023).opus"
+      },
+      {
+        "track": "06",
+        "title": "Tourniquet (Remastered 2023)",
+        "url": "Fallen%20(Deluxe%20Edition%20%20Remastered%202023)/06.%20Tourniquet%20(Remastered%202023).opus"
+      },
+      {
+        "track": "07",
+        "title": "Imaginary (Remastered 2023)",
+        "url": "Fallen%20(Deluxe%20Edition%20%20Remastered%202023)/07.%20Imaginary%20(Remastered%202023).opus"
+      },
+      {
+        "track": "08",
+        "title": "Taking Over Me (Remastered 2023)",
+        "url": "Fallen%20(Deluxe%20Edition%20%20Remastered%202023)/08.%20Taking%20Over%20Me%20(Remastered%202023).opus"
+      },
+      {
+        "track": "09",
+        "title": "Hello (Remastered 2023)",
+        "url": "Fallen%20(Deluxe%20Edition%20%20Remastered%202023)/09.%20Hello%20(Remastered%202023).opus"
+      },
+      {
+        "track": "10",
+        "title": "My Last Breath (Remastered 2023)",
+        "url": "Fallen%20(Deluxe%20Edition%20%20Remastered%202023)/10.%20My%20Last%20Breath%20(Remastered%202023).opus"
+      },
+      {
+        "track": "11",
+        "title": "Whisper (Remastered 2023)",
+        "url": "Fallen%20(Deluxe%20Edition%20%20Remastered%202023)/11.%20Whisper%20(Remastered%202023).opus"
+      },
+      {
+        "track": "12",
+        "title": "My Immortal (Band Version  Remastered 2023)",
+        "url": "Fallen%20(Deluxe%20Edition%20%20Remastered%202023)/12.%20My%20Immortal%20(Band%20Version%20%20Remastered%202023).opus"
       },
       {
         "track": "13",
-        "title": "Legend",
-        "url": "Trench/13.%20Legend.opus"
+        "title": "Breathe No More (Remastered 2023)",
+        "url": "Fallen%20(Deluxe%20Edition%20%20Remastered%202023)/13.%20Breathe%20No%20More%20(Remastered%202023).opus"
       },
       {
         "track": "14",
-        "title": "Leave the City",
-        "url": "Trench/14.%20Leave%20the%20City.opus"
+        "title": "Farther Away (Remastered 2023)",
+        "url": "Fallen%20(Deluxe%20Edition%20%20Remastered%202023)/14.%20Farther%20Away%20(Remastered%202023).opus"
+      },
+      {
+        "track": "15",
+        "title": "Missing (Remastered 2023)",
+        "url": "Fallen%20(Deluxe%20Edition%20%20Remastered%202023)/15.%20Missing%20(Remastered%202023).opus"
+      },
+      {
+        "track": "16",
+        "title": "My Immortal (Strings Version  Remastered 2023)",
+        "url": "Fallen%20(Deluxe%20Edition%20%20Remastered%202023)/16.%20My%20Immortal%20(Strings%20Version%20%20Remastered%202023).opus"
+      },
+      {
+        "track": "17",
+        "title": "Bring Me To Life (Demo  Remastered 2023)",
+        "url": "Fallen%20(Deluxe%20Edition%20%20Remastered%202023)/17.%20Bring%20Me%20To%20Life%20(Demo%20%20Remastered%202023).opus"
+      },
+      {
+        "track": "18",
+        "title": "Bring Me To Life (AOL Session  2003  Remastered)",
+        "url": "Fallen%20(Deluxe%20Edition%20%20Remastered%202023)/18.%20Bring%20Me%20To%20Life%20(AOL%20Session%20%202003%20%20Remastered).opus"
+      },
+      {
+        "track": "19",
+        "title": "Going Under (Live Acoustic  2003  Remastered)",
+        "url": "Fallen%20(Deluxe%20Edition%20%20Remastered%202023)/19.%20Going%20Under%20(Live%20Acoustic%20%202003%20%20Remastered).opus"
+      },
+      {
+        "track": "20",
+        "title": "Bring Me To Life (Live On Triple M’s Garage Session  2020  Remastered 2023)",
+        "url": "Fallen%20(Deluxe%20Edition%20%20Remastered%202023)/20.%20Bring%20Me%20To%20Life%20(Live%20On%20Triple%20M’s%20Garage%20Session%20%202020%20%20Remastered%202023).opus"
+      },
+      {
+        "track": "21",
+        "title": "My Immortal (Live At O2 Arena  2022  Remastered 2023)",
+        "url": "Fallen%20(Deluxe%20Edition%20%20Remastered%202023)/21.%20My%20Immortal%20(Live%20At%20O2%20Arena%20%202022%20%20Remastered%202023).opus"
       }
     ]
   },
   {
-    "name": "Twenty One Pilots",
+    "name": "Fight Like A Girl (feat. K.Flay)",
     "tracks": [
       {
         "track": "01",
-        "title": "Implicit Demand For Proof",
-        "url": "Twenty%20One%20Pilots/01.%20Implicit%20Demand%20For%20Proof.opus"
+        "title": "Fight Like A Girl (feat. K.Flay)",
+        "url": "Fight%20Like%20A%20Girl%20(feat.%20K.Flay)/01.%20Fight%20Like%20A%20Girl%20(feat.%20K.Flay).opus"
+      }
+    ]
+  },
+  {
+    "name": "Hi-Lo (feat. Lindsey Stirling)",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "Hi-Lo (feat. Lindsey Stirling)",
+        "url": "Hi-Lo%20(feat.%20Lindsey%20Stirling)/01.%20Hi-Lo%20(feat.%20Lindsey%20Stirling).opus"
+      }
+    ]
+  },
+  {
+    "name": "Lost Whispers",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "Lost Whispers Intro",
+        "url": "Lost%20Whispers/01.%20Lost%20Whispers%20Intro.opus"
       },
       {
         "track": "02",
-        "title": "Fall Away",
-        "url": "Twenty%20One%20Pilots/02.%20Fall%20Away.opus"
+        "title": "Even In Death 2016 Version",
+        "url": "Lost%20Whispers/02.%20Even%20In%20Death%202016%20Version.opus"
       },
       {
         "track": "03",
-        "title": "The Pantaloon",
-        "url": "Twenty%20One%20Pilots/03.%20The%20Pantaloon.opus"
+        "title": "Missing",
+        "url": "Lost%20Whispers/03.%20Missing.opus"
       },
       {
         "track": "04",
-        "title": "Addict With A Pen",
-        "url": "Twenty%20One%20Pilots/04.%20Addict%20With%20A%20Pen.opus"
+        "title": "Farther Away",
+        "url": "Lost%20Whispers/04.%20Farther%20Away.opus"
       },
       {
         "track": "05",
-        "title": "Friend Please",
-        "url": "Twenty%20One%20Pilots/05.%20Friend%20Please.opus"
+        "title": "Breathe No More B-Side Version",
+        "url": "Lost%20Whispers/05.%20Breathe%20No%20More%20B-Side%20Version.opus"
       },
       {
         "track": "06",
-        "title": "March To the Sea",
-        "url": "Twenty%20One%20Pilots/06.%20March%20To%20the%20Sea.opus"
+        "title": "If You Dont Mind",
+        "url": "Lost%20Whispers/06.%20If%20You%20Dont%20Mind.opus"
       },
       {
         "track": "07",
-        "title": "Johnny Boy",
-        "url": "Twenty%20One%20Pilots/07.%20Johnny%20Boy.opus"
+        "title": "Together Again",
+        "url": "Lost%20Whispers/07.%20Together%20Again.opus"
       },
       {
         "track": "08",
-        "title": "Oh Ms Believer",
-        "url": "Twenty%20One%20Pilots/08.%20Oh%20Ms%20Believer.opus"
+        "title": "The Last Song Im Wasting on You",
+        "url": "Lost%20Whispers/08.%20The%20Last%20Song%20Im%20Wasting%20on%20You.opus"
       },
       {
         "track": "09",
-        "title": "Air Catcher",
-        "url": "Twenty%20One%20Pilots/09.%20Air%20Catcher.opus"
+        "title": "A New Way To Bleed",
+        "url": "Lost%20Whispers/09.%20A%20New%20Way%20To%20Bleed.opus"
       },
       {
         "track": "10",
-        "title": "Trapdoor",
-        "url": "Twenty%20One%20Pilots/10.%20Trapdoor.opus"
+        "title": "Say You Will",
+        "url": "Lost%20Whispers/10.%20Say%20You%20Will.opus"
       },
       {
         "track": "11",
-        "title": "A Car a Torch a Death",
-        "url": "Twenty%20One%20Pilots/11.%20A%20Car%20a%20Torch%20a%20Death.opus"
+        "title": "Disappear",
+        "url": "Lost%20Whispers/11.%20Disappear.opus"
       },
       {
         "track": "12",
-        "title": "Taxi Cab",
-        "url": "Twenty%20One%20Pilots/12.%20Taxi%20Cab.opus"
+        "title": "Secret Door",
+        "url": "Lost%20Whispers/12.%20Secret%20Door.opus"
+      }
+    ]
+  },
+  {
+    "name": "Sanctuary",
+    "tracks": [
+      {
+        "track": "03",
+        "title": "Who Will You Follow",
+        "url": "Sanctuary/03.%20Who%20Will%20You%20Follow.opus"
+      },
+      {
+        "track": "05",
+        "title": "Afterlife",
+        "url": "Sanctuary/05.%20Afterlife.opus"
+      }
+    ]
+  },
+  {
+    "name": "Synthesis",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "Overture",
+        "url": "Synthesis/01.%20Overture.opus"
+      },
+      {
+        "track": "02",
+        "title": "Never Go Back",
+        "url": "Synthesis/02.%20Never%20Go%20Back.opus"
+      },
+      {
+        "track": "03",
+        "title": "Hi-Lo",
+        "url": "Synthesis/03.%20Hi-Lo.opus"
+      },
+      {
+        "track": "04",
+        "title": "My Heart Is Broken",
+        "url": "Synthesis/04.%20My%20Heart%20Is%20Broken.opus"
+      },
+      {
+        "track": "05",
+        "title": "Lacrymosa",
+        "url": "Synthesis/05.%20Lacrymosa.opus"
+      },
+      {
+        "track": "06",
+        "title": "The End Of The Dream",
+        "url": "Synthesis/06.%20The%20End%20Of%20The%20Dream.opus"
+      },
+      {
+        "track": "07",
+        "title": "Bring Me To Life Synthesis",
+        "url": "Synthesis/07.%20Bring%20Me%20To%20Life%20Synthesis.opus"
+      },
+      {
+        "track": "08",
+        "title": "Unraveling Interlude",
+        "url": "Synthesis/08.%20Unraveling%20Interlude.opus"
+      },
+      {
+        "track": "09",
+        "title": "Imaginary",
+        "url": "Synthesis/09.%20Imaginary.opus"
+      },
+      {
+        "track": "10",
+        "title": "Secret Door",
+        "url": "Synthesis/10.%20Secret%20Door.opus"
+      },
+      {
+        "track": "11",
+        "title": "Lithium",
+        "url": "Synthesis/11.%20Lithium.opus"
+      },
+      {
+        "track": "12",
+        "title": "Lost In Paradise",
+        "url": "Synthesis/12.%20Lost%20In%20Paradise.opus"
       },
       {
         "track": "13",
-        "title": "Before You Start Your Day",
-        "url": "Twenty%20One%20Pilots/13.%20Before%20You%20Start%20Your%20Day.opus"
+        "title": "Your Star",
+        "url": "Synthesis/13.%20Your%20Star.opus"
       },
       {
         "track": "14",
-        "title": "Isle Of Flightless Birds",
-        "url": "Twenty%20One%20Pilots/14.%20Isle%20Of%20Flightless%20Birds.opus"
+        "title": "My Immortal",
+        "url": "Synthesis/14.%20My%20Immortal.opus"
+      },
+      {
+        "track": "15",
+        "title": "The In-Between Piano Solo",
+        "url": "Synthesis/15.%20The%20In-Between%20Piano%20Solo.opus"
+      },
+      {
+        "track": "16",
+        "title": "Imperfection",
+        "url": "Synthesis/16.%20Imperfection.opus"
       }
     ]
   },
   {
-    "name": "Vessel",
+    "name": "Synthesis Live",
     "tracks": [
       {
         "track": "01",
-        "title": "Ode to Sleep",
-        "url": "Vessel/01.%20Ode%20to%20Sleep.opus"
+        "title": "Overture  Never Go Back Live",
+        "url": "Synthesis%20Live/01.%20Overture%20%20Never%20Go%20Back%20Live.opus"
       },
       {
         "track": "02",
-        "title": "Holding on to You",
-        "url": "Vessel/02.%20Holding%20on%20to%20You.opus"
+        "title": "Lacrymosa Live",
+        "url": "Synthesis%20Live/02.%20Lacrymosa%20Live.opus"
       },
       {
         "track": "03",
-        "title": "Migraine",
-        "url": "Vessel/03.%20Migraine.opus"
+        "title": "End of the Dream Live",
+        "url": "Synthesis%20Live/03.%20End%20of%20the%20Dream%20Live.opus"
       },
       {
         "track": "04",
-        "title": "House of Gold",
-        "url": "Vessel/04.%20House%20of%20Gold.opus"
+        "title": "My Heart Is Broken Live",
+        "url": "Synthesis%20Live/04.%20My%20Heart%20Is%20Broken%20Live.opus"
       },
       {
         "track": "05",
-        "title": "Car Radio",
-        "url": "Vessel/05.%20Car%20Radio.opus"
+        "title": "Lithium Live",
+        "url": "Synthesis%20Live/05.%20Lithium%20Live.opus"
       },
       {
         "track": "06",
-        "title": "Semi-Automatic",
-        "url": "Vessel/06.%20Semi-Automatic.opus"
+        "title": "Bring Me To Life Live",
+        "url": "Synthesis%20Live/06.%20Bring%20Me%20To%20Life%20Live.opus"
       },
       {
         "track": "07",
-        "title": "Screen",
-        "url": "Vessel/07.%20Screen.opus"
+        "title": "Unraveling  Imaginary Live",
+        "url": "Synthesis%20Live/07.%20Unraveling%20%20Imaginary%20Live.opus"
       },
       {
         "track": "08",
-        "title": "The Run and Go",
-        "url": "Vessel/08.%20The%20Run%20and%20Go.opus"
+        "title": "Secret Door Live",
+        "url": "Synthesis%20Live/08.%20Secret%20Door%20Live.opus"
       },
       {
         "track": "09",
-        "title": "Fake You Out",
-        "url": "Vessel/09.%20Fake%20You%20Out.opus"
+        "title": "Hi-Lo Live",
+        "url": "Synthesis%20Live/09.%20Hi-Lo%20Live.opus"
       },
       {
         "track": "10",
-        "title": "Guns for Hands",
-        "url": "Vessel/10.%20Guns%20for%20Hands.opus"
+        "title": "Lost In Paradise Live",
+        "url": "Synthesis%20Live/10.%20Lost%20In%20Paradise%20Live.opus"
       },
       {
         "track": "11",
-        "title": "Trees",
-        "url": "Vessel/11.%20Trees.opus"
+        "title": "Your Star Live",
+        "url": "Synthesis%20Live/11.%20Your%20Star%20Live.opus"
       },
       {
         "track": "12",
-        "title": "Truce",
-        "url": "Vessel/12.%20Truce.opus"
+        "title": "My Immortal Live",
+        "url": "Synthesis%20Live/12.%20My%20Immortal%20Live.opus"
+      },
+      {
+        "track": "13",
+        "title": "The Inbetween  Imperfection Live",
+        "url": "Synthesis%20Live/13.%20The%20Inbetween%20%20Imperfection%20Live.opus"
+      },
+      {
+        "track": "14",
+        "title": "Speak To Me Live",
+        "url": "Synthesis%20Live/14.%20Speak%20To%20Me%20Live.opus"
+      },
+      {
+        "track": "15",
+        "title": "Good Enough Live",
+        "url": "Synthesis%20Live/15.%20Good%20Enough%20Live.opus"
+      },
+      {
+        "track": "16",
+        "title": "Swimming Home Live",
+        "url": "Synthesis%20Live/16.%20Swimming%20Home%20Live.opus"
+      }
+    ]
+  },
+  {
+    "name": "The Bitter Truth",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "ArtifactThe Turn",
+        "url": "The%20Bitter%20Truth/01.%20ArtifactThe%20Turn.opus"
+      },
+      {
+        "track": "02",
+        "title": "Broken Pieces Shine",
+        "url": "The%20Bitter%20Truth/02.%20Broken%20Pieces%20Shine.opus"
+      },
+      {
+        "track": "03",
+        "title": "The Game Is Over",
+        "url": "The%20Bitter%20Truth/03.%20The%20Game%20Is%20Over.opus"
+      },
+      {
+        "track": "04",
+        "title": "Yeah Right",
+        "url": "The%20Bitter%20Truth/04.%20Yeah%20Right.opus"
+      },
+      {
+        "track": "05",
+        "title": "Feeding The Dark",
+        "url": "The%20Bitter%20Truth/05.%20Feeding%20The%20Dark.opus"
+      },
+      {
+        "track": "06",
+        "title": "Wasted On You",
+        "url": "The%20Bitter%20Truth/06.%20Wasted%20On%20You.opus"
+      },
+      {
+        "track": "07",
+        "title": "Better Without You",
+        "url": "The%20Bitter%20Truth/07.%20Better%20Without%20You.opus"
+      },
+      {
+        "track": "08",
+        "title": "Use My Voice",
+        "url": "The%20Bitter%20Truth/08.%20Use%20My%20Voice.opus"
+      },
+      {
+        "track": "09",
+        "title": "Take Cover",
+        "url": "The%20Bitter%20Truth/09.%20Take%20Cover.opus"
+      },
+      {
+        "track": "10",
+        "title": "Far From Heaven",
+        "url": "The%20Bitter%20Truth/10.%20Far%20From%20Heaven.opus"
+      },
+      {
+        "track": "11",
+        "title": "Part Of Me",
+        "url": "The%20Bitter%20Truth/11.%20Part%20Of%20Me.opus"
+      },
+      {
+        "track": "12",
+        "title": "Blind Belief",
+        "url": "The%20Bitter%20Truth/12.%20Blind%20Belief.opus"
+      }
+    ]
+  },
+  {
+    "name": "The Chain (From Gears 5)",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "The Chain (From Gears 5)",
+        "url": "The%20Chain%20(From%20Gears%205)/01.%20The%20Chain%20(From%20Gears%205).opus"
+      }
+    ]
+  },
+  {
+    "name": "The Game Is Over",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "The Game Is Over",
+        "url": "The%20Game%20Is%20Over/01.%20The%20Game%20Is%20Over.opus"
+      }
+    ]
+  },
+  {
+    "name": "The Open Door",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "Sweet Sacrifice",
+        "url": "The%20Open%20Door/01.%20Sweet%20Sacrifice.opus"
+      },
+      {
+        "track": "02",
+        "title": "Call Me When Youre Sober",
+        "url": "The%20Open%20Door/02.%20Call%20Me%20When%20Youre%20Sober.opus"
+      },
+      {
+        "track": "03",
+        "title": "Weight Of The World",
+        "url": "The%20Open%20Door/03.%20Weight%20Of%20The%20World.opus"
+      },
+      {
+        "track": "04",
+        "title": "Lithium",
+        "url": "The%20Open%20Door/04.%20Lithium.opus"
+      },
+      {
+        "track": "05",
+        "title": "Cloud Nine",
+        "url": "The%20Open%20Door/05.%20Cloud%20Nine.opus"
+      },
+      {
+        "track": "06",
+        "title": "Snow White Queen",
+        "url": "The%20Open%20Door/06.%20Snow%20White%20Queen.opus"
+      },
+      {
+        "track": "07",
+        "title": "Lacrymosa",
+        "url": "The%20Open%20Door/07.%20Lacrymosa.opus"
+      },
+      {
+        "track": "08",
+        "title": "Like You",
+        "url": "The%20Open%20Door/08.%20Like%20You.opus"
+      },
+      {
+        "track": "09",
+        "title": "Lose Control",
+        "url": "The%20Open%20Door/09.%20Lose%20Control.opus"
+      },
+      {
+        "track": "10",
+        "title": "The Only One",
+        "url": "The%20Open%20Door/10.%20The%20Only%20One.opus"
+      },
+      {
+        "track": "11",
+        "title": "Your Star",
+        "url": "The%20Open%20Door/11.%20Your%20Star.opus"
+      },
+      {
+        "track": "12",
+        "title": "All That Im Living For",
+        "url": "The%20Open%20Door/12.%20All%20That%20Im%20Living%20For.opus"
+      },
+      {
+        "track": "13",
+        "title": "Good Enough",
+        "url": "The%20Open%20Door/13.%20Good%20Enough.opus"
+      }
+    ]
+  },
+  {
+    "name": "Together Again",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "Together Again",
+        "url": "Together%20Again/01.%20Together%20Again.opus"
+      }
+    ]
+  },
+  {
+    "name": "Use My Voice",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "Use My Voice",
+        "url": "Use%20My%20Voice/01.%20Use%20My%20Voice.opus"
       }
     ]
   }
 ]
+  },
+  "Three Days Grace": {
+    "location": "https://raw.githubusercontent.com/sigmiliarity/web60/refs/heads/main/th/",
+    "albums": [
+  {
+    "name": "Alienation",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "Dominate",
+        "url": "Alienation/01.%20Dominate.opus"
+      },
+      {
+        "track": "02",
+        "title": "Apologies",
+        "url": "Alienation/02.%20Apologies.opus"
+      },
+      {
+        "track": "03",
+        "title": "Mayday",
+        "url": "Alienation/03.%20Mayday.opus"
+      },
+      {
+        "track": "04",
+        "title": "Kill Me Fast",
+        "url": "Alienation/04.%20Kill%20Me%20Fast.opus"
+      },
+      {
+        "track": "05",
+        "title": "In Waves",
+        "url": "Alienation/05.%20In%20Waves.opus"
+      },
+      {
+        "track": "06",
+        "title": "Alienation",
+        "url": "Alienation/06.%20Alienation.opus"
+      },
+      {
+        "track": "07",
+        "title": "Never Ordinary",
+        "url": "Alienation/07.%20Never%20Ordinary.opus"
+      },
+      {
+        "track": "08",
+        "title": "Deathwish",
+        "url": "Alienation/08.%20Deathwish.opus"
+      },
+      {
+        "track": "09",
+        "title": "Don't Wanna Go Home Tonight",
+        "url": "Alienation/09.%20Don't%20Wanna%20Go%20Home%20Tonight.opus"
+      },
+      {
+        "track": "10",
+        "title": "In Cold Blood",
+        "url": "Alienation/10.%20In%20Cold%20Blood.opus"
+      },
+      {
+        "track": "11",
+        "title": "The Power",
+        "url": "Alienation/11.%20The%20Power.opus"
+      },
+      {
+        "track": "12",
+        "title": "Another Relapse",
+        "url": "Alienation/12.%20Another%20Relapse.opus"
+      }
+    ]
+  },
+  {
+    "name": "EXPLOSIONS",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "So Called Life",
+        "url": "EXPLOSIONS/01.%20So%20Called%20Life.opus"
+      },
+      {
+        "track": "02",
+        "title": "I Am The Weapon",
+        "url": "EXPLOSIONS/02.%20I%20Am%20The%20Weapon.opus"
+      },
+      {
+        "track": "03",
+        "title": "Neurotic",
+        "url": "EXPLOSIONS/03.%20Neurotic.opus"
+      },
+      {
+        "track": "04",
+        "title": "Lifetime",
+        "url": "EXPLOSIONS/04.%20Lifetime.opus"
+      },
+      {
+        "track": "05",
+        "title": "A Scar Is Born",
+        "url": "EXPLOSIONS/05.%20A%20Scar%20Is%20Born.opus"
+      },
+      {
+        "track": "06",
+        "title": "Souvenirs",
+        "url": "EXPLOSIONS/06.%20Souvenirs.opus"
+      },
+      {
+        "track": "07",
+        "title": "No Tomorrow",
+        "url": "EXPLOSIONS/07.%20No%20Tomorrow.opus"
+      },
+      {
+        "track": "08",
+        "title": "Redemption",
+        "url": "EXPLOSIONS/08.%20Redemption.opus"
+      },
+      {
+        "track": "09",
+        "title": "Champion",
+        "url": "EXPLOSIONS/09.%20Champion.opus"
+      },
+      {
+        "track": "10",
+        "title": "Chain of Abuse",
+        "url": "EXPLOSIONS/10.%20Chain%20of%20Abuse.opus"
+      },
+      {
+        "track": "11",
+        "title": "Someone To Talk To",
+        "url": "EXPLOSIONS/11.%20Someone%20To%20Talk%20To.opus"
+      },
+      {
+        "track": "12",
+        "title": "Explosions",
+        "url": "EXPLOSIONS/12.%20Explosions.opus"
+      }
+    ]
+  },
+  {
+    "name": "Human",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "Human Race",
+        "url": "Human/01.%20Human%20Race.opus"
+      },
+      {
+        "track": "02",
+        "title": "Painkiller",
+        "url": "Human/02.%20Painkiller.opus"
+      },
+      {
+        "track": "03",
+        "title": "Fallen Angel",
+        "url": "Human/03.%20Fallen%20Angel.opus"
+      },
+      {
+        "track": "04",
+        "title": "Landmine",
+        "url": "Human/04.%20Landmine.opus"
+      },
+      {
+        "track": "05",
+        "title": "Tell Me Why",
+        "url": "Human/05.%20Tell%20Me%20Why.opus"
+      },
+      {
+        "track": "06",
+        "title": "I Am Machine",
+        "url": "Human/06.%20I%20Am%20Machine.opus"
+      },
+      {
+        "track": "07",
+        "title": "So What",
+        "url": "Human/07.%20So%20What.opus"
+      },
+      {
+        "track": "08",
+        "title": "Car Crash",
+        "url": "Human/08.%20Car%20Crash.opus"
+      },
+      {
+        "track": "09",
+        "title": "Nothing's Fair In Love and War",
+        "url": "Human/09.%20Nothing's%20Fair%20In%20Love%20and%20War.opus"
+      },
+      {
+        "track": "10",
+        "title": "One Too Many",
+        "url": "Human/10.%20One%20Too%20Many.opus"
+      },
+      {
+        "track": "11",
+        "title": "The End Is Not the Answer",
+        "url": "Human/11.%20The%20End%20Is%20Not%20the%20Answer.opus"
+      },
+      {
+        "track": "12",
+        "title": "The Real You",
+        "url": "Human/12.%20The%20Real%20You.opus"
+      }
+    ]
+  },
+  {
+    "name": "I Hate Everything About You (Acoustic Version)",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "I Hate Everything About You (Acoustic Version)",
+        "url": "I%20Hate%20Everything%20About%20You%20(Acoustic%20Version)/01.%20I%20Hate%20Everything%20About%20You%20(Acoustic%20Version).opus"
+      }
+    ]
+  },
+  {
+    "name": "Life Starts Now",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "Bitter Taste",
+        "url": "Life%20Starts%20Now/01.%20Bitter%20Taste.opus"
+      },
+      {
+        "track": "02",
+        "title": "Break",
+        "url": "Life%20Starts%20Now/02.%20Break.opus"
+      },
+      {
+        "track": "03",
+        "title": "World so Cold",
+        "url": "Life%20Starts%20Now/03.%20World%20so%20Cold.opus"
+      },
+      {
+        "track": "04",
+        "title": "Lost in You",
+        "url": "Life%20Starts%20Now/04.%20Lost%20in%20You.opus"
+      },
+      {
+        "track": "05",
+        "title": "The Good Life",
+        "url": "Life%20Starts%20Now/05.%20The%20Good%20Life.opus"
+      },
+      {
+        "track": "06",
+        "title": "No More",
+        "url": "Life%20Starts%20Now/06.%20No%20More.opus"
+      },
+      {
+        "track": "07",
+        "title": "Last to Know",
+        "url": "Life%20Starts%20Now/07.%20Last%20to%20Know.opus"
+      },
+      {
+        "track": "08",
+        "title": "Someone Who Cares",
+        "url": "Life%20Starts%20Now/08.%20Someone%20Who%20Cares.opus"
+      },
+      {
+        "track": "09",
+        "title": "Bully",
+        "url": "Life%20Starts%20Now/09.%20Bully.opus"
+      },
+      {
+        "track": "10",
+        "title": "Without You",
+        "url": "Life%20Starts%20Now/10.%20Without%20You.opus"
+      },
+      {
+        "track": "11",
+        "title": "Goin' Down",
+        "url": "Life%20Starts%20Now/11.%20Goin'%20Down.opus"
+      },
+      {
+        "track": "12",
+        "title": "Life Starts Now",
+        "url": "Life%20Starts%20Now/12.%20Life%20Starts%20Now.opus"
+      }
+    ]
+  },
+  {
+    "name": "Lost In You EP",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "Lost in You",
+        "url": "Lost%20In%20You%20EP/01.%20Lost%20in%20You.opus"
+      },
+      {
+        "track": "02",
+        "title": "World So Cold (Piano)",
+        "url": "Lost%20In%20You%20EP/02.%20World%20So%20Cold%20(Piano).opus"
+      },
+      {
+        "track": "03",
+        "title": "The Chain",
+        "url": "Lost%20In%20You%20EP/03.%20The%20Chain.opus"
+      }
+    ]
+  },
+  {
+    "name": "Never Too Late",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "Never Too Late",
+        "url": "Never%20Too%20Late/01.%20Never%20Too%20Late.opus"
+      },
+      {
+        "track": "02",
+        "title": "Never Too Late (Acoustic Version)",
+        "url": "Never%20Too%20Late/02.%20Never%20Too%20Late%20(Acoustic%20Version).opus"
+      }
+    ]
+  },
+  {
+    "name": "One-X",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "It's All Over",
+        "url": "One-X/01.%20It's%20All%20Over.opus"
+      },
+      {
+        "track": "02",
+        "title": "Pain",
+        "url": "One-X/02.%20Pain.opus"
+      },
+      {
+        "track": "03",
+        "title": "Animal I Have Become",
+        "url": "One-X/03.%20Animal%20I%20Have%20Become.opus"
+      },
+      {
+        "track": "04",
+        "title": "Never Too Late",
+        "url": "One-X/04.%20Never%20Too%20Late.opus"
+      },
+      {
+        "track": "05",
+        "title": "On My Own",
+        "url": "One-X/05.%20On%20My%20Own.opus"
+      },
+      {
+        "track": "06",
+        "title": "Riot",
+        "url": "One-X/06.%20Riot.opus"
+      },
+      {
+        "track": "07",
+        "title": "Get Out Alive",
+        "url": "One-X/07.%20Get%20Out%20Alive.opus"
+      },
+      {
+        "track": "08",
+        "title": "Let It Die",
+        "url": "One-X/08.%20Let%20It%20Die.opus"
+      },
+      {
+        "track": "09",
+        "title": "Over and Over",
+        "url": "One-X/09.%20Over%20and%20Over.opus"
+      },
+      {
+        "track": "10",
+        "title": "Time of Dying",
+        "url": "One-X/10.%20Time%20of%20Dying.opus"
+      },
+      {
+        "track": "11",
+        "title": "Gone Forever",
+        "url": "One-X/11.%20Gone%20Forever.opus"
+      },
+      {
+        "track": "12",
+        "title": "One X",
+        "url": "One-X/12.%20One%20X.opus"
+      }
+    ]
+  },
+  {
+    "name": "Outsider",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "Right Left Wrong",
+        "url": "Outsider/01.%20Right%20Left%20Wrong.opus"
+      },
+      {
+        "track": "02",
+        "title": "The Mountain",
+        "url": "Outsider/02.%20The%20Mountain.opus"
+      },
+      {
+        "track": "03",
+        "title": "I Am An Outsider",
+        "url": "Outsider/03.%20I%20Am%20An%20Outsider.opus"
+      },
+      {
+        "track": "04",
+        "title": "Infra-Red",
+        "url": "Outsider/04.%20Infra-Red.opus"
+      },
+      {
+        "track": "05",
+        "title": "Nothing To Lose But You",
+        "url": "Outsider/05.%20Nothing%20To%20Lose%20But%20You.opus"
+      },
+      {
+        "track": "06",
+        "title": "Me Against You",
+        "url": "Outsider/06.%20Me%20Against%20You.opus"
+      },
+      {
+        "track": "07",
+        "title": "Love Me Or Leave Me",
+        "url": "Outsider/07.%20Love%20Me%20Or%20Leave%20Me.opus"
+      },
+      {
+        "track": "08",
+        "title": "Strange Days",
+        "url": "Outsider/08.%20Strange%20Days.opus"
+      },
+      {
+        "track": "09",
+        "title": "Villain I'm Not",
+        "url": "Outsider/09.%20Villain%20I'm%20Not.opus"
+      },
+      {
+        "track": "10",
+        "title": "Chasing The First Time",
+        "url": "Outsider/10.%20Chasing%20The%20First%20Time.opus"
+      },
+      {
+        "track": "11",
+        "title": "The New Real",
+        "url": "Outsider/11.%20The%20New%20Real.opus"
+      },
+      {
+        "track": "12",
+        "title": "The Abyss",
+        "url": "Outsider/12.%20The%20Abyss.opus"
+      }
+    ]
+  },
+  {
+    "name": "Pain",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "Pain",
+        "url": "Pain/01.%20Pain.opus"
+      }
+    ]
+  },
+  {
+    "name": "Pain (+ Acoustic) - Single",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "Pain",
+        "url": "Pain%20(+%20Acoustic)%20-%20Single/01.%20Pain.opus"
+      },
+      {
+        "track": "02",
+        "title": "Pain (Stripped Acoustic Version)",
+        "url": "Pain%20(+%20Acoustic)%20-%20Single/02.%20Pain%20(Stripped%20Acoustic%20Version).opus"
+      },
+      {
+        "track": "03",
+        "title": "Animal I Have Become (Stripped Acoustic Version)",
+        "url": "Pain%20(+%20Acoustic)%20-%20Single/03.%20Animal%20I%20Have%20Become%20(Stripped%20Acoustic%20Version).opus"
+      }
+    ]
+  },
+  {
+    "name": "So Called Life (Chainsaw Cut (Amazon Original))",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "So Called Life (Chainsaw Cut (Amazon Original))",
+        "url": "So%20Called%20Life%20(Chainsaw%20Cut%20(Amazon%20Original))/01.%20So%20Called%20Life%20(Chainsaw%20Cut%20(Amazon%20Original)).opus"
+      }
+    ]
+  },
+  {
+    "name": "Somebody That I Used to Know",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "Somebody That I Used to Know",
+        "url": "Somebody%20That%20I%20Used%20to%20Know/01.%20Somebody%20That%20I%20Used%20to%20Know.opus"
+      }
+    ]
+  },
+  {
+    "name": "Three Days Grace",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "Burn",
+        "url": "Three%20Days%20Grace/01.%20Burn.opus"
+      },
+      {
+        "track": "02",
+        "title": "Just Like You",
+        "url": "Three%20Days%20Grace/02.%20Just%20Like%20You.opus"
+      },
+      {
+        "track": "03",
+        "title": "I Hate Everything About You",
+        "url": "Three%20Days%20Grace/03.%20I%20Hate%20Everything%20About%20You.opus"
+      },
+      {
+        "track": "04",
+        "title": "Home",
+        "url": "Three%20Days%20Grace/04.%20Home.opus"
+      },
+      {
+        "track": "05",
+        "title": "Scared",
+        "url": "Three%20Days%20Grace/05.%20Scared.opus"
+      },
+      {
+        "track": "06",
+        "title": "Let You Down",
+        "url": "Three%20Days%20Grace/06.%20Let%20You%20Down.opus"
+      },
+      {
+        "track": "07",
+        "title": "Now or Never",
+        "url": "Three%20Days%20Grace/07.%20Now%20or%20Never.opus"
+      },
+      {
+        "track": "08",
+        "title": "Born Like This",
+        "url": "Three%20Days%20Grace/08.%20Born%20Like%20This.opus"
+      },
+      {
+        "track": "09",
+        "title": "Drown",
+        "url": "Three%20Days%20Grace/09.%20Drown.opus"
+      },
+      {
+        "track": "10",
+        "title": "Wake Up",
+        "url": "Three%20Days%20Grace/10.%20Wake%20Up.opus"
+      },
+      {
+        "track": "11",
+        "title": "Take Me Under",
+        "url": "Three%20Days%20Grace/11.%20Take%20Me%20Under.opus"
+      },
+      {
+        "track": "12",
+        "title": "Overrated",
+        "url": "Three%20Days%20Grace/12.%20Overrated.opus"
+      }
+    ]
+  },
+  {
+    "name": "Transit Of Venus",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "Sign Of The Times",
+        "url": "Transit%20Of%20Venus/01.%20Sign%20Of%20The%20Times.opus"
+      },
+      {
+        "track": "02",
+        "title": "Chalk Outline",
+        "url": "Transit%20Of%20Venus/02.%20Chalk%20Outline.opus"
+      },
+      {
+        "track": "03",
+        "title": "The High Road",
+        "url": "Transit%20Of%20Venus/03.%20The%20High%20Road.opus"
+      },
+      {
+        "track": "04",
+        "title": "Operate",
+        "url": "Transit%20Of%20Venus/04.%20Operate.opus"
+      },
+      {
+        "track": "05",
+        "title": "Anonymous",
+        "url": "Transit%20Of%20Venus/05.%20Anonymous.opus"
+      },
+      {
+        "track": "06",
+        "title": "Misery Loves My Company",
+        "url": "Transit%20Of%20Venus/06.%20Misery%20Loves%20My%20Company.opus"
+      },
+      {
+        "track": "07",
+        "title": "Give In To Me",
+        "url": "Transit%20Of%20Venus/07.%20Give%20In%20To%20Me.opus"
+      },
+      {
+        "track": "08",
+        "title": "Happiness",
+        "url": "Transit%20Of%20Venus/08.%20Happiness.opus"
+      },
+      {
+        "track": "09",
+        "title": "Give Me a Reason",
+        "url": "Transit%20Of%20Venus/09.%20Give%20Me%20a%20Reason.opus"
+      },
+      {
+        "track": "10",
+        "title": "Time That Remains",
+        "url": "Transit%20Of%20Venus/10.%20Time%20That%20Remains.opus"
+      },
+      {
+        "track": "11",
+        "title": "Expectations",
+        "url": "Transit%20Of%20Venus/11.%20Expectations.opus"
+      },
+      {
+        "track": "12",
+        "title": "Broken Glass",
+        "url": "Transit%20Of%20Venus/12.%20Broken%20Glass.opus"
+      },
+      {
+        "track": "13",
+        "title": "Unbreakable Heart",
+        "url": "Transit%20Of%20Venus/13.%20Unbreakable%20Heart.opus"
+      }
+    ]
+  },
+  {
+    "name": "You Don't Get Me High Anymore",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "You Don't Get Me High Anymore",
+        "url": "You%20Don't%20Get%20Me%20High%20Anymore/01.%20You%20Don't%20Get%20Me%20High%20Anymore.opus"
+      }
+    ]
+  }
+]
+  },
+  "Jorge Rivera-Herrans": {
+    "location": "https://raw.githubusercontent.com/sigmiliarity/web60/refs/heads/main/j/",
+    "albums": [
+  {
+    "name": "EPIC The Circe Saga (Official Concept Album)",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "Puppeteer",
+        "url": "EPIC%20The%20Circe%20Saga%20(Official%20Concept%20Album)/01.%20Puppeteer.opus"
+      },
+      {
+        "track": "02",
+        "title": "Wouldn't You Like",
+        "url": "EPIC%20The%20Circe%20Saga%20(Official%20Concept%20Album)/02.%20Wouldn't%20You%20Like.opus"
+      },
+      {
+        "track": "03",
+        "title": "Done For",
+        "url": "EPIC%20The%20Circe%20Saga%20(Official%20Concept%20Album)/03.%20Done%20For.opus"
+      },
+      {
+        "track": "04",
+        "title": "There Are Other Ways",
+        "url": "EPIC%20The%20Circe%20Saga%20(Official%20Concept%20Album)/04.%20There%20Are%20Other%20Ways.opus"
+      }
+    ]
+  },
+  {
+    "name": "EPIC The Cyclops Saga (Official Concept Album)",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "Polyphemus",
+        "url": "EPIC%20The%20Cyclops%20Saga%20(Official%20Concept%20Album)/01.%20Polyphemus.opus"
+      },
+      {
+        "track": "02",
+        "title": "Survive",
+        "url": "EPIC%20The%20Cyclops%20Saga%20(Official%20Concept%20Album)/02.%20Survive.opus"
+      },
+      {
+        "track": "03",
+        "title": "Remember Them",
+        "url": "EPIC%20The%20Cyclops%20Saga%20(Official%20Concept%20Album)/03.%20Remember%20Them.opus"
+      },
+      {
+        "track": "04",
+        "title": "My Goodbye",
+        "url": "EPIC%20The%20Cyclops%20Saga%20(Official%20Concept%20Album)/04.%20My%20Goodbye.opus"
+      }
+    ]
+  },
+  {
+    "name": "EPIC The Ithaca Saga (Official Concept Album)",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "The Challenge",
+        "url": "EPIC%20The%20Ithaca%20Saga%20(Official%20Concept%20Album)/01.%20The%20Challenge.opus"
+      },
+      {
+        "track": "02",
+        "title": "Hold Them Down",
+        "url": "EPIC%20The%20Ithaca%20Saga%20(Official%20Concept%20Album)/02.%20Hold%20Them%20Down.opus"
+      },
+      {
+        "track": "03",
+        "title": "Odysseus",
+        "url": "EPIC%20The%20Ithaca%20Saga%20(Official%20Concept%20Album)/03.%20Odysseus.opus"
+      },
+      {
+        "track": "04",
+        "title": "I Can't Help but Wonder",
+        "url": "EPIC%20The%20Ithaca%20Saga%20(Official%20Concept%20Album)/04.%20I%20Can't%20Help%20but%20Wonder.opus"
+      },
+      {
+        "track": "05",
+        "title": "Would You Fall in Love with Me Again",
+        "url": "EPIC%20The%20Ithaca%20Saga%20(Official%20Concept%20Album)/05.%20Would%20You%20Fall%20in%20Love%20with%20Me%20Again.opus"
+      }
+    ]
+  },
+  {
+    "name": "EPIC The Ocean Saga (Official Concept Album)",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "Storm",
+        "url": "EPIC%20The%20Ocean%20Saga%20(Official%20Concept%20Album)/01.%20Storm.opus"
+      },
+      {
+        "track": "02",
+        "title": "Luck Runs Out",
+        "url": "EPIC%20The%20Ocean%20Saga%20(Official%20Concept%20Album)/02.%20Luck%20Runs%20Out.opus"
+      },
+      {
+        "track": "03",
+        "title": "Keep Your Friends Close",
+        "url": "EPIC%20The%20Ocean%20Saga%20(Official%20Concept%20Album)/03.%20Keep%20Your%20Friends%20Close.opus"
+      },
+      {
+        "track": "04",
+        "title": "Ruthlessness",
+        "url": "EPIC%20The%20Ocean%20Saga%20(Official%20Concept%20Album)/04.%20Ruthlessness.opus"
+      }
+    ]
+  },
+  {
+    "name": "EPIC The Thunder Saga (Official Concept Album)",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "Suffering",
+        "url": "EPIC%20The%20Thunder%20Saga%20(Official%20Concept%20Album)/01.%20Suffering.opus"
+      },
+      {
+        "track": "02",
+        "title": "Different Beast",
+        "url": "EPIC%20The%20Thunder%20Saga%20(Official%20Concept%20Album)/02.%20Different%20Beast.opus"
+      },
+      {
+        "track": "03",
+        "title": "Scylla",
+        "url": "EPIC%20The%20Thunder%20Saga%20(Official%20Concept%20Album)/03.%20Scylla.opus"
+      },
+      {
+        "track": "04",
+        "title": "Mutiny",
+        "url": "EPIC%20The%20Thunder%20Saga%20(Official%20Concept%20Album)/04.%20Mutiny.opus"
+      },
+      {
+        "track": "05",
+        "title": "Thunder Bringer",
+        "url": "EPIC%20The%20Thunder%20Saga%20(Official%20Concept%20Album)/05.%20Thunder%20Bringer.opus"
+      }
+    ]
+  },
+  {
+    "name": "EPIC The Troy Saga (Official Concept Album)",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "The Horse and the Infant",
+        "url": "EPIC%20The%20Troy%20Saga%20(Official%20Concept%20Album)/01.%20The%20Horse%20and%20the%20Infant.opus"
+      },
+      {
+        "track": "02",
+        "title": "Just a Man",
+        "url": "EPIC%20The%20Troy%20Saga%20(Official%20Concept%20Album)/02.%20Just%20a%20Man.opus"
+      },
+      {
+        "track": "03",
+        "title": "Full Speed Ahead",
+        "url": "EPIC%20The%20Troy%20Saga%20(Official%20Concept%20Album)/03.%20Full%20Speed%20Ahead.opus"
+      },
+      {
+        "track": "04",
+        "title": "Open Arms",
+        "url": "EPIC%20The%20Troy%20Saga%20(Official%20Concept%20Album)/04.%20Open%20Arms.opus"
+      },
+      {
+        "track": "05",
+        "title": "Warrior of the Mind",
+        "url": "EPIC%20The%20Troy%20Saga%20(Official%20Concept%20Album)/05.%20Warrior%20of%20the%20Mind.opus"
+      }
+    ]
+  },
+  {
+    "name": "EPIC The Underworld Saga (Official Concept Album)",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "The Underworld",
+        "url": "EPIC%20The%20Underworld%20Saga%20(Official%20Concept%20Album)/01.%20The%20Underworld.opus"
+      },
+      {
+        "track": "02",
+        "title": "No Longer You",
+        "url": "EPIC%20The%20Underworld%20Saga%20(Official%20Concept%20Album)/02.%20No%20Longer%20You.opus"
+      },
+      {
+        "track": "03",
+        "title": "Monster",
+        "url": "EPIC%20The%20Underworld%20Saga%20(Official%20Concept%20Album)/03.%20Monster.opus"
+      }
+    ]
+  },
+  {
+    "name": "EPIC The Vengeance Saga (Official Concept Album)",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "Not Sorry for Loving You",
+        "url": "EPIC%20The%20Vengeance%20Saga%20(Official%20Concept%20Album)/01.%20Not%20Sorry%20for%20Loving%20You.opus"
+      },
+      {
+        "track": "02",
+        "title": "Dangerous",
+        "url": "EPIC%20The%20Vengeance%20Saga%20(Official%20Concept%20Album)/02.%20Dangerous.opus"
+      },
+      {
+        "track": "03",
+        "title": "Charybdis",
+        "url": "EPIC%20The%20Vengeance%20Saga%20(Official%20Concept%20Album)/03.%20Charybdis.opus"
+      },
+      {
+        "track": "04",
+        "title": "Get in the Water",
+        "url": "EPIC%20The%20Vengeance%20Saga%20(Official%20Concept%20Album)/04.%20Get%20in%20the%20Water.opus"
+      },
+      {
+        "track": "05",
+        "title": "Six Hundred Strike",
+        "url": "EPIC%20The%20Vengeance%20Saga%20(Official%20Concept%20Album)/05.%20Six%20Hundred%20Strike.opus"
+      }
+    ]
+  },
+  {
+    "name": "EPIC The Wisdom Saga (Official Concept Album)",
+    "tracks": [
+      {
+        "track": "01",
+        "title": "Legendary",
+        "url": "EPIC%20The%20Wisdom%20Saga%20(Official%20Concept%20Album)/01.%20Legendary.opus"
+      },
+      {
+        "track": "02",
+        "title": "Little Wolf",
+        "url": "EPIC%20The%20Wisdom%20Saga%20(Official%20Concept%20Album)/02.%20Little%20Wolf.opus"
+      },
+      {
+        "track": "03",
+        "title": "We'll Be Fine",
+        "url": "EPIC%20The%20Wisdom%20Saga%20(Official%20Concept%20Album)/03.%20We'll%20Be%20Fine.opus"
+      },
+      {
+        "track": "04",
+        "title": "Love in Paradise",
+        "url": "EPIC%20The%20Wisdom%20Saga%20(Official%20Concept%20Album)/04.%20Love%20in%20Paradise.opus"
+      },
+      {
+        "track": "05",
+        "title": "God Games",
+        "url": "EPIC%20The%20Wisdom%20Saga%20(Official%20Concept%20Album)/05.%20God%20Games.opus"
+      }
+    ]
+  }
+]
+  }
 }
