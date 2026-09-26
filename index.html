@@ -1,0 +1,1000 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Σ Music LOCAL</title>
+   <link rel="icon" href="placeholder.svg" />
+  
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
+  
+  <style>
+    :root {
+      --accent: #ffd86f;
+      --accent-glow: rgba(254, 216, 111, 0.2);
+      --bg-gradient: radial-gradient(circle at top left, #1a1a1f, #0a0a0c);
+      --card-bg: rgba(255, 255, 255, 0.04);
+      --card-hover: rgba(255, 255, 255, 0.08);
+      --border: rgba(255, 255, 255, 0.08);
+      --text-main: #ffffff;
+      --text-dim: #a0a0a0;
+      --overlay-bg: rgba(5, 5, 7, 0.85);
+      
+      --radius-sm: 10px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-full: 9999px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 30px;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      line-height: 1.5;
+      color: var(--text-main);
+      background: var(--bg-gradient) fixed;
+      overflow-x: hidden;
+    }
+
+    /* Ambient dynamic background blurring behind contents */
+    #ambient-bg {
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      background-position: center;
+      background-size: cover;
+      filter: blur(40px);
+      opacity: 0.25;
+      transition: background-image 1s ease-in-out;
+    }
+
+    #visualizer {
+      position: fixed;
+      inset: 0;
+      z-index: 8;
+      pointer-events: none;
+      mix-blend-mode: screen;
+      opacity: 0.9;
+    }
+
+    .container {
+      margin: 0 auto;
+      padding-bottom: 120px;
+    }
+
+    header {
+      margin-bottom: 30px;
+
+      h1 {
+        margin: 0 0 6px;
+        font-size: clamp(1.8rem, 4vw, 2.5rem);
+        font-weight: 800;
+        letter-spacing: -0.5px;
+
+        span {
+          color: var(--accent);
+          text-shadow: 0 0 20px var(--accent-glow);
+        }
+      }
+
+      #status {
+        margin: 0;
+        color: var(--text-dim);
+        font-size: 0.875rem;
+      }
+    }
+
+    /* Controls & Toolbar */
+    .toolbar {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+
+      .search-wrapper {
+        position: relative;
+        flex: 1 1 380px;
+        max-width: 560px;
+      }
+    }
+
+    #search {
+      width: 100%;
+      padding: 14px 24px;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-main);
+      font-size: 1rem;
+      outline: none;
+      backdrop-filter: blur(4px);
+      transition: border-color 0.25s, box-shadow 0.25s;
+
+      &:focus {
+        border-color: var(--text-main);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 0;
+      background: #ffffff;
+      color: #000000;
+      font-weight: 700;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      transition: transform 0.2s, background-color 0.2s;
+
+      &:hover {
+        transform: scale(1.04);
+        background-color: #f0f0f0;
+      }
+
+      &.icon-btn {
+        width: 48px;
+        height: 48px;
+        font-size: 1.2rem;
+        background: rgba(255, 255, 255, 0.08);
+        color: #ffffff;
+        border: 1px solid var(--border);
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.15);
+          border-color: rgba(255, 255, 255, 0.3);
+        }
+      }
+
+      &.play-btn {
+        padding: 14px 28px;
+        box-shadow: 0 4px 20px var(--accent-glow);
+      }
+    }
+
+    /* Component Grid Layouts */
+    .section-title {
+      margin-top: 40px;
+      font-size: 1.4rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      &::after {
+        content: "";
+        height: 1px;
+        flex: 1;
+        background: linear-gradient(to right, var(--border), transparent);
+      }
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 20px;
+      margin-top: 16px;
+    }
+
+    /* Media Cards */
+    .card {
+      background: var(--card-bg);
+      padding: 14px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      cursor: pointer;
+      backdrop-filter: blur(8px);
+      transition: background-color 0.3s, transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+
+      &:hover {
+        background: var(--card-hover);
+        transform: translateY(-6px);
+        border-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+
+        .card-img img {
+          transform: scale(1.06);
+        }
+      }
+
+      &.artist-type .card-img {
+        border-radius: 50%;
+      }
+    }
+
+    .card-img {
+      width: 100%;
+      aspect-ratio: 1;
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      background: #151518;
+      margin-bottom: 12px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+      }
+    }
+
+    .card-title {
+      font-weight: 600;
+      font-size: 0.95rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .card-sub {
+      color: var(--text-dim);
+      font-size: 0.85rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-top: 2px;
+    }
+
+    /* Modern HTML Native Dialog Element Modal */
+    #viewer-dialog {
+      border: none;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      max-width: 100vw;
+      max-height: 100vh;
+      background: var(--overlay-bg);
+      backdrop-filter: blur(30px);
+      color: var(--text-main);
+      overflow-y: auto;
+
+      &::backdrop {
+        background: rgba(0, 0, 0, 0.6);
+      }
+
+      .dialog-container {
+        max-width: 1500px;
+        margin: 60px auto;
+        padding: 0 40px 120px;
+      }
+
+      .close-dialog {
+        position: sticky;
+        top: 30px;
+        float: right;
+        z-index: 11;
+        border: 1px solid var(--border);
+        background: rgba(255, 255, 255, 0.08);
+        color: var(--text-main);
+        border-radius: var(--radius-full);
+        padding: 10px 18px;
+        cursor: pointer;
+        font-weight: 600;
+        backdrop-filter: blur(10px);
+        transition: background-color 0.2s;
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.15);
+        }
+      }
+    }
+
+    /* Detail Hero Area inside Modal */
+    .hero {
+      display: flex;
+      gap: 36px;
+      align-items: flex-end;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+
+      img {
+        width: min(40vw, 260px);
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: var(--radius-lg);
+        box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+      }
+
+      .hero-details {
+        flex: 1;
+        min-width: 280px;
+
+        h2 {
+          margin: 0 0 10px;
+          font-size: clamp(1.8rem, 5vw, 2.8rem);
+          font-weight: 800;
+          line-height: 1.1;
+        }
+
+        p {
+          margin: 0 0 20px;
+          color: var(--text-dim);
+          font-size: 1.1rem;
+          display: inline-block;
+
+          &.clickable:hover {
+            text-decoration: underline;
+            cursor: pointer;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+
+    /* Track Lists Layout */
+    .track-list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .track-row {
+      display: grid;
+      grid-template-columns: 44px 1fr 80px;
+      gap: 16px;
+      align-items: center;
+      padding: 12px 16px;
+      border-radius: var(--radius-sm);
+      border: 1px solid transparent;
+      background: rgba(255, 255, 255, 0.02);
+      cursor: pointer;
+      transition: background-color 0.2s, border-color 0.2s;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.06);
+        border-color: var(--border);
+      }
+
+      &.active {
+        background: rgba(254, 216, 111, 0.15);
+        border-color: rgba(254, 216, 111, 0.4);
+        color: var(--accent);
+        font-weight: 600;
+
+        .track-index {
+          color: var(--accent);
+        }
+      }
+
+      .track-index {
+        color: var(--text-dim);
+        font-family: ui-monospace, SFMono-Regular, monospace;
+      }
+
+      .track-duration {
+        color: var(--text-dim);
+        text-align: right;
+        font-family: ui-monospace, SFMono-Regular, monospace;
+        font-size: 0.9rem;
+      }
+    }
+
+    /* Playback Panel Float */
+    #player-panel {
+      position: fixed;
+      left: 50%;
+      bottom: 24px;
+      transform: translateX(-50%);
+      width: min(1000px, 92vw);
+      z-index: 100;
+      background: rgba(15, 15, 20, 0.75);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(20px);
+      padding: 16px 24px;
+    }
+
+    .player-layout {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .player-controls {
+      display: flex;
+      gap: 6px;
+
+      .control-btn {
+        border: 0;
+        background: none;
+        color: var(--text-main);
+        cursor: pointer;
+        font-size: 0.75rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        opacity: 0.7;
+        padding: 10px 14px;
+        transition: opacity 0.2s, transform 0.1s;
+
+        &:hover {
+          opacity: 1;
+        }
+        &:active {
+          transform: scale(0.95);
+        }
+        &#play-toggle {
+          font-size: 0.95rem;
+          color: var(--accent);
+          opacity: 1;
+        }
+      }
+    }
+
+    .progress-container {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 0;
+
+      .time-display {
+        width: 46px;
+        font-size: 0.8rem;
+        font-family: ui-monospace, SFMono-Regular, monospace;
+        color: var(--text-dim);
+      }
+    }
+
+    .progress-slider {
+      flex: 1;
+      height: 6px;
+      background: rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      position: relative;
+      transition: height 0.15s;
+
+      &:hover {
+        height: 8px;
+        .progress-bar::after { transform: scale(1); }
+      }
+    }
+
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background: #ffffff;
+      border-radius: inherit;
+      box-shadow: 0 0 12px #ffffff;
+      position: relative;
+      
+      /* Precision handle knob */
+      &::after {
+        content: "";
+        position: absolute;
+        right: -4px;
+        top: 50%;
+        transform: translateY(-50%) scale(0);
+        width: 10px;
+        height: 10px;
+        background: #ffffff;
+        border-radius: 50%;
+        transition: transform 0.15s;
+      }
+    }
+
+    audio {
+      display: none;
+    }
+
+    /* Clean Responsive System Rules */
+    @media (max-width: 768px) {
+      body {
+        padding: 16px;
+      }
+      .container {
+        padding-bottom: 160px;
+      }
+      .player-layout {
+        flex-direction: column;
+        gap: 14px;
+        align-items: stretch;
+      }
+      .player-controls {
+        justify-content: space-around;
+      }
+      #viewer-dialog .dialog-container {
+        padding: 0 16px 140px;
+        margin: 40px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="ambient-bg"></div>
+  <canvas id="visualizer"></canvas>
+
+  <main class="container">
+    <header>
+      <h1>Σ Music <span>LOCAL</span></h1>
+      <p id="status">Loading ecosystem...</p>
+    </header>
+
+    <div class="toolbar">
+      <div class="search-wrapper">
+        <input id="search" type="search" placeholder="Search artists, tracks, albums..." autocomplete="off">
+      </div>
+      <button id="random" class="btn icon-btn" title="Play Random Track">🎲</button>
+      <button id="current" class="btn icon-btn" title="Open Playing Album">🔊</button>
+    </div>
+
+    <div id="results"></div>
+  </main>
+
+  <dialog id="viewer-dialog">
+    <div class="dialog-container">
+      <button id="close-dialog" class="close-dialog">✕ Close</button>
+      <div id="dialog-content"></div>
+    </div>
+  </dialog>
+
+  <div id="player-panel">
+    <div class="player-layout">
+      <div class="player-controls">
+        <button class="control-btn" id="prev-track">Prev</button>
+        <button class="control-btn" id="play-toggle">Play</button>
+        <button class="control-btn" id="next-track">Next</button>
+      </div>
+      <div class="progress-container">
+        <span class="time-display" id="time-current">0:00</span>
+        <div class="progress-slider" id="seek-slider">
+          <div class="progress-bar" id="fill-bar"></div>
+        </div>
+        <span class="time-display" id="time-total">0:00</span>
+      </div>
+    </div>
+  </div>
+
+  <audio crossorigin="anonymous" id="audio"></audio>
+
+  <script>
+  (() => {
+    "use strict";
+
+    // Standard DOM Cache selectors helper
+    const $ = id => document.getElementById(id);
+    const audio = $("audio");
+
+    // Unified Application Ecosystem State Struct
+    const State = {
+      library: [],
+      queue: [],
+      index: 0,
+      audioCtx: null,
+      analyser: null,
+      vTime: 0,
+      fuse: null
+    };
+
+    // Humanize parsing digital audio runtimes
+    const formatTime = seconds => {
+      if (!Number.isFinite(seconds) || seconds < 0) return "0:00";
+      const mins = Math.floor(seconds / 60);
+      const secs = Math.floor(seconds % 60);
+      return `${mins}:${String(secs).padStart(2, "0")}`;
+    };
+
+    const getFlattenedAlbums = () => State.library.flatMap(art => art.albums.map(alb => ({ ...alb, artist: art.name })));
+    const getFlattenedTracks = () => State.library.flatMap(art => art.albums.flatMap(alb => alb.tracks));
+    const findTargetAlbum = (artistName, albumTitle) => State.library.find(a => a.name === artistName)?.albums.find(al => al.title === albumTitle);
+
+    /**
+     * Card Component Template Builder Engine
+     */
+    const createCardHTML = ({ type, title, subtitle, imgPath, artist = "", album = "", file = "" }) => {
+      const classType = type === "artist" ? "artist-type" : "";
+      return `
+        <article class="card ${classType}" data-type="${type}" data-artist="${encodeURIComponent(artist || title)}" data-album="${encodeURIComponent(album || title)}" data-file="${encodeURIComponent(file)}">
+          <div class="card-img">
+            <img src="${encodeURI(imgPath)}" loading="lazy" alt="${title}">
+          </div>
+          <div class="card-title">${title}</div>
+          <div class="card-sub">${subtitle}</div>
+        </article>
+      `;
+    };
+
+    /**
+     * Engine Renderer Component
+     */
+    function renderLibraryGrid(query = "") {
+      const cleanQuery = query.toLowerCase().trim();
+      const allAlbums = getFlattenedAlbums();
+
+      const filteredArtists = State.library.filter(art => !cleanQuery || art.name.toLowerCase().includes(cleanQuery));
+      const filteredAlbums = allAlbums.filter(alb => !cleanQuery || alb.title.toLowerCase().includes(cleanQuery) || alb.artist.toLowerCase().includes(cleanQuery));
+      const filteredTracks = cleanQuery ? State.fuse.search(cleanQuery).map(res => res.item) : allAlbums.flatMap(a => a.tracks);
+
+      let htmlOutput = "";
+
+      if (filteredArtists.length) {
+        htmlOutput += `<div class="section-title">Artists</div><div class="grid">`;
+        htmlOutput += filteredArtists.map(art => createCardHTML({
+          type: "artist",
+          title: art.name,
+          subtitle: `${art.albums.length} albums • ${art.albums.flatMap(al => al.tracks).length} tracks`,
+          imgPath: `https://raw.githubusercontent.com/sigmiliarity/web57/refs/heads/main/icon.png`
+        })).join("");
+        htmlOutput += `</div>`;
+      }
+
+      if (filteredAlbums.length) {
+        htmlOutput += `<div class="section-title">Albums</div><div class="grid">`;
+        htmlOutput += filteredAlbums.map(alb => createCardHTML({
+          type: "album",
+          title: alb.title,
+          subtitle: alb.artist,
+          imgPath: `https://raw.githubusercontent.com/sigmiliarity/web57/refs/heads/main/${alb.title}/cover.jpg`,
+          artist: alb.artist,
+          album: alb.title
+        })).join("");
+        htmlOutput += `</div>`;
+      }
+
+      if (filteredTracks.length) {
+        htmlOutput += `<div class="section-title">Tracks</div><div class="grid">`;
+        htmlOutput += filteredTracks.map(track => createCardHTML({
+          type: "track",
+          title: track.title,
+          subtitle: `${track.artist} • ${track.album}`,
+          imgPath: `https://raw.githubusercontent.com/sigmiliarity/web57/refs/heads/main/${track.album}/cover.jpg`,
+          artist: track.artist,
+          album: track.album,
+          file: track.file
+        })).join("");
+        htmlOutput += `</div>`;
+      }
+
+      $("results").innerHTML = htmlOutput || `<div style="padding: 24px 0; color: var(--text-dim)">No matching query parameters found inside Local Node storage.</div>`;
+    }
+
+    /**
+     * Modern UI Dialogue Controller Module
+     */
+    function openViewerDialog(type, artistName, albumTitle = null) {
+      const artist = State.library.find(a => a.name === artistName);
+      if (!artist) return;
+
+      const dialog = $("viewer-dialog");
+      const content = $("dialog-content");
+
+      if (type === "artist") {
+        content.innerHTML = `
+          <div class="hero">
+            <img src="${encodeURI(`https://raw.githubusercontent.com/sigmiliarity/web57/refs/heads/main/icon.png`)}" style="border-radius: 50%" alt="${artist.name}">
+            <div class="hero-details">
+              <h2>${artist.name}</h2>
+              <button class="btn play-btn" data-action="play-artist" data-artist="${encodeURIComponent(artist.name)}">Play Artist Discography</button>
+            </div>
+          </div>
+          <div class="section-title">Albums</div>
+          <div class="grid">
+            ${artist.albums.map(al => createCardHTML({
+              type: "album",
+              title: al.title,
+              subtitle: artist.name,
+              imgPath: `https://raw.githubusercontent.com/sigmiliarity/web57/refs/heads/main/${al.title}/cover.jpg`,
+              artist: artist.name,
+              album: al.title
+            })).join("")}
+          </div>
+        `;
+        dialog.showModal();
+        return;
+      }
+
+      const album = findTargetAlbum(artistName, albumTitle);
+      if (!album) return;
+
+      const currentActiveTrackFile = State.queue[State.index]?.file;
+
+      content.innerHTML = `
+        <div class="hero">
+          <img data-action="view-artist" data-artist="${encodeURIComponent(artist.name)}" src="${encodeURI(`https://raw.githubusercontent.com/sigmiliarity/web57/refs/heads/main/${album.title}/cover.jpg`)}" alt="${album.title}" style="cursor: pointer;">
+          <div class="hero-details">
+            <h2>${album.title}</h2>
+            <p class="clickable view-artist-trigger" data-action="view-artist" data-artist="${encodeURIComponent(artist.name)}">${artist.name}</p>
+            <div>
+              <button class="btn play-btn" data-action="play-album" data-artist="${encodeURIComponent(artist.name)}" data-album="${encodeURIComponent(album.title)}">Play Album</button>
+            </div>
+          </div>
+        </div>
+        <div class="track-list">
+          ${album.tracks.map((t, idx) => {
+            const isActive = currentActiveTrackFile === t.file ? "active" : "";
+            return `
+              <div class="track-row ${isActive}" data-action="play-track-row" data-artist="${encodeURIComponent(artist.name)}" data-album="${encodeURIComponent(album.title)}" data-index="${idx}">
+                <span class="track-index">${t.track || idx + 1}</span>
+                <span class="track-title">${t.title}</span>
+                <span class="track-duration">${t.duration ? formatTime(t.duration) : ""}</span>
+              </div>
+            `;
+          }).join("")}
+        </div>
+      `;
+      dialog.showModal();
+    }
+
+    function handleCardActivation(cardElement) {
+      const type = cardElement.dataset.type;
+      const artist = decodeURIComponent(cardElement.dataset.artist || "");
+      const album = decodeURIComponent(cardElement.dataset.album || "");
+      const file = decodeURIComponent(cardElement.dataset.file || "");
+
+      if (type === "track") {
+        const matchingTrack = findTargetAlbum(artist, album)?.tracks.find(t => t.file === file);
+        if (matchingTrack) executePlaybackQueue([matchingTrack], 0);
+      } else {
+        openViewerDialog(type, artist, album);
+      }
+    }
+
+    function updatePlaybackUI(track) {
+      if (!track) return;
+      $("status").textContent = `Now Playing: ${track.title} • ${track.artist}`;
+      document.title = `${track.title} — ${track.artist}`;
+      
+      // Dynamic App branding icon adjustment matches tracking art node assets
+      const targetCover = `https://raw.githubusercontent.com/sigmiliarity/web57/refs/heads/main/${track.album}/cover.jpg`;
+      document.querySelector('link[rel="icon"]').href = targetCover;
+      $("ambient-bg").style.backgroundImage = `url('${encodeURI(targetCover)}')`;
+
+      // Synchronization state layout highlights
+      document.querySelectorAll(".track-row").forEach(row => {
+        const rowTitle = row.querySelector(".track-title")?.textContent;
+        row.classList.toggle("active", rowTitle === track.title);
+      });
+
+      if ("mediaSession" in navigator) {
+        navigator.mediaSession.metadata = new MediaMetadata({
+          title: track.title,
+          artist: track.artist,
+          album: track.album,
+          artwork: [{ src: targetCover, sizes: "512x512", type: "image/jpeg" }]
+        });
+      }
+    }
+
+    /**
+     * Web Audio API Analysis Pipeline Pipeline Module
+     */
+    function initializeAudioGraph() {
+      if (State.audioCtx) return;
+      
+      const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+      State.audioCtx = new AudioContextClass();
+      State.analyser = State.audioCtx.createAnalyser();
+      State.analyser.fftSize = 256;
+
+      const sourceNode = State.audioCtx.createMediaElementSource(audio);
+      sourceNode.connect(State.analyser);
+      State.analyser.connect(State.audioCtx.destination);
+      
+      beginRenderAnimationLoop();
+    }
+
+    function executePlaybackQueue(trackList, startIndex = 0) {
+      initializeAudioGraph();
+      State.queue = trackList;
+      State.index = startIndex;
+      
+      audio.src = State.queue[State.index].file;
+      updatePlaybackUI(State.queue[State.index]);
+      audio.play().catch(() => console.log("User interaction required prior to automated streaming initialized media layers."));
+    }
+
+    const shiftQueueIndex = direction => {
+      if (!State.queue.length) return;
+      State.index = (State.index + direction + State.queue.length) % State.queue.length;
+      audio.src = State.queue[State.index].file;
+      updatePlaybackUI(State.queue[State.index]);
+      audio.play().catch(() => {});
+    };
+
+    /**
+     * Global Application Context Click Router Events Delegations
+     */
+    document.body.addEventListener("click", event => {
+      // Main Core Container Card Click Target Handler Router
+      const targetCard = event.target.closest(".container .card");
+      if (targetCard) {
+        handleCardActivation(targetCard);
+        return;
+      }
+
+      // Dialog Intercept Layer Handler Router
+      const targetDialogCard = event.target.closest("#viewer-dialog .card");
+      if (targetDialogCard) {
+        handleCardActivation(targetDialogCard);
+        return;
+      }
+
+      // Action Attribute Delegation Routing Matrix Target Router
+      const actionElement = event.target.closest("[data-action]");
+      if (!actionElement) return;
+
+      const action = actionElement.dataset.action;
+      const artist = decodeURIComponent(actionElement.dataset.artist || "");
+      const album = decodeURIComponent(actionElement.dataset.album || "");
+
+      if (action === "view-artist") {
+        openViewerDialog("artist", artist);
+      } else if (action === "play-artist") {
+        const fullDiscography = State.library.find(x => x.name === artist)?.albums.flatMap(al => al.tracks);
+        if (fullDiscography?.length) executePlaybackQueue(fullDiscography, 0);
+      } else if (action === "play-album") {
+        const targetedAlbumInstance = findTargetAlbum(artist, album);
+        if (targetedAlbumInstance) executePlaybackQueue(targetedAlbumInstance.tracks, 0);
+      } else if (action === "play-track-row") {
+        const targetedAlbumInstance = findTargetAlbum(artist, album);
+        const trackingIndex = Number(actionElement.dataset.index);
+        if (targetedAlbumInstance) executePlaybackQueue(targetedAlbumInstance.tracks, trackingIndex);
+      }
+    });
+
+    // Control Elements Events Setup Hooks bindings interface
+    $("close-dialog").onclick = () => $("viewer-dialog").close();
+    $("search").oninput = event => renderLibraryGrid(event.target.value);
+    
+    $("random").onclick = () => {
+      const globalTracks = getFlattenedTracks();
+      if (!globalTracks.length) return;
+      const indexRand = Math.floor(Math.random() * globalTracks.length);
+      executePlaybackQueue([globalTracks[indexRand]], 0);
+    };
+
+    $("current").onclick = () => {
+      const activeTrack = State.queue[State.index];
+      if (activeTrack) openViewerDialog("album", activeTrack.artist, activeTrack.album);
+    };
+
+    $("play-toggle").onclick = () => {
+      initializeAudioGraph();
+      if (audio.paused) {
+        audio.play().catch(() => {});
+      } else {
+        audio.pause();
+      }
+    };
+
+    $("next-track").onclick = () => shiftQueueIndex(1);
+    $("prev-track").onclick = () => shiftQueueIndex(-1);
+
+    $("seek-slider").onclick = event => {
+      if (!audio.duration) return;
+      const boundingDimensions = event.currentTarget.getBoundingClientRect();
+      const relativeXCoordinate = event.clientX - boundingDimensions.left;
+      audio.currentTime = (relativeXCoordinate / boundingDimensions.width) * audio.duration;
+    };
+
+    // System Audio Component Interception Event hooks bindings interface
+    audio.onplay = () => $("play-toggle").textContent = "Pause";
+    audio.onpause = () => $("play-toggle").textContent = "Play";
+    audio.onended = () => shiftQueueIndex(1);
+    
+    audio.ontimeupdate = () => {
+      const positionRatio = (audio.currentTime / audio.duration) * 100 || 0;
+      $("fill-bar").style.width = `${positionRatio}%`;
+      $("time-current").textContent = formatTime(audio.currentTime);
+      if (audio.duration) $("time-total").textContent = formatTime(audio.duration);
+    };
+
+    // Native integration platforms hardware metadata bindings handles setups
+    if ("mediaSession" in navigator) {
+      navigator.mediaSession.setActionHandler("play", () => audio.play());
+      navigator.mediaSession.setActionHandler("pause", () => audio.pause());
+      navigator.mediaSession.setActionHandler("previoustrack", () => shiftQueueIndex(-1));
+      navigator.mediaSession.setActionHandler("nexttrack", () => shiftQueueIndex(1));
+    }
+
+    /**
+     * Canvas Graphics Visualization Procedural Matrix Module
+     */
+    const canvas = $("visualizer");
+    const canvasContext = canvas.getContext("2d");
+
+    const synchronizeCanvasBoundingViewportDimensions = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    };
+    window.addEventListener("resize", synchronizeCanvasBoundingViewportDimensions, { passive: true });
+    synchronizeCanvasBoundingViewportDimensions();
+
+    function beginRenderAnimationLoop() {
+      requestAnimationFrame(beginRenderAnimationLoop);
+      if (!State.analyser) return;
+
+      State.vTime += 0.016; // Incremental time frame ticker references
+
+      const audioFrequencyDataBuffer = new Uint8Array(State.analyser.frequencyBinCount);
+      State.analyser.getByteFrequencyData(audioFrequencyDataBuffer);
+      
+      canvasContext.clearRect(0, 0, canvas.width, canvas.height);
+
+      const dynamicSampleIntervalStep = Math.max(1, Math.floor(audioFrequencyDataBuffer.length / 70));
+      const calculationTotalBins = Math.ceil(audioFrequencyDataBuffer.length / dynamicSampleIntervalStep);
+      const allocatedSlotWidth = canvas.width / calculationTotalBins;
+
+      const bodyComputedStyle = getComputedStyle(document.body);
+      const colorAccentHex = bodyComputedStyle.getPropertyValue("--accent").trim() || "#ffd86f";
+      const colorDimHex = bodyComputedStyle.getPropertyValue("--text-dim").trim() || "#a0a0a0";
+
+      canvasContext.textAlign = "center";
+      canvasContext.textBaseline = "middle";
+      canvasContext.font = "bold 26px 'Inter', system-ui, sans-serif";
+
+      for (let index = 0, binIndex = 0; index < audioFrequencyDataBuffer.length; index += dynamicSampleIntervalStep, binIndex++) {
+        const amplitudePercentage = audioFrequencyDataBuffer[index] / 255;
+        const renderingXCoord = (binIndex * allocatedSlotWidth) + (allocatedSlotWidth / 2);
+        const baseCalculatedYCoord = canvas.height - 60 - (amplitudePercentage * (canvas.height * 0.65));
+        const finalWaveYCoord = baseCalculatedYCoord + Math.sin((State.vTime * 2) + (binIndex * 0.15)) * 12;
+        const rotationalAngleRadians = ((State.vTime * 2.5) + (binIndex * 0.2) + (amplitudePercentage * 0.4)) % (Math.PI * 2);
+
+        const fillGradient = canvasContext.createLinearGradient(renderingXCoord, finalWaveYCoord - 20, renderingXCoord, finalWaveYCoord + 20);
+        fillGradient.addColorStop(0, colorAccentHex);
+        fillGradient.addColorStop(1, colorDimHex);
+
+        canvasContext.save();
+        canvasContext.translate(renderingXCoord, finalWaveYCoord);
+        canvasContext.rotate(rotationalAngleRadians);
+        canvasContext.fillStyle = fillGradient;
+        canvasContext.globalAlpha = 0.4 + (amplitudePercentage * 0.5);
+        
+        canvasContext.fillText("Σ", 0, 0);
+        canvasContext.restore();
+      }
+      canvasContext.globalAlpha = 1.0;
+    }
+
+    /**
+     * System Initialization Pipeline Asynchronous Node Launcher
+     */
+    (async () => {
+      try {
+        const fetchStreamResponse = await fetch("music_data.json");
+        if (!fetchStreamResponse.ok) throw new Error("Network status validation failure parsing file endpoint locations.");
+        
+        const runtimeRawEcosystemJSON = await fetchStreamResponse.json();
+
+        State.library = Object.entries(runtimeRawEcosystemJSON).map(([artistName, artistAlbumsList]) => ({
+          name: artistName,
+          albums: artistAlbumsList.map(albumItem => {
+            const dynamicAlbumTitleString = albumItem.name || albumItem.album || "Unknown Production Set Content";
+            return {
+              title: dynamicAlbumTitleString,
+              tracks: (albumItem.tracks || []).map(trackObject => ({
+                ...trackObject,
+                artist: artistName,
+                album: dynamicAlbumTitleString,
+                file: "https://raw.githubusercontent.com/sigmiliarity/web57/refs/heads/main/" + trackObject.url || trackObject.file
+              }))
+            };
+          })
+        }));
+
+        State.fuse = new Fuse(getFlattenedTracks(), {
+          keys: ["title", "artist", "album"],
+          threshold: 0.35
+        });
+
+        renderLibraryGrid();
+        $("status").textContent = `Ecosystem operational: Online node detects ${State.library.length} artists, ${getFlattenedAlbums().length} albums, and ${getFlattenedTracks().length} index tracks.`;
+      } catch (runtimeInitializationExceptionError) {
+        console.error(runtimeInitializationExceptionError);
+        $("status").textContent = "Ecosystem fatal synchronization error: localized media library loading matrix failed.";
+      }
+    })();
+  })();
+  </script>
+</body>
+</html>
