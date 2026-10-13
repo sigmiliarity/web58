@@ -2,60 +2,154 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Σ Music</title>
-  <link rel="icon" href="placeholder.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sigma Music</title>
+  <link rel="icon" href="icon.svg" />
 
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* OLED Theme Enhancements & Smooth Scrollbar */
+    body {
+      background-color: #030305;
+      color: #f1f5f9;
+    }
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #030305;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #181822;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #272738;
+    }
+  </style>
 </head>
-<body>
+<body class="bg-[#030305] text-slate-100 font-sans antialiased selection:bg-amber-500/30 selection:text-amber-200 min-h-screen flex flex-col justify-between overflow-x-hidden m-0 p-0">
 
-  <div id="ambient-bg"></div>
-  <canvas id="visualizer"></canvas>
+  <div id="ambient-bg" class="fixed inset-0 pointer-events-none z-0 opacity-20"></div>
+  <canvas id="visualizer" class="fixed inset-0 pointer-events-none z-0 w-full h-full opacity-40"></canvas>
 
-  <main class="container">
-    <header>
-      <h1>Σ Music <span>∞</span></h1>
-      <p id="status">Loading ecosystem...</p>
-    </header>
-
-    <div class="toolbar">
-      <div class="search-wrapper">
-        <input id="search" type="search" placeholder="Search artists, tracks, albums..." autocomplete="off">
+  <header class="sticky top-0 z-30 backdrop-blur-3xl bg-[#030305]/80 border-b border-white/[0.06] px-6 lg:px-10 py-4 flex flex-col gap-4 shadow-2xl">
+    <div class="flex items-center justify-between w-full">
+      <div class="flex items-center gap-6">
+        <h1 class="text-xl font-bold tracking-tight cursor-pointer flex items-center gap-2 select-none hover:text-[var(--accent)] transition-colors" id="logo-home">
+          Σ Music <span class="text-[var(--accent)] font-normal">INFINITE</span>
+        </h1>
+        <div class="flex items-center gap-1.5 bg-[#0b0b10] border border-white/[0.06] p-1 rounded-xl">
+          <button id="go-back" class="w-8 h-8 rounded-lg flex items-center justify-center text-slate-400 hover:text-white hover:bg-white/[0.06] transition-all disabled:opacity-25 disabled:cursor-not-allowed" title="Go Back">←</button>
+          <button id="go-forward" class="w-8 h-8 rounded-lg flex items-center justify-center text-slate-400 hover:text-white hover:bg-white/[0.06] transition-all disabled:opacity-25 disabled:cursor-not-allowed" title="Go Forward">→</button>
+        </div>
       </div>
-      <button id="random" class="btn icon-btn" title="Play Random Track">🎲</button>
-      <button id="current" class="btn icon-btn" title="Open Current Album">🔊</button>
-    </div>
 
-    <div id="results"></div>
+      <div class="toolbar flex items-center gap-3 flex-1 max-w-xl mx-8">
+        <div class="search-wrapper relative w-full">
+          <input id="search" type="search" placeholder="Search artists, albums, tracks..." autocomplete="off" class="w-full bg-[#0b0b10] border border-white/[0.08] rounded-2xl px-4 py-2.5 text-sm text-slate-100 placeholder:text-slate-500 focus:outline-none focus:border-[var(--accent)]/50 focus:bg-[#12121c] transition-all shadow-inner">
+        </div>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <button id="random" class="h-10 px-4 rounded-2xl bg-[#0b0b10] border border-white/[0.08] hover:border-white/[0.15] hover:bg-[#12121c] text-sm font-medium flex items-center gap-2 transition-all shadow-lg" title="Play Random Track">
+          <span class="hidden md:inline">Random</span>
+        </button>
+        <button id="current" class="h-10 px-4 rounded-2xl bg-[#0b0b10] border border-white/[0.08] hover:border-white/[0.15] hover:bg-[#12121c] text-sm font-medium flex items-center gap-2 transition-all shadow-lg open-current-album" title="Open Current Album">
+          <span class="hidden md:inline">Playing</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="w-full px-6 lg:px-12 py-8 flex-1 pb-56 z-10">
+    <!-- Main views rendered dynamically -->
   </main>
 
-  <dialog id="viewer-dialog">
-    <div class="dialog-container">
-      <button id="close-dialog" class="close-dialog">✕ Close</button>
-      <div id="dialog-content"></div>
-    </div>
-  </dialog>
+  <div id="context-menu" class="fixed hidden z-50 bg-[#0d0d14] border border-white/10 rounded-2xl shadow-2xl backdrop-blur-3xl py-2 min-w-[200px] text-sm text-slate-200"></div>
 
-  <div id="player-panel">
-    <div class="player-layout">
-      <div class="player-controls">
-        <button class="control-btn" id="prev-track">Prev</button>
-        <button class="control-btn" id="play-toggle">Play</button>
-        <button class="control-btn" id="next-track">Next</button>
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toast-container" class="fixed bottom-36 right-6 z-50 flex flex-col gap-2 pointer-events-none"></div>
+
+  <!-- PLAYLIST SELECTION DROPDOWN MODAL -->
+  <div id="playlist-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 backdrop-blur-md p-4">
+    <div class="bg-[#0b0b10] border border-white/10 rounded-3xl p-6 w-full max-w-md shadow-2xl space-y-4">
+      <div class="flex items-center justify-between">
+        <h3 class="text-lg font-bold text-white tracking-wide">Add to Playlist (will be deleted when sigma music gets update so don't rely on playlists for now)</h3>
+        <button id="close-pl-modal" class="w-8 h-8 rounded-full bg-white/[0.04] hover:bg-white/[0.08] text-slate-400 hover:text-white flex items-center justify-center transition-colors">✕</button>
       </div>
-      <div class="progress-container">
-        <span class="time-display" id="time-current">0:00</span>
-        <div class="progress-slider" id="seek-slider">
-          <div class="progress-bar" id="fill-bar"></div>
-        </div>
-        <span class="time-display" id="time-total">0:00</span>
-      </div>
+      <div id="pl-modal-list" class="space-y-2 max-h-60 overflow-y-auto pr-1"></div>
+      <button id="create-pl-from-modal" class="w-full bg-[var(--accent)] hover:bg-[var(--accent)] text-slate-950 font-bold py-3 rounded-2xl text-sm transition-all shadow-lg shadow-amber-500/10">+ Create New Playlist</button>
     </div>
   </div>
 
-  <audio crossorigin="anonymous" id="audio"></audio>
+  <div id="player-panel" class="fixed bottom-4 left-4 right-4 max-w-[1600px] mx-auto z-40 bg-[#08080c]/50 border border-white/[0.08] rounded-3xl backdrop-blur-3xl px-6 py-4 shadow-2xl">
+    <div class="player-layout flex flex-col lg:flex-row items-center justify-between gap-6 w-full">
+      
+      <!-- Track Info -->
+      <div class="flex items-center gap-4 w-full lg:w-80 min-w-0">
+        <img id="player-art" class="w-14 h-14 rounded-2xl object-cover bg-slate-900 border border-white/10 flex-shrink-0 shadow-xl open-current-album cursor-pointer hover:scale-105 transition-transform" alt="Now Playing">
+        <div class="min-w-0 flex-1">
+          <h4 id="player-title" class="font-semibold text-white text-sm truncate open-current-album cursor-pointer hover:text-[var(--accent)] transition-colors">No track playing</h4>
+          <p id="player-artist" class="text-xs text-slate-400 truncate mt-0.5 open-current-artist cursor-pointer hover:text-slate-200 transition-colors">Σ Music</p>
+        </div>
+      </div>
+
+      <!-- Controls & Progress -->
+      <div class="flex-1 w-full max-w-3xl flex flex-col gap-2.5">
+        <div class="player-controls flex items-center justify-center gap-6">
+          <button class="control-btn text-slate-400 hover:text-white transition-colors text-xs font-bold tracking-widest uppercase px-2 py-1" id="prev-track" title="Previous Track">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 19 2 12 11 5 11 19"></polygon><line x1="22" y1="19" x2="22" y2="5"></line></svg>
+          </button>
+          <button class="control-btn w-12 h-12 rounded-2xl bg-[var(--accent)] hover:bg-[var(--accent)] text-slate-950 font-bold flex items-center justify-center shadow-lg shadow-[var(--accent)_0_0_8px] transition-all hover:scale-105 text-sm" id="play-toggle" title="Play / Pause">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg>
+          </button>
+          <button class="control-btn text-slate-400 hover:text-white transition-colors text-xs font-bold tracking-widest uppercase px-2 py-1" id="next-track" title="Next Track">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 5 22 12 13 19 13 5"></polygon><line x1="2" y1="5" x2="2" y2="19"></line></svg>
+          </button>
+        </div>
+
+        <div class="progress-container flex items-center gap-3 w-full">
+          <span class="time-display text-xs font-mono text-slate-500 w-10 text-right" id="time-current">0:00</span>
+          <div class="progress-slider flex-1 h-2 bg-white/[0.08] hover:h-2.5 rounded-full cursor-pointer relative transition-all group" id="seek-slider">
+            <div class="progress-bar absolute top-0 left-0 h-full bg-[var(--accent)] rounded-full w-0 transition-all shadow-[var(--accent)_0_0_8px]" id="fill-bar"></div>
+          </div>
+          <span class="time-display text-xs font-mono text-slate-500 w-10" id="time-total">0:00</span>
+        </div>
+      </div>
+
+      <!-- Options & Volume -->
+      <div id="player-options" class="flex items-center gap-3 w-full lg:w-auto justify-end">
+        <button class="option-btn text-slate-400 hover:text-white p-2.5 rounded-xl hover:bg-white/[0.06] transition-all text-base relative" id="loop-btn" title="Toggle Loop">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 7v6h-6"></path><path d="M3 17a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 7"></path></svg>
+          <span id="loop-indicator" class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-[var(--accent)] hidden shadow-[var(--accent)_0_0_8px]"></span>
+        </button>
+        <button class="option-btn text-slate-400 hover:text-white p-2.5 rounded-xl hover:bg-white/[0.06] transition-all text-base relative" id="shuffle-btn" title="Toggle Shuffle">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 3 21 3 21 8"></polyline><line x1="4" y1="20" x2="21" y2="3"></line><polyline points="21 16 21 21 16 21"></polyline><line x1="15" y1="15" x2="21" y2="21"></line><line x1="4" y1="4" x2="9" y2="9"></line></svg>
+          <span id="shuffle-indicator" class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-[var(--accent)] hidden shadow-[var(--accent)_0_0_8px]"></span>
+        </button>
+        <div class="flex items-center gap-2 bg-[#0b0b10] px-3 py-2 rounded-2xl border border-white/[0.06]">
+          <button class="option-btn text-slate-400 hover:text-white text-sm" id="volume-btn" title="Volume">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon></svg>
+          </button>
+          <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1" class="w-20 accent-[var(--accent)] cursor-pointer">
+        </div>
+        <button class="option-btn text-slate-400 hover:text-white p-2.5 rounded-xl hover:bg-white/[0.06] transition-all text-base" id="queue-btn" title="View Queue">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+        </button>
+        <button hidden class="option-btn text-slate-400 hover:text-white p-2.5 rounded-xl hover:bg-white/[0.06] transition-all text-base" id="lyrics-btn" title="View Lyrics">📝</button>
+        <button hidden class="option-btn text-slate-400 hover:text-white p-2.5 rounded-xl hover:bg-white/[0.06] transition-all text-base" id="fullscreen-btn" title="Toggle Fullscreen">⛶</button>
+      </div>
+
+    </div>
+  </div>
+
+  <audio crossorigin="anonymous" id="audio" preload="auto"></audio>
+  <audio crossorigin="anonymous" id="preload-audio" preload="auto" muted style="display:none;"></audio>
 
   <script src="script.js"></script>
 </body>
